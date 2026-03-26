@@ -8599,16 +8599,16 @@ html.lenis body {
   display: flex;
   align-items: center;
   gap: 12px;
-  margin-top: 90px;
+  margin-top: 20px;
 }
 @media (max-width: 1399px) {
   .testimonial-wrapper .testimonial-box .info-item {
-    margin-top: 40px;
+    margin-top: 20px;
   }
 }
 @media (max-width: 991px) {
   .testimonial-wrapper .testimonial-box .info-item {
-    margin-top: 30px;
+    margin-top: 15px;
   }
 }
 .testimonial-wrapper .testimonial-box .info-item .client-image img {
