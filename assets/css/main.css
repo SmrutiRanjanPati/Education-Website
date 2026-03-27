@@ -100,7 +100,7 @@ Version: 1.0.0
 }
 
 .link-btn {
-  color: var(--theme-2);
+  color: var(--theme);
   text-transform: capitalize;
   font-weight: 500;
   font-family: "Space Grotesk", sans-serif;
@@ -109,7 +109,7 @@ Version: 1.0.0
   margin-left: 8px;
 }
 .link-btn:hover {
-  color: var(--theme);
+  color: var(--theme-2);
 }
 
 /* --------------------------------------------
@@ -6138,6 +6138,8 @@ html.lenis body {
   display: flex;
   align-items: center;
   gap: 8px;
+  font-weight: 700;
+  color: var(--theme-2);
 }
 .news-card-item:hover .news-image .news-layer-wrapper .news-layer-image {
   transform: translateY(-100%);
