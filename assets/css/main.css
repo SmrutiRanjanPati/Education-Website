@@ -6867,6 +6867,20 @@ html.lenis body {
   .reply:hover {
   background-color: var(--theme);
 }
+.enquiry-now{
+  font-weight: 500;
+  font-size: 14px;
+  color: var(--theme);
+  padding: 6px 14px;
+  text-transform: uppercase;
+  color: var(--white);
+  background-color: var(--bg-2);
+  border-radius: 100px;
+  transition: all 450ms;
+}
+.enquiry-now:hover{
+    background-color: var(--theme);
+}
 .news-details-wrapper
   .news-details-post
   .details-content
