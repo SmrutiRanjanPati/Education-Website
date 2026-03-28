@@ -6151,6 +6151,26 @@ html.lenis body {
   font-weight: 700;
   color: var(--theme-2);
 }
+
+.news-card-item .news-content .courses {
+  display: flex;
+  flex-direction: row;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 16px;
+}
+.news-card-item .news-content .courses .info-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 700;
+  color: var(--theme-2);
+}
+.news-card-item .news-content .courses .info-item .course-name {
+  font-size: 14px; 
+  font-weight: 500;
+  color: var(--text);
+}
 .news-card-item:hover .news-image .news-layer-wrapper .news-layer-image {
   transform: translateY(-100%);
 }
