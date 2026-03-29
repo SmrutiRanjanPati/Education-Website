@@ -2092,7 +2092,7 @@ span {
 
 .faq-wrapper .faq-items .accordion .accordion-button::after {
   content: "\f324";
-  font-family: "Roboto", sans-serif;
+  font-family: "Font Awesome 6 Pro";
   background: transparent;
   font-weight: 900;
   transition: all 0.3s ease-in-out !important;
@@ -2108,7 +2108,7 @@ span {
 
 .faq-wrapper .faq-items .accordion .accordion-button:not(.collapsed)::after {
   content: "\f322";
-  font-family: "Roboto", sans-serif;
+  font-family: "Font Awesome 6 Pro";
   background: transparent;
   font-weight: 900;
   color: var(--theme);
@@ -9191,7 +9191,7 @@ html.lenis body {
 
 .service-details-wrapper .service-details-post .faq-items .accordion .accordion-button::after {
   content: "\f324";
-  font-family: "Roboto", sans-serif;
+  font-family: "Font Awesome 6 Pro";
   background: transparent;
   font-weight: 900;
   transition: all 0.3s ease-in-out !important;
@@ -9207,7 +9207,7 @@ html.lenis body {
 
 .service-details-wrapper .service-details-post .faq-items .accordion .accordion-button:not(.collapsed)::after {
   content: "\f322";
-  font-family:"Roboto", sans-serif;
+  font-family:"Font Awesome 6 Pro";
   background: transparent;
   font-weight: 900;
   color: var(--theme);
