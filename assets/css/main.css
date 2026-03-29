@@ -7559,7 +7559,7 @@ html.lenis body {
   color: var(--header);
   font-size: 18px;
   font-weight: 500;
-  font-family: "Space Grotesk", serif;
+  font-family:"Roboto", sans-serif;
   margin-bottom: 10px;
   display: inline-block;
 }
@@ -7643,10 +7643,10 @@ html.lenis body {
 
 .preloader .animation-preloader .txt-loading {
   font:
-    bold 5em "Space Grotesk",
-    serif,
-    "Inter",
+    bold 5em "Roboto",
     sans-serif;
+    font-size: 5rem;
+    font-weight: bol;
   text-align: center;
   user-select: none;
 }
@@ -7696,7 +7696,7 @@ html.lenis body {
   content: attr(data-text-preloader);
   left: 0;
   opacity: 0;
-  font-family: "Space Grotesk", serif;
+  font-family: "Roboto", sans-serif;
   position: absolute;
   top: -3px;
   transform: rotateY(-90deg);
