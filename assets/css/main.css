@@ -1,47 +1,6 @@
 @charset "UTF-8";
-/*
-Theme Name: Visaway 
-Author: Gramentheme
-Author URI: https://themeforest.net/user/Gramentheme/portfolio
-Description: Career FFutures
-Service Html Template 
-Version: 1.0.0
-*/
-/*CSS Table Of Content Ends Here*/
-/*
---------------------------------------------------------------
-[Table of Contents]
---------------------------------------------------------------
-01. Variables & Mixins
-02. Typography
-03. Buttons
-04. About 
-05. Animation 
-06. Brand 
-07. Contact
-08. Cta
-09. Faq
-10. Feature
-11. Footer
-12. Header
-13. Helping
-14. Hero
-15. Marquee
-16. Meanmenu
-17. News
-18. Preloader
-19. Pricing
-20. Section
-21. Service
-22. Testimonial
-23. Visa
 
-
---------------------------------------------------------------
-*/
-@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&amp;display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&amp;display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 :root {
   --body: #fff;
   --black: #000;
@@ -72,7 +31,7 @@ Version: 1.0.0
   transition: all 0.3s ease-in-out;
   position: relative;
   z-index: 1;
-  font-family: "Space Grotesk", sans-serif;
+  font-family:"Roboto", sans-serif;
   border: 1px solid var(--border);
 }
 
@@ -108,7 +67,7 @@ Version: 1.0.0
   color: var(--theme);
   text-transform: capitalize;
   font-weight: 500;
-  font-family: "Space Grotesk", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .link-btn i {
@@ -123,7 +82,7 @@ Version: 1.0.0
     Template Default Fonts & Fonts Styles
  ---------------------------------------------- */
 body {
-  font-family: "Inter", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
@@ -162,7 +121,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Space Grotesk", serif;
+  font-family: "Roboto", sans-serif;
   margin: 0px;
   padding: 0;
   color: var(--header);
@@ -551,7 +510,7 @@ span {
   font-size: 18px;
   font-weight: 500;
   color: var(--header);
-  font-family: "Space Grotesk", serif;
+  font-family: "Roboto", sans-serif;
 }
 
 @media (max-width: 1399px) {
@@ -1920,7 +1879,7 @@ span {
   color: var(--header);
   font-size: 18px;
   font-weight: 500;
-  font-family: "Space Grotesk", serif;
+  font-family: "Roboto", sans-serif;
   margin-bottom: 10px;
   display: inline-block;
 }
@@ -1996,7 +1955,7 @@ span {
   font-size: 18px;
   color: var(--header);
   font-weight: 500;
-  font-family: "Space Grotesk", serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .contact-from-wrapper .cheak-list-item .cheak-list .form-check .form-check-input {
@@ -2133,7 +2092,7 @@ span {
 
 .faq-wrapper .faq-items .accordion .accordion-button::after {
   content: "\f324";
-  font-family: "Font Awesome 6 Pro";
+  font-family: "Roboto", sans-serif;
   background: transparent;
   font-weight: 900;
   transition: all 0.3s ease-in-out !important;
@@ -2149,7 +2108,7 @@ span {
 
 .faq-wrapper .faq-items .accordion .accordion-button:not(.collapsed)::after {
   content: "\f322";
-  font-family: "Font Awesome 6 Pro";
+  font-family: "Roboto", sans-serif;
   background: transparent;
   font-weight: 900;
   color: var(--theme);
@@ -2656,7 +2615,7 @@ span {
   font-size: 18px;
   font-weight: 500;
   color: var(--header);
-  font-family: "Space Grotesk", serif;
+  font-family: "Roboto", sans-serif;
 }
 
 @media (max-width: 1399px) {
@@ -2991,7 +2950,7 @@ span {
   font-size: 18px;
   font-weight: 500;
   color: var(--header);
-  font-family: "Space Grotesk", serif;
+  font-family: "Roboto", sans-serif;
 }
 
 @media (max-width: 1399px) {
@@ -3349,7 +3308,7 @@ span {
 
 .footer-wrapper .footer-item .footer-list-item .footer-list li {
   font-weight: 500;
-  font-family: "Space Grotesk", serif;
+  font-family: "Roboto", sans-serif;
   text-transform: uppercase;
 }
 
@@ -3517,7 +3476,7 @@ span {
   color: var(--white);
   font-weight: 500;
   text-transform: uppercase;
-  font-family: "Space Grotesk", serif;
+  font-family: "Roboto", sans-serif;
 }
 
 @media (max-width: 1399px) {
@@ -7457,7 +7416,7 @@ html.lenis body {
   display: inline-block;
   margin-right: 8px;
   color: var(--header);
-  font-family: "Space Grotesk", serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .news-details-wrapper .news-details-post .details-content .tag-share-wrap .tagcloud a {
@@ -8454,7 +8413,7 @@ html.lenis body {
   font-size: 18px;
   font-weight: 500;
   color: var(--theme-2);
-  font-family: "Space Grotesk", serif;
+  font-family: "Roboto", sans-serif;
   margin-bottom: 20px;
   text-transform: capitalize;
   line-height: 1;
@@ -8474,7 +8433,7 @@ html.lenis body {
   color: var(--theme-2);
   font-size: 18px;
   font-weight: 400;
-  font-family: "Space Grotesk", serif;
+  font-family: "Roboto", sans-serif;
   margin-bottom: 20px;
   display: inline-block;
 }
@@ -8652,7 +8611,7 @@ html.lenis body {
 .service-wrapper .service-item .right-item .service-btn {
   font-weight: 500;
   color: var(--theme);
-  font-family: "Space Grotesk", serif;
+  font-family: "Roboto", sans-serif;
   text-transform: capitalize;
   opacity: 0;
   visibility: hidden;
@@ -9158,7 +9117,7 @@ html.lenis body {
   font-size: 20px;
   font-weight: 500;
   color: var(--header);
-  font-family: "Space Grotesk", serif;
+  font-family: "Roboto", sans-serif;
 }
 
 @media (max-width: 1399px) {
@@ -9232,7 +9191,7 @@ html.lenis body {
 
 .service-details-wrapper .service-details-post .faq-items .accordion .accordion-button::after {
   content: "\f324";
-  font-family: "Font Awesome 6 Pro";
+  font-family: "Roboto", sans-serif;
   background: transparent;
   font-weight: 900;
   transition: all 0.3s ease-in-out !important;
@@ -9248,7 +9207,7 @@ html.lenis body {
 
 .service-details-wrapper .service-details-post .faq-items .accordion .accordion-button:not(.collapsed)::after {
   content: "\f322";
-  font-family: "Font Awesome 6 Pro";
+  font-family:"Roboto", sans-serif;
   background: transparent;
   font-weight: 900;
   color: var(--theme);
@@ -9450,7 +9409,7 @@ html.lenis body {
   max-width: 549px;
   font-size: 20px;
   font-weight: 500;
-  font-family: "Space Grotesk", serif;
+  font-family: "Roboto", sans-serif;
   color: var(--white);
   line-height: 140%;
 }
@@ -9720,7 +9679,7 @@ html.lenis body {
 .visa-certification-wrapper .visa-certification-content .visa-item .nav li {
   font-size: 20px;
   font-weight: 700;
-  font-family: "Space Grotesk", serif;
+  font-family: "Roboto", sans-serif;
 }
 
 @media (max-width: 1399px) {
@@ -9862,7 +9821,7 @@ html.lenis body {
 .visa-provide-box .visa-list-item .list li {
   font-size: 18px;
   font-weight: 500;
-  font-family: "Space Grotesk", serif;
+  font-family: "Roboto", sans-serif;
 }
 
 @media (max-width: 1600px) {
@@ -10132,7 +10091,7 @@ html.lenis body {
   color: var(--header);
   font-size: 18px;
   font-weight: 500;
-  font-family: "Space Grotesk", serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .country-details-wrapper .country-details-post .country-details-content .list-item li:not(:last-child) {
@@ -10143,7 +10102,7 @@ html.lenis body {
   font-size: 16px;
   font-weight: 400;
   color: var(--text);
-  font-family: "Inter", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .country-details-wrapper .country-details-post .country-details-content .thumb img {
