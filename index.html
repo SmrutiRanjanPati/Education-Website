@@ -278,7 +278,26 @@
   </header>
 
   <!--Hero Section Start -->
-  <section class="hero-section hero-1 fix bg-cover" style="background-image: url(assets/img/home-1/hero/bg.webp)">
+  <!-- <section class="hero-section hero-1 fix bg-cover" style="background-image: url(assets/img/home-1/hero/bg.webp)"> -->
+  <section class="hero-section hero-1 fix" style="position:relative; overflow:hidden;">
+
+  <!-- LCP Image -->
+  <img 
+    src="assets/img/home-1/hero/bg.webp"
+    alt="Study in India's Top Universities"
+    fetchpriority="high"
+    loading="eager"
+    decoding="async"
+    style="
+      position:absolute;
+      top:0;
+      left:0;
+      width:100%;
+      height:100%;
+      object-fit:cover;
+      z-index:-1;
+    "
+  />
     <div class="left-shape">
       <img src="assets/img/home-1/hero/sape-2.png" loading="lazy" alt="img" />
     </div>
