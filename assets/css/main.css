@@ -9312,7 +9312,7 @@ html.lenis body {
 .testimonial-wrapper .testimonial-box p {
   font-style: italic;
   font-weight: 500;
-  max-width: 307px;
+  max-width: 100%;
 }
 
 .testimonial-wrapper .testimonial-box .info-item {
