@@ -1,6 +1,7 @@
 @charset "UTF-8";
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 :root {
   --body: #fff;
   --black: #000;
@@ -31,7 +32,7 @@
   transition: all 0.3s ease-in-out;
   position: relative;
   z-index: 1;
-  font-family:"Roboto", sans-serif;
+  font-family: "Roboto", sans-serif;
   border: 1px solid var(--border);
 }
 
@@ -1630,6 +1631,17 @@ span {
   display: flex;
   align-items: center;
   gap: 325px;
+}
+
+.name {
+  font-weight: 600;
+  color: var(--black);
+}
+
+.home-course-title {
+  font-weight: 600;
+  font-size: 20px;
+  color: var(--black);
 }
 
 @media (max-width: 1399px) {
@@ -6091,8 +6103,7 @@ html.lenis body {
   }
 }
 
-.hero-1 .hero-content h6 {
-  font-size: 18px;
+.hero-1 .hero-content span {
   font-weight: 500;
   color: var(--white);
   margin-bottom: 20px;
@@ -7279,6 +7290,7 @@ html.lenis body {
 .main-sideber .news-sideber-box .news-widget-categories ul li h6 {
   color: var(--header);
 }
+
 .main-sideber .news-sideber-box .news-widget-categories ul li:hover h6 {
   color: var(--white);
   position: relative;
@@ -7610,7 +7622,7 @@ html.lenis body {
   color: var(--header);
   font-size: 18px;
   font-weight: 500;
-  font-family:"Roboto", sans-serif;
+  font-family: "Roboto", sans-serif;
   margin-bottom: 10px;
   display: inline-block;
 }
@@ -7696,8 +7708,8 @@ html.lenis body {
   font:
     bold 5em "Roboto",
     sans-serif;
-    font-size: 5rem;
-    font-weight: bol;
+  font-size: 5rem;
+  font-weight: bol;
   text-align: center;
   user-select: none;
 }
@@ -9258,7 +9270,7 @@ html.lenis body {
 
 .service-details-wrapper .service-details-post .faq-items .accordion .accordion-button:not(.collapsed)::after {
   content: "\f322";
-  font-family:"Font Awesome 6 Pro";
+  font-family: "Font Awesome 6 Pro";
   background: transparent;
   font-weight: 900;
   color: var(--theme);
@@ -10205,7 +10217,7 @@ html.lenis body {
   justify-content: flex-start;
   flex-wrap: wrap;
   gap: 10px;
-   color: var(--bg);
+  color: var(--bg);
 }
 
 .country-details-wrapper .country-details-sideber-one .icon-box-item-one {
@@ -10221,6 +10233,7 @@ html.lenis body {
 .country-details-wrapper .country-details-sideber-one .icon-box-item-one:hover {
   background-color: var(--theme);
 }
+
 .country-details-wrapper .country-details-sideber-one .icon-box-item-one h5 {
   color: var(--bg);
 }
