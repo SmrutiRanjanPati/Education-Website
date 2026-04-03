@@ -1,968 +1,588 @@
 <!doctype html>
 <html lang="en">
-  <!--<< Header Area >>-->
 
-  <!-- Mirrored from ex-coders.com/html/visaway/news-grid.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 25 Mar 2026 09:09:29 GMT -->
+<head>
+  <!-- ========== Meta Tags ========== -->
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="author" content="Gramentheme" />
+  <meta name="description" content="Career FFutures" />
+  <!-- ======== Page title ============ -->
+  <title>Career FFutures</title>
+  <!--<< Favcion >>-->
+  <link rel="shortcut icon" href="assets/img/favicon.png" />
+  <!--<< Bootstrap min.css >>-->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+  <!--<< All Min Css >>-->
+  <link rel="stylesheet" href="assets/css/all.min.css" />
+  <!--<< Animate.css >>-->
+  <link rel="stylesheet" href="assets/css/animate.css" />
+  <!--<< Magnific Popup.css >>-->
+  <link rel="stylesheet" href="assets/css/magnific-popup.css" />
+  <!--<< MeanMenu.css >>-->
+  <link rel="stylesheet" href="assets/css/meanmenu.css" />
+  <!--<< Odometer.css >>-->
+  <link rel="stylesheet" href="assets/css/odometer.css" />
+  <!--<< Swiper Bundle.css >>-->
+  <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+  <!--<< Nice Select.css >>-->
+  <link rel="stylesheet" href="assets/css/nice-select.css" />
+  <!--<< Main.css >>-->
+  <link rel="stylesheet" href="assets/css/main.css" />
+</head>
 
-  <head>
-    <!-- ========== Meta Tags ========== -->
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="author" content="Gramentheme" />
-    <meta name="description" content="Career FFutures" />
-    <!-- ======== Page title ============ -->
-    <title>Career FFutures</title>
-    <!--<< Favcion >>-->
-    <link rel="shortcut icon" href="assets/img/favicon.png" />
-    <!--<< Bootstrap min.css >>-->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
-    <!--<< All Min Css >>-->
-    <link rel="stylesheet" href="assets/css/all.min.css" />
-    <!--<< Animate.css >>-->
-    <link rel="stylesheet" href="assets/css/animate.css" />
-    <!--<< Magnific Popup.css >>-->
-    <link rel="stylesheet" href="assets/css/magnific-popup.css" />
-    <!--<< MeanMenu.css >>-->
-    <link rel="stylesheet" href="assets/css/meanmenu.css" />
-    <!--<< Odometer.css >>-->
-    <link rel="stylesheet" href="assets/css/odometer.css" />
-    <!--<< Swiper Bundle.css >>-->
-    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
-    <!--<< Nice Select.css >>-->
-    <link rel="stylesheet" href="assets/css/nice-select.css" />
-    <!--<< Main.css >>-->
-    <link rel="stylesheet" href="assets/css/main.css" />
-  </head>
-
-  <body class="smooth-scroll-yes">
-    <!-- Preloader Start -->
-    <div id="preloader" class="preloader">
-      <div class="animation-preloader">
-        <div class="spinner"></div>
-        <div class="txt-loading">
-          <span data-text-preloader="C" class="letters-loading">C</span>
-          <span data-text-preloader="A" class="letters-loading">A</span>
-          <span data-text-preloader="R" class="letters-loading">R</span>
-          <span data-text-preloader="E" class="letters-loading">E</span>
-          <span data-text-preloader="E" class="letters-loading">E</span>
-          <span data-text-preloader="R" class="letters-loading">R</span>
-          <span data-text-preloader="F" class="letters-loading">F</span>
-          <span data-text-preloader="F" class="letters-loading">F</span>
-          <span data-text-preloader="U" class="letters-loading">U</span>
-          <span data-text-preloader="T" class="letters-loading">T</span>
-          <span data-text-preloader="U" class="letters-loading">U</span>
-          <span data-text-preloader="R" class="letters-loading">R</span>
-          <span data-text-preloader="E" class="letters-loading">E</span>
-          <span data-text-preloader="S" class="letters-loading">S</span>
-        </div>
-        <p class="text-center">Loading</p>
+<body class="smooth-scroll-yes">
+  <!-- Preloader Start -->
+  <div id="preloader" class="preloader">
+    <div class="animation-preloader">
+      <div class="spinner"></div>
+      <div class="txt-loading">
+        <span data-text-preloader="C" class="letters-loading">C</span>
+        <span data-text-preloader="A" class="letters-loading">A</span>
+        <span data-text-preloader="R" class="letters-loading">R</span>
+        <span data-text-preloader="E" class="letters-loading">E</span>
+        <span data-text-preloader="E" class="letters-loading">E</span>
+        <span data-text-preloader="R" class="letters-loading">R</span>
+        <span data-text-preloader="F" class="letters-loading">F</span>
+        <span data-text-preloader="F" class="letters-loading">F</span>
+        <span data-text-preloader="U" class="letters-loading">U</span>
+        <span data-text-preloader="T" class="letters-loading">T</span>
+        <span data-text-preloader="U" class="letters-loading">U</span>
+        <span data-text-preloader="R" class="letters-loading">R</span>
+        <span data-text-preloader="E" class="letters-loading">E</span>
+        <span data-text-preloader="S" class="letters-loading">S</span>
       </div>
-      <div class="loader">
-        <div class="row">
-          <div class="col-3 loader-section section-left">
-            <div class="bg"></div>
-          </div>
-          <div class="col-3 loader-section section-left">
-            <div class="bg"></div>
-          </div>
-          <div class="col-3 loader-section section-right">
-            <div class="bg"></div>
-          </div>
-          <div class="col-3 loader-section section-right">
-            <div class="bg"></div>
-          </div>
+      <p class="text-center">Loading</p>
+    </div>
+    <div class="loader">
+      <div class="row">
+        <div class="col-3 loader-section section-left">
+          <div class="bg"></div>
+        </div>
+        <div class="col-3 loader-section section-left">
+          <div class="bg"></div>
+        </div>
+        <div class="col-3 loader-section section-right">
+          <div class="bg"></div>
+        </div>
+        <div class="col-3 loader-section section-right">
+          <div class="bg"></div>
         </div>
       </div>
     </div>
+  </div>
 
-    <!-- GT Back To Top Start -->
-    <button id="back-top" class="back-to-top show">
-      <i class="fa-regular fa-arrow-up"></i>
-    </button>
+  <!-- GT Back To Top Start -->
+  <button id="back-top" class="back-to-top show">
+    <i class="fa-regular fa-arrow-up"></i>
+  </button>
 
-    <!-- GT MouseCursor Start -->
-    <div class="mouseCursor cursor-outer"></div>
-    <div class="mouseCursor cursor-inner"></div>
+  <!-- GT MouseCursor Start -->
+  <div class="mouseCursor cursor-outer"></div>
+  <div class="mouseCursor cursor-inner"></div>
 
-    <!-- Header-Top-Section Start -->
-    <div class="header-top-section">
-      <div class="container-fluid">
-        <div class="header-top-wrapper">
-          <div class="header-left">
-            <ul class="list">
-              <li class="style-2">
-                <span>Help Line</span>
-                <i class="fa-solid fa-phone"></i>
-                <a href="tel:+919090660999">+91 909 066 0999</a>
-              </li>
-              <li>
-                <i class="fa-solid fa-location-dot"></i>
-                2nd floor, Above Uco Bank, Khandagiri Marg Near Kolothia NH5,
-                Bhubaneswar, Odisha
-              </li>
-              <li>
-                <i class="fa-solid fa-envelope"></i>
-                <a href="mailto:info@careerfutures.in">info@careerfutures.in</a>
-              </li>
-            </ul>
-          </div>
-          <div class="header-right">
-            <div class="social-item">
-              <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-              <a href="#"><i class="fa-brands fa-twitter"></i></a>
-              <a href="#"><i class="fa-brands fa-instagram"></i></a>
-              <a href="#"><i class="fa-brands fa-youtube"></i></a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Offcanvas Area Start -->
-    <div class="fix-area">
-      <div class="offcanvas__info">
-        <div class="offcanvas__wrapper">
-          <div class="offcanvas__content">
-            <div
-              class="offcanvas__top mb-5 d-flex justify-content-between align-items-center"
-            >
-              <div class="offcanvas__logo">
-                <a href="index.html">
-                  <img
-                    src="assets/img/logo/black-logo.svg"
-                    loading="lazy"
-                    alt="logo-img"
-                    style="width: 200px"
-                  />
-                </a>
-              </div>
-              <div class="offcanvas__close">
-                <button>
-                  <i class="fas fa-times"></i>
-                </button>
-              </div>
-            </div>
-            <p class="text d-none d-xl-block">
-              Nullam dignissim, ante scelerisque the is euismod fermentum odio
-              sem semper the is erat, a feugiat leo urna eget eros. Duis Aenean
-              a imperdiet risus.
-            </p>
-            <div class="mobile-menu fix mb-3"></div>
-            <div class="offcanvas__contact d-xl-block">
-              <h4 class="d-xl-block">Contact Info</h4>
-              <ul class="d-xl-block">
-                <li class="d-flex align-items-center">
-                  <div class="offcanvas__contact-icon">
-                    <i class="fal fa-map-marker-alt"></i>
-                  </div>
-                  <div class="offcanvas__contact-text">
-                    <a target="_blank" href="contact.html"
-                      >2nd floor, Above Uco Bank, Khandagiri Marg Near Kolothia
-                      NH5, Bhubaneswar, Odisha</a
-                    >
-                  </div>
-                </li>
-                <li class="d-flex align-items-center">
-                  <div class="offcanvas__contact-icon mr-15">
-                    <i class="fal fa-envelope"></i>
-                  </div>
-                  <div class="offcanvas__contact-text">
-                    <a href="mailto:info@careerfutures.in"
-                      ><span class="mailto:info@careerfutures.in"
-                        >info@careerfutures.in</span
-                      ></a
-                    >
-                  </div>
-                </li>
-                <li class="d-flex align-items-center">
-                  <div class="offcanvas__contact-icon mr-15">
-                    <i class="fal fa-clock"></i>
-                  </div>
-                  <div class="offcanvas__contact-text">
-                    <a target="_blank" href="contact.html"
-                      >Open All Days 24/7</a
-                    >
-                  </div>
-                </li>
-                <li class="d-flex align-items-center">
-                  <div class="offcanvas__contact-icon mr-15">
-                    <i class="far fa-phone"></i>
-                  </div>
-                  <div class="offcanvas__contact-text">
-                    <a href="tel:+919090660999">+91 909 066 0999</a>
-                  </div>
-                </li>
-              </ul>
-              <div class="social-icon d-flex align-items-center">
-                <a href="contact.html"><i class="fab fa-facebook-f"></i></a>
-                <a href="contact.html"><i class="fab fa-twitter"></i></a>
-                <a href="contact.html"><i class="fab fa-youtube"></i></a>
-                <a href="contact.html"><i class="fab fa-linkedin-in"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="offcanvas__overlay"></div>
-
-    <!-- New Header Section Start -->
-    <header id="header-sticky" class="header-1">
-      <div class="container-fluid">
-        <div class="mega-menu-wrapper">
-          <div class="header-main">
-            <div class="header-left">
-              <div class="logo">
-                <a href="index.html" class="header-logo-2">
-                  <img
-                    src="assets/img/logo/black-logo.svg"
-                    alt="logo-img"
-                    style="width: 200px"
-                  />
-                </a>
-              </div>
-              <div class="mean__menu-wrapper">
-                <div class="main-menu">
-                  <nav id="mobile-menu">
-                    <ul>
-                      <li class="has-dropdown">
-                        <a href="index.html">Home</a>
-                      </li>
-                      <li>
-                        <a href="about.html">About Us</a>
-                      </li>
-                      <li class="has-dropdown">
-                        <a href="top-btech-colleges.html">Study in India </a>
-                        <ul class="submenu">
-                          <li><a href="top-btech-colleges.html">B.tech</a></li>
-                          <li><a href="top-mba-colleges.html">MBBS</a></li>
-                          <li><a href="MBBS-pg-cources.html">MBBS (PG)</a></li>
-                          <li><a href="top-mba-colleges.html">MBA</a></li>
-                          <li>
-                            <a href="top-bsc-agriculture-colleges.html"
-                              >Bsc Agriculture</a
-                            >
-                          </li>
-                          <li><a href="top-law-colleges.html">LAW</a></li>
-                          <li>
-                            <a href="top-bds-mds-colleges.html">BDS-MDS</a>
-                          </li>
-                        </ul>
-                      </li>
-                      <li>
-                        <a href="coming-soon.html">Study in Abroad</a>
-                        <ul class="submenu">
-                          <li><a href="coming-soon.html">Mbbs In Nepal</a></li>
-                          <li>
-                            <a href="coming-soon.html">Mbbs In Russia</a>
-                          </li>
-                          <li>
-                            <a href="coming-soon.html">Mbbs In Ukraine</a>
-                          </li>
-                          <li>
-                            <a href="coming-soon.html">Mbbs In Kyrgyzstan</a>
-                          </li>
-                          <li>
-                            <a href="coming-soon.html">Mbbs In Philippines</a>
-                          </li>
-                          <li>
-                            <a href="coming-soon.html">Mbbs In Bangladesh</a>
-                          </li>
-                        </ul>
-                      </li>
-                      <li>
-                        <a href="news-details.html">Blog</a>
-                      </li>
-                      <li>
-                        <a href="contact.html">Contact Us</a>
-                      </li>
-                    </ul>
-                  </nav>
-                </div>
-              </div>
-            </div>
-            <div class="header-right d-flex align-items-center mt-0">
-              <div class="header-call-item">
-                <a
-                  href="https://wa.me/919090660999?text=Hello%20I%20am%20interested%20in%20career%20guidance.%0ACan%20I%20get%20a%20free%20consultation%3F"
-                  class="theme-btn"
-                  target="_blank"
-                >
-                  Contact Us
-                  <i class="fa-brands fa-whatsapp"></i>
-                </a>
-                <div class="header__hamburger my-auto">
-                  <div class="sidebar__toggle">
-                    <i class="fa-solid fa-bars-staggered"></i>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </header>
-
-    <!-- Search Area Start -->
-    <div class="search-popup">
-      <div class="search-popup__overlay search-toggler"></div>
-      <div class="search-popup__content">
-        <form role="search" method="get" class="search-popup__form" action="#">
-          <input
-            type="text"
-            id="search"
-            name="search"
-            placeholder="Search Here..."
-          />
-          <button type="submit" aria-label="search submit" class="search-btn">
-            <span><i class="fa-regular fa-magnifying-glass"></i></span>
-          </button>
-        </form>
-      </div>
-    </div>
-
-    <!-- Breadcrumb-Wrapper Section Start -->
-    <section
-      class="breadcrumb-wrapper fix bg-cover"
-      style="background-image: url(assets/img/inner-page/breadcrumb.jpg)"
-    >
-      <div class="shape">
-        <img src="assets/img/inner-page/shape.png" alt="img" />
-      </div>
-      <div class="container">
-        <div class="page-heading">
-          <h1 class="breadcrumb-title">Our BLOG</h1>
-          <ul class="breadcrumb-list">
-            <li>
-              <a href="index.html">Home</a>
+  <!-- Header-Top-Section Start -->
+  <div class="header-top-section">
+    <div class="container-fluid">
+      <div class="header-top-wrapper">
+        <div class="header-left">
+          <ul class="list">
+            <li class="style-2">
+              <span>Help Line</span>
+              <i class="fa-solid fa-phone"></i>
+              <a href="tel:+919090660999">+91 909 066 0999</a>
             </li>
             <li>
-              <i class="fa-solid fa-chevron-right"></i>
+              <i class="fa-solid fa-location-dot"></i>
+              2nd floor, Above Uco Bank, Khandagiri Marg Near Kolothia NH5,
+              Bhubaneswar, Odisha
             </li>
-            <li>Our Blog</li>
+            <li>
+              <i class="fa-solid fa-envelope"></i>
+              <a href="mailto:info@careerfutures.in">info@careerfutures.in</a>
+            </li>
           </ul>
         </div>
+        <div class="header-right">
+          <div class="social-item">
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
       </div>
-    </section>
+    </div>
+  </div>
 
-    <!--News Section Start -->
-    <section class="news-section section-padding fix">
-      <div class="container">
-        <div class="row g-4">
-          <div class="col-xl-4 col-lg-6 col-md-6">
-            <div class="news-card-item">
-              <div class="news-image">
-                <img src="assets/img/home-1/news/news-4.jpg" alt="img" />
-                <span>Student Visa</span>
-                <div class="news-layer-wrapper">
-                  <div
-                    class="news-layer-image"
-                    style="
-                      background-image: url(&quot;assets/img/home-1/news/news-4.jpg&quot;);
-                    "
-                  ></div>
-                  <div
-                    class="news-layer-image"
-                    style="
-                      background-image: url(&quot;assets/img/home-1/news/news-4.jpg&quot;);
-                    "
-                  ></div>
-                  <div
-                    class="news-layer-image"
-                    style="
-                      background-image: url(&quot;assets/img/home-1/news/news-4.jpg&quot;);
-                    "
-                  ></div>
-                  <div
-                    class="news-layer-image"
-                    style="
-                      background-image: url(&quot;assets/img/home-1/news/news-4.jpg&quot;);
-                    "
-                  ></div>
-                </div>
-              </div>
-              <div class="news-content">
-                <div class="list">
-                  <span>Comment (08)</span>
-                  <span>_ 20 August ,2025</span>
-                </div>
-                <h3>
-                  <a href="news-details.html">
-                    How Immigration Policies Impact Global Travelers
-                  </a>
-                </h3>
-                <div class="news-bottom">
-                  <div class="info-item">
-                    <img src="assets/img/home-1/news/client.png" alt="img" />
-                    <span>By Sohel</span>
-                  </div>
-                  <a href="news-details.html" class="link-btn"
-                    >View Articles<i class="fa-solid fa-arrow-right"></i
-                  ></a>
-                </div>
-              </div>
+  <!-- Offcanvas Area Start -->
+  <div class="fix-area">
+    <div class="offcanvas__info">
+      <div class="offcanvas__wrapper">
+        <div class="offcanvas__content">
+          <div class="offcanvas__top mb-5 d-flex justify-content-between align-items-center">
+            <div class="offcanvas__logo">
+              <a href="index.html">
+                <img src="assets/img/logo/black-logo.svg" loading="lazy" alt="logo-img" style="width: 200px" />
+              </a>
+            </div>
+            <div class="offcanvas__close">
+              <button>
+                <i class="fas fa-times"></i>
+              </button>
             </div>
           </div>
-          <div class="col-xl-4 col-lg-6 col-md-6">
-            <div class="news-card-item">
-              <div class="news-image">
-                <img src="assets/img/home-1/news/news-5.jpg" alt="img" />
-                <span>IELTS / TOEFL</span>
-                <div class="news-layer-wrapper">
-                  <div
-                    class="news-layer-image"
-                    style="
-                      background-image: url(&quot;assets/img/home-1/news/news-5.jpg&quot;);
-                    "
-                  ></div>
-                  <div
-                    class="news-layer-image"
-                    style="
-                      background-image: url(&quot;assets/img/home-1/news/news-5.jpg&quot;);
-                    "
-                  ></div>
-                  <div
-                    class="news-layer-image"
-                    style="
-                      background-image: url(&quot;assets/img/home-1/news/news-5.jpg&quot;);
-                    "
-                  ></div>
-                  <div
-                    class="news-layer-image"
-                    style="
-                      background-image: url(&quot;assets/img/home-1/news/news-5.jpg&quot;);
-                    "
-                  ></div>
+          <p class="text d-none d-xl-block">
+            Nullam dignissim, ante scelerisque the is euismod fermentum odio
+            sem semper the is erat, a feugiat leo urna eget eros. Duis Aenean
+            a imperdiet risus.
+          </p>
+          <div class="mobile-menu fix mb-3"></div>
+          <div class="offcanvas__contact d-xl-block">
+            <h4 class="d-xl-block">Contact Info</h4>
+            <ul class="d-xl-block">
+              <li class="d-flex align-items-center">
+                <div class="offcanvas__contact-icon">
+                  <i class="fal fa-map-marker-alt"></i>
                 </div>
-              </div>
-              <div class="news-content">
-                <div class="list">
-                  <span>Comment (08)</span>
-                  <span>_ 20 August ,2025</span>
+                <div class="offcanvas__contact-text">
+                  <a target="_blank" href="contact.html">2nd floor, Above Uco Bank, Khandagiri Marg Near Kolothia
+                    NH5, Bhubaneswar, Odisha</a>
                 </div>
-                <h3>
-                  <a href="news-details.html">
-                    Travel Visa Made Easy A Step-by-Step Guide
-                  </a>
-                </h3>
-                <div class="news-bottom">
-                  <div class="info-item">
-                    <img src="assets/img/home-1/news/client.png" alt="img" />
-                    <span>By Sohel</span>
-                  </div>
-                  <a href="news-details.html" class="link-btn"
-                    >View Articles<i class="fa-solid fa-arrow-right"></i
-                  ></a>
+              </li>
+              <li class="d-flex align-items-center">
+                <div class="offcanvas__contact-icon mr-15">
+                  <i class="fal fa-envelope"></i>
                 </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-4 col-lg-6 col-md-6">
-            <div class="news-card-item">
-              <div class="news-image">
-                <img src="assets/img/home-1/news/news-6.jpg" alt="img" />
-                <span>Study Abroad</span>
-                <div class="news-layer-wrapper">
-                  <div
-                    class="news-layer-image"
-                    style="
-                      background-image: url(&quot;assets/img/home-1/news/news-6.jpg&quot;);
-                    "
-                  ></div>
-                  <div
-                    class="news-layer-image"
-                    style="
-                      background-image: url(&quot;assets/img/home-1/news/news-6.jpg&quot;);
-                    "
-                  ></div>
-                  <div
-                    class="news-layer-image"
-                    style="
-                      background-image: url(&quot;assets/img/home-1/news/news-6.jpg&quot;);
-                    "
-                  ></div>
-                  <div
-                    class="news-layer-image"
-                    style="
-                      background-image: url(&quot;assets/img/home-1/news/news-6.jpg&quot;);
-                    "
-                  ></div>
+                <div class="offcanvas__contact-text">
+                  <a href="mailto:info@careerfutures.in"><span
+                      class="mailto:info@careerfutures.in">info@careerfutures.in</span></a>
                 </div>
-              </div>
-              <div class="news-content">
-                <div class="list">
-                  <span>Comment (08)</span>
-                  <span>_ 20 August ,2025</span>
+              </li>
+              <li class="d-flex align-items-center">
+                <div class="offcanvas__contact-icon mr-15">
+                  <i class="fal fa-clock"></i>
                 </div>
-                <h3>
-                  <a href="news-details.html">
-                    The Importance of Legal Support in Immigration Cases
-                  </a>
-                </h3>
-                <div class="news-bottom">
-                  <div class="info-item">
-                    <img src="assets/img/home-1/news/client.png" alt="img" />
-                    <span>By Sohel</span>
-                  </div>
-                  <a href="news-details.html" class="link-btn"
-                    >View Articles<i class="fa-solid fa-arrow-right"></i
-                  ></a>
+                <div class="offcanvas__contact-text">
+                  <a target="_blank" href="contact.html">Open All Days 24/7</a>
                 </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-4 col-lg-6 col-md-6">
-            <div class="news-card-item">
-              <div class="news-image">
-                <img src="assets/img/home-1/news/news-7.jpg" alt="img" />
-                <span>Student Visa</span>
-                <div class="news-layer-wrapper">
-                  <div
-                    class="news-layer-image"
-                    style="
-                      background-image: url(&quot;assets/img/home-1/news/news-7.jpg&quot;);
-                    "
-                  ></div>
-                  <div
-                    class="news-layer-image"
-                    style="
-                      background-image: url(&quot;assets/img/home-1/news/news-7.jpg&quot;);
-                    "
-                  ></div>
-                  <div
-                    class="news-layer-image"
-                    style="
-                      background-image: url(&quot;assets/img/home-1/news/news-7.jpg&quot;);
-                    "
-                  ></div>
-                  <div
-                    class="news-layer-image"
-                    style="
-                      background-image: url(&quot;assets/img/home-1/news/news-7.jpg&quot;);
-                    "
-                  ></div>
+              </li>
+              <li class="d-flex align-items-center">
+                <div class="offcanvas__contact-icon mr-15">
+                  <i class="far fa-phone"></i>
                 </div>
-              </div>
-              <div class="news-content">
-                <div class="list">
-                  <span>Comment (08)</span>
-                  <span>_ 20 August ,2025</span>
+                <div class="offcanvas__contact-text">
+                  <a href="tel:+919090660999">+91 909 066 0999</a>
                 </div>
-                <h3>
-                  <a href="news-details.html">
-                    Work Visa vs. Student Visa Which is Right for You?
-                  </a>
-                </h3>
-                <div class="news-bottom">
-                  <div class="info-item">
-                    <img src="assets/img/home-1/news/client.png" alt="img" />
-                    <span>By Sohel</span>
-                  </div>
-                  <a href="news-details.html" class="link-btn"
-                    >View Articles<i class="fa-solid fa-arrow-right"></i
-                  ></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-4 col-lg-6 col-md-6">
-            <div class="news-card-item">
-              <div class="news-image">
-                <img src="assets/img/home-1/news/news-8.jpg" alt="img" />
-                <span>IELTS / TOEFL</span>
-                <div class="news-layer-wrapper">
-                  <div
-                    class="news-layer-image"
-                    style="
-                      background-image: url(&quot;assets/img/home-1/news/news-8.jpg&quot;);
-                    "
-                  ></div>
-                  <div
-                    class="news-layer-image"
-                    style="
-                      background-image: url(&quot;assets/img/home-1/news/news-8.jpg&quot;);
-                    "
-                  ></div>
-                  <div
-                    class="news-layer-image"
-                    style="
-                      background-image: url(&quot;assets/img/home-1/news/news-8.jpg&quot;);
-                    "
-                  ></div>
-                  <div
-                    class="news-layer-image"
-                    style="
-                      background-image: url(&quot;assets/img/home-1/news/news-8.jpg&quot;);
-                    "
-                  ></div>
-                </div>
-              </div>
-              <div class="news-content">
-                <div class="list">
-                  <span>Comment (08)</span>
-                  <span>_ 20 August ,2025</span>
-                </div>
-                <h3>
-                  <a href="news-details.html">
-                    How to Choose the Right Immigration Consultancy
-                  </a>
-                </h3>
-                <div class="news-bottom">
-                  <div class="info-item">
-                    <img src="assets/img/home-1/news/client.png" alt="img" />
-                    <span>By Sohel</span>
-                  </div>
-                  <a href="news-details.html" class="link-btn"
-                    >View Articles<i class="fa-solid fa-arrow-right"></i
-                  ></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-4 col-lg-6 col-md-6">
-            <div class="news-card-item">
-              <div class="news-image">
-                <img src="assets/img/home-1/news/news-9.jpg" alt="img" />
-                <span>Study Abroad</span>
-                <div class="news-layer-wrapper">
-                  <div
-                    class="news-layer-image"
-                    style="
-                      background-image: url(&quot;assets/img/home-1/news/news-9.jpg&quot;);
-                    "
-                  ></div>
-                  <div
-                    class="news-layer-image"
-                    style="
-                      background-image: url(&quot;assets/img/home-1/news/news-9.jpg&quot;);
-                    "
-                  ></div>
-                  <div
-                    class="news-layer-image"
-                    style="
-                      background-image: url(&quot;assets/img/home-1/news/news-9.jpg&quot;);
-                    "
-                  ></div>
-                  <div
-                    class="news-layer-image"
-                    style="
-                      background-image: url(&quot;assets/img/home-1/news/news-9.jpg&quot;);
-                    "
-                  ></div>
-                </div>
-              </div>
-              <div class="news-content">
-                <div class="list">
-                  <span>Comment (08)</span>
-                  <span>_ 20 August ,2025</span>
-                </div>
-                <h3>
-                  <a href="news-details.html">
-                    Preparing Your Family for Immigration Abroad
-                  </a>
-                </h3>
-                <div class="news-bottom">
-                  <div class="info-item">
-                    <img src="assets/img/home-1/news/client.png" alt="img" />
-                    <span>By Sohel</span>
-                  </div>
-                  <a href="news-details.html" class="link-btn"
-                    >View Articles<i class="fa-solid fa-arrow-right"></i
-                  ></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-4 col-lg-6 col-md-6">
-            <div class="news-card-item">
-              <div class="news-image">
-                <img src="assets/img/home-1/news/news-10.jpg" alt="img" />
-                <span>Student Visa</span>
-                <div class="news-layer-wrapper">
-                  <div
-                    class="news-layer-image"
-                    style="
-                      background-image: url(&quot;assets/img/home-1/news/news-10.jpg&quot;);
-                    "
-                  ></div>
-                  <div
-                    class="news-layer-image"
-                    style="
-                      background-image: url(&quot;assets/img/home-1/news/news-10.jpg&quot;);
-                    "
-                  ></div>
-                  <div
-                    class="news-layer-image"
-                    style="
-                      background-image: url(&quot;assets/img/home-1/news/news-10.jpg&quot;);
-                    "
-                  ></div>
-                  <div
-                    class="news-layer-image"
-                    style="
-                      background-image: url(&quot;assets/img/home-1/news/news-10.jpg&quot;);
-                    "
-                  ></div>
-                </div>
-              </div>
-              <div class="news-content">
-                <div class="list">
-                  <span>Comment (08)</span>
-                  <span>_ 20 August ,2025</span>
-                </div>
-                <h3>
-                  <a href="news-details.html">
-                    Tips to Improve Your Chances of Visa Approval
-                  </a>
-                </h3>
-                <div class="news-bottom">
-                  <div class="info-item">
-                    <img src="assets/img/home-1/news/client.png" alt="img" />
-                    <span>By Sohel</span>
-                  </div>
-                  <a href="news-details.html" class="link-btn"
-                    >View Articles<i class="fa-solid fa-arrow-right"></i
-                  ></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-4 col-lg-6 col-md-6">
-            <div class="news-card-item">
-              <div class="news-image">
-                <img src="assets/img/home-1/news/news-11.jpg" alt="img" />
-                <span>IELTS / TOEFL</span>
-                <div class="news-layer-wrapper">
-                  <div
-                    class="news-layer-image"
-                    style="
-                      background-image: url(&quot;assets/img/home-1/news/news-11.jpg&quot;);
-                    "
-                  ></div>
-                  <div
-                    class="news-layer-image"
-                    style="
-                      background-image: url(&quot;assets/img/home-1/news/news-11.jpg&quot;);
-                    "
-                  ></div>
-                  <div
-                    class="news-layer-image"
-                    style="
-                      background-image: url(&quot;assets/img/home-1/news/news-11.jpg&quot;);
-                    "
-                  ></div>
-                  <div
-                    class="news-layer-image"
-                    style="
-                      background-image: url(&quot;assets/img/home-1/news/news-11.jpg&quot;);
-                    "
-                  ></div>
-                </div>
-              </div>
-              <div class="news-content">
-                <div class="list">
-                  <span>Comment (08)</span>
-                  <span>_ 20 August ,2025</span>
-                </div>
-                <h3>
-                  <a href="news-details.html">
-                    Future Trends in Global Immigration and Visa Services
-                  </a>
-                </h3>
-                <div class="news-bottom">
-                  <div class="info-item">
-                    <img src="assets/img/home-1/news/client.png" alt="img" />
-                    <span>By Sohel</span>
-                  </div>
-                  <a href="news-details.html" class="link-btn"
-                    >View Articles<i class="fa-solid fa-arrow-right"></i
-                  ></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-4 col-lg-6 col-md-6">
-            <div class="news-card-item">
-              <div class="news-image">
-                <img src="assets/img/home-1/news/news-12.jpg" alt="img" />
-                <span>Study Abroad</span>
-                <div class="news-layer-wrapper">
-                  <div
-                    class="news-layer-image"
-                    style="
-                      background-image: url(&quot;assets/img/home-1/news/news-12.jpg&quot;);
-                    "
-                  ></div>
-                  <div
-                    class="news-layer-image"
-                    style="
-                      background-image: url(&quot;assets/img/home-1/news/news-12.jpg&quot;);
-                    "
-                  ></div>
-                  <div
-                    class="news-layer-image"
-                    style="
-                      background-image: url(&quot;assets/img/home-1/news/news-12.jpg&quot;);
-                    "
-                  ></div>
-                  <div
-                    class="news-layer-image"
-                    style="
-                      background-image: url(&quot;assets/img/home-1/news/news-12.jpg&quot;);
-                    "
-                  ></div>
-                </div>
-              </div>
-              <div class="news-content">
-                <div class="list">
-                  <span>Comment (08)</span>
-                  <span>_ 20 August ,2025</span>
-                </div>
-                <h3>
-                  <a href="news-details.html">
-                    Scholarships and Grants for International Students
-                  </a>
-                </h3>
-                <div class="news-bottom">
-                  <div class="info-item">
-                    <img src="assets/img/home-1/news/client.png" alt="img" />
-                    <span>By Sohel</span>
-                  </div>
-                  <a href="news-details.html" class="link-btn"
-                    >View Articles<i class="fa-solid fa-arrow-right"></i
-                  ></a>
-                </div>
-              </div>
+              </li>
+            </ul>
+            <div class="social-icon d-flex align-items-center">
+              <a href="contact.html"><i class="fab fa-facebook-f"></i></a>
+              <a href="contact.html"><i class="fab fa-twitter"></i></a>
+              <a href="contact.html"><i class="fab fa-youtube"></i></a>
+              <a href="contact.html"><i class="fab fa-linkedin-in"></i></a>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </div>
+  <div class="offcanvas__overlay"></div>
 
-    <!--Footer Section Start -->
-    <footer
-      class="footer-section fix bg-cover"
-      style="background-image: url(assets/img/home-1/footer-bg.webp)"
-    >
-      <div class="container">
-        <div class="footer-wrapper">
-          <div class="row">
-            <div class="col-xl-12">
-              <div class="footer-item">
-                <h2>
-                  <a href="tel:+919090660999">+91 909 066 0999</a>
-                </h2>
-                <h6 class="text text-white">
-                  2nd floor, Above Uco Bank, Khandagiri Marg Near Kolothia NH5,
-                  Bhubaneswar, Odisha
-                </h6>
-                <div class="footer-list-item">
-                  <a href="index.html">
-                    <img
-                      src="assets/img/logo/white-logo.svg"
-                      loading="lazy"
-                      alt="img"
-                    />
-                  </a>
-                  <ul class="footer-list">
-                    <li>
+  <!-- New Header Section Start -->
+  <header id="header-sticky" class="header-1">
+    <div class="container-fluid">
+      <div class="mega-menu-wrapper">
+        <div class="header-main">
+          <div class="header-left">
+            <div class="logo">
+              <a href="index.html" class="header-logo-2">
+                <img src="assets/img/logo/black-logo.svg" alt="logo-img" style="width: 200px" />
+              </a>
+            </div>
+            <div class="mean__menu-wrapper">
+              <div class="main-menu">
+                <nav id="mobile-menu">
+                  <ul>
+                    <li class="has-dropdown">
                       <a href="index.html">Home</a>
                     </li>
                     <li>
                       <a href="about.html">About Us</a>
                     </li>
-                    <li>
-                      <a href="top-btech-colleges.html">Study in india</a>
+                    <li class="has-dropdown">
+                      <a href="top-btech-colleges.html">Study in India </a>
+                      <ul class="submenu">
+                        <li><a href="top-btech-colleges.html">B.tech</a></li>
+                        <li><a href="top-mba-colleges.html">MBBS</a></li>
+                        <li><a href="MBBS-pg-cources.html">MBBS (PG)</a></li>
+                        <li><a href="top-mba-colleges.html">MBA</a></li>
+                        <li>
+                          <a href="top-bsc-agriculture-colleges.html">Bsc Agriculture</a>
+                        </li>
+                        <li><a href="top-law-colleges.html">LAW</a></li>
+                        <li>
+                          <a href="top-bds-mds-colleges.html">BDS-MDS</a>
+                        </li>
+                      </ul>
                     </li>
                     <li>
-                      <a href="coming-soon.html">study abroad</a>
+                      <a href="coming-soon.html">Study in Abroad</a>
+                      <ul class="submenu">
+                        <li><a href="coming-soon.html">Mbbs In Nepal</a></li>
+                        <li>
+                          <a href="coming-soon.html">Mbbs In Russia</a>
+                        </li>
+                        <li>
+                          <a href="coming-soon.html">Mbbs In Ukraine</a>
+                        </li>
+                        <li>
+                          <a href="coming-soon.html">Mbbs In Kyrgyzstan</a>
+                        </li>
+                        <li>
+                          <a href="coming-soon.html">Mbbs In Philippines</a>
+                        </li>
+                        <li>
+                          <a href="coming-soon.html">Mbbs In Bangladesh</a>
+                        </li>
+                      </ul>
                     </li>
                     <li>
-                      <a href="news-details.html">blog</a>
+                      <a href="news-grid.html">Blog</a>
                     </li>
                     <li>
                       <a href="contact.html">Contact Us</a>
                     </li>
                   </ul>
-                  <div class="social-icon">
-                    <a href="contact.html"
-                      ><i class="fa-brands fa-twitter"></i
-                    ></a>
-                    <a href="contact.html"
-                      ><i class="fa-brands fa-instagram"></i
-                    ></a>
-                    <a href="contact.html"
-                      ><i class="fa-brands fa-linkedin"></i
-                    ></a>
-                    <a href="contact.html"
-                      ><i class="fa-brands fa-youtube"></i
-                    ></a>
-                  </div>
+                </nav>
+              </div>
+            </div>
+          </div>
+          <div class="header-right d-flex align-items-center mt-0">
+            <div class="header-call-item">
+              <a href="https://wa.me/919090660999?text=Hello%20I%20am%20interested%20in%20career%20guidance.%0ACan%20I%20get%20a%20free%20consultation%3F"
+                class="theme-btn" target="_blank">
+                Contact Us
+                <i class="fa-brands fa-whatsapp"></i>
+              </a>
+              <div class="header__hamburger my-auto">
+                <div class="sidebar__toggle">
+                  <i class="fa-solid fa-bars-staggered"></i>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </footer>
+    </div>
+  </header>
 
-    <!--Footer-Bottom Section Start -->
-    <div class="footer-bottom">
-      <div class="container">
-        <div class="footer-wrapper">
-          <p>
-            Copyright © <strong><span id="year"></span></strong>
-            <span><strong>Careerffutures</strong></span> All Rights Reserved.
-          </p>
-          <ul class="bottom-list">
-            <li>
-              <a href="contact.html">Terms & Conditions</a>
-            </li>
-            <li>
-              <a href="contact.html">Privacy Policy</a>
-            </li>
-            <li>
-              <a href="contact.html">Contact Us</a>
-            </li>
-          </ul>
+  <!-- Search Area Start -->
+  <div class="search-popup">
+    <div class="search-popup__overlay search-toggler"></div>
+    <div class="search-popup__content">
+      <form role="search" method="get" class="search-popup__form" action="#">
+        <input type="text" id="search" name="search" placeholder="Search Here..." />
+        <button type="submit" aria-label="search submit" class="search-btn">
+          <span><i class="fa-regular fa-magnifying-glass"></i></span>
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Breadcrumb-Wrapper Section Start -->
+  <section class="breadcrumb-wrapper fix bg-cover" style="background-image: url(assets/img/inner-page/breadcrumb.webp)">
+    <div class="shape">
+      <img src="assets/img/inner-page/shape.png" alt="img" />
+    </div>
+    <div class="container">
+      <div class="page-heading">
+        <h1 class="breadcrumb-title">BLOGs</h1>
+      </div>
+    </div>
+  </section>
+
+  <!--News Section Start -->
+  <section class="news-section section-padding fix">
+    <div class="container">
+      <div class="row g-4">
+
+        <div class="col-xl-4 col-lg-6 col-md-6">
+          <div class="news-card-item">
+            <div class="news-image">
+              <img src="assets/img/home-1/news/news-5.jpg" alt="img" />
+              <span>BLOG</span>
+              <div class="news-layer-wrapper">
+                <div class="news-layer-image" style="
+                      background-image: url(&quot;assets/img/home-1/news/news-5.jpg&quot;);
+                    "></div>
+                <div class="news-layer-image" style="
+                      background-image: url(&quot;assets/img/home-1/news/news-5.jpg&quot;);
+                    "></div>
+                <div class="news-layer-image" style="
+                      background-image: url(&quot;assets/img/home-1/news/news-5.jpg&quot;);
+                    "></div>
+                <div class="news-layer-image" style="
+                      background-image: url(&quot;assets/img/home-1/news/news-5.jpg&quot;);
+                    "></div>
+              </div>
+            </div>
+            <div class="news-content">
+              <div class="list">
+                <span>20-Jan-2026</span>
+              </div>
+              <h3>
+                <a href="news-details.html" aria-label="view blog details page">
+                  Education Visa Made Easy A Step-by-Step Guide
+                </a>
+              </h3>
+              <div class="news-bottom">
+                <div class="info-item">
+                  <img src="assets/img/home-1/news/client.png" alt="img" />
+                  <span>By Admin</span>
+                </div>
+                <a href="news-details.html" class="link-btn">View Blog<i class="fa-solid fa-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xl-4 col-lg-6 col-md-6">
+          <div class="news-card-item">
+            <div class="news-image">
+              <img src="assets/img/home-1/news/news-5.jpg" alt="img" />
+              <span>BLOG</span>
+              <div class="news-layer-wrapper">
+                <div class="news-layer-image" style="
+                      background-image: url(&quot;assets/img/home-1/news/news-5.jpg&quot;);
+                    "></div>
+                <div class="news-layer-image" style="
+                      background-image: url(&quot;assets/img/home-1/news/news-5.jpg&quot;);
+                    "></div>
+                <div class="news-layer-image" style="
+                      background-image: url(&quot;assets/img/home-1/news/news-5.jpg&quot;);
+                    "></div>
+                <div class="news-layer-image" style="
+                      background-image: url(&quot;assets/img/home-1/news/news-5.jpg&quot;);
+                    "></div>
+              </div>
+            </div>
+            <div class="news-content">
+              <div class="list">
+                <span>20-Jan-2026</span>
+              </div>
+              <h3>
+                <a href="news-details.html" aria-label="view blog details page">
+                  Education Visa Made Easy A Step-by-Step Guide
+                </a>
+              </h3>
+              <div class="news-bottom">
+                <div class="info-item">
+                  <img src="assets/img/home-1/news/client.png" alt="img" />
+                  <span>By Admin</span>
+                </div>
+                <a href="news-details.html" class="link-btn">View Blog<i class="fa-solid fa-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-xl-4 col-lg-6 col-md-6">
+          <div class="news-card-item">
+            <div class="news-image">
+              <img src="assets/img/home-1/news/news-5.jpg" alt="img" />
+              <span>BLOG</span>
+              <div class="news-layer-wrapper">
+                <div class="news-layer-image" style="
+                      background-image: url(&quot;assets/img/home-1/news/news-5.jpg&quot;);
+                    "></div>
+                <div class="news-layer-image" style="
+                      background-image: url(&quot;assets/img/home-1/news/news-5.jpg&quot;);
+                    "></div>
+                <div class="news-layer-image" style="
+                      background-image: url(&quot;assets/img/home-1/news/news-5.jpg&quot;);
+                    "></div>
+                <div class="news-layer-image" style="
+                      background-image: url(&quot;assets/img/home-1/news/news-5.jpg&quot;);
+                    "></div>
+              </div>
+            </div>
+            <div class="news-content">
+              <div class="list">
+                <span>20-Jan-2026</span>
+              </div>
+              <h3>
+                <a href="news-details.html" aria-label="view blog details page">
+                  Education Visa Made Easy A Step-by-Step Guide
+                </a>
+              </h3>
+              <div class="news-bottom">
+                <div class="info-item">
+                  <img src="assets/img/home-1/news/client.png" alt="img" />
+                  <span>By Admin</span>
+                </div>
+                <a href="news-details.html" class="link-btn">View Blog<i class="fa-solid fa-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xl-4 col-lg-6 col-md-6">
+          <div class="news-card-item">
+            <div class="news-image">
+              <img src="assets/img/home-1/news/news-5.jpg" alt="img" />
+              <span>BLOG</span>
+              <div class="news-layer-wrapper">
+                <div class="news-layer-image" style="
+                      background-image: url(&quot;assets/img/home-1/news/news-5.jpg&quot;);
+                    "></div>
+                <div class="news-layer-image" style="
+                      background-image: url(&quot;assets/img/home-1/news/news-5.jpg&quot;);
+                    "></div>
+                <div class="news-layer-image" style="
+                      background-image: url(&quot;assets/img/home-1/news/news-5.jpg&quot;);
+                    "></div>
+                <div class="news-layer-image" style="
+                      background-image: url(&quot;assets/img/home-1/news/news-5.jpg&quot;);
+                    "></div>
+              </div>
+            </div>
+            <div class="news-content">
+              <div class="list">
+                <span>20-Jan-2026</span>
+              </div>
+              <h3>
+                <a href="news-details.html" aria-label="view blog details page">
+                  Education Visa Made Easy A Step-by-Step Guide
+                </a>
+              </h3>
+              <div class="news-bottom">
+                <div class="info-item">
+                  <img src="assets/img/home-1/news/client.png" alt="img" />
+                  <span>By Admin</span>
+                </div>
+                <a href="news-details.html" class="link-btn">View Blog<i class="fa-solid fa-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+
+  <!--Footer Section Start -->
+  <footer class="footer-section fix bg-cover" style="background-image: url(assets/img/home-1/footer-bg.webp)">
+    <div class="container">
+      <div class="footer-wrapper">
+        <div class="row">
+          <div class="col-xl-12">
+            <div class="footer-item">
+              <h2>
+                <a href="tel:+919090660999">+91 909 066 0999</a>
+              </h2>
+              <h6 class="text text-white">
+                2nd floor, Above Uco Bank, Khandagiri Marg Near Kolothia NH5,
+                Bhubaneswar, Odisha
+              </h6>
+              <div class="footer-list-item">
+                <a href="index.html">
+                  <img src="assets/img/logo/white-logo.svg" loading="lazy" alt="img" />
+                </a>
+                <ul class="footer-list">
+                  <li>
+                    <a href="index.html">Home</a>
+                  </li>
+                  <li>
+                    <a href="about.html">About Us</a>
+                  </li>
+                  <li>
+                    <a href="top-btech-colleges.html">Study in india</a>
+                  </li>
+                  <li>
+                    <a href="coming-soon.html">study abroad</a>
+                  </li>
+                  <li>
+                    <a href="news-details.html">blog</a>
+                  </li>
+                  <li>
+                    <a href="contact.html">Contact Us</a>
+                  </li>
+                </ul>
+                <div class="social-icon">
+                  <a href="contact.html"><i class="fa-brands fa-twitter"></i></a>
+                  <a href="contact.html"><i class="fa-brands fa-instagram"></i></a>
+                  <a href="contact.html"><i class="fa-brands fa-linkedin"></i></a>
+                  <a href="contact.html"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
+  </footer>
 
-    <!--<< All JS Plugins >>-->
-    <script src="assets/js/jquery-3.7.1.min.js"></script>
-    <!--<< Viewport Js >>-->
-    <script src="assets/js/viewport.jquery.js"></script>
-    <!--<< Bootstrap Js >>-->
-    <script src="assets/js/bootstrap.bundle.min.js"></script>
-    <!--<< nice-selec Js >>-->
-    <script src="assets/js/jquery.nice-select.min.js"></script>
-    <!--<< Waypoints Js >>-->
-    <script src="assets/js/jquery.waypoints.js"></script>
-    <!--<< Odometer Js >>-->
-    <script src="assets/js/odometer.min.js"></script>
-    <!--<< Swiper Slider Js >>-->
-    <script src="assets/js/swiper-bundle.min.js"></script>
-    <!--<< MeanMenu Js >>-->
-    <script src="assets/js/jquery.meanmenu.min.js"></script>
-    <!--<< Magnific Popup Js >>-->
-    <script src="assets/js/jquery.magnific-popup.min.js"></script>
-    <!--<< Wow Animation Js >>-->
-    <script src="assets/js/wow.min.js"></script>
-    <!--<< circle-progress Js >>-->
-    <script src="assets/js/circle-progress.js"></script>
-    <!--<< Wow gsap Js >>-->
-    <script src="assets/js/gsap.js"></script>
-    <!--<< Wow lenis.min. Js >>-->
-    <script src="assets/js/lenis.min.js"></script>
-    <!--<< Wow ScrollTrigger.min. Js >>-->
-    <script src="assets/js/ScrollTrigger.min.js"></script>
-    <!--<< Wow SplitText.min. Js >>-->
-    <script src="assets/js/SplitText.min.js"></script>
-    <!--<< Main.js >>-->
-    <script src="assets/js/main.js"></script>
-  </body>
+  <!--Footer-Bottom Section Start -->
+  <div class="footer-bottom">
+    <div class="container">
+      <div class="footer-wrapper">
+        <p>
+          Copyright © <strong><span id="year"></span></strong>
+          <span><strong>Careerffutures</strong></span> All Rights Reserved.
+        </p>
+        <ul class="bottom-list">
+          <li>
+            <a href="contact.html">Terms & Conditions</a>
+          </li>
+          <li>
+            <a href="contact.html">Privacy Policy</a>
+          </li>
+          <li>
+            <a href="contact.html">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
 
-  <!-- Mirrored from ex-coders.com/html/visaway/news-grid.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 25 Mar 2026 09:09:31 GMT -->
+  <!--<< All JS Plugins >>-->
+  <script src="assets/js/jquery-3.7.1.min.js"></script>
+  <!--<< Viewport Js >>-->
+  <script src="assets/js/viewport.jquery.js"></script>
+  <!--<< Bootstrap Js >>-->
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <!--<< nice-selec Js >>-->
+  <script src="assets/js/jquery.nice-select.min.js"></script>
+  <!--<< Waypoints Js >>-->
+  <script src="assets/js/jquery.waypoints.js"></script>
+  <!--<< Odometer Js >>-->
+  <script src="assets/js/odometer.min.js"></script>
+  <!--<< Swiper Slider Js >>-->
+  <script src="assets/js/swiper-bundle.min.js"></script>
+  <!--<< MeanMenu Js >>-->
+  <script src="assets/js/jquery.meanmenu.min.js"></script>
+  <!--<< Magnific Popup Js >>-->
+  <script src="assets/js/jquery.magnific-popup.min.js"></script>
+  <!--<< Wow Animation Js >>-->
+  <script src="assets/js/wow.min.js"></script>
+  <!--<< circle-progress Js >>-->
+  <script src="assets/js/circle-progress.js"></script>
+  <!--<< Wow gsap Js >>-->
+  <script src="assets/js/gsap.js"></script>
+  <!--<< Wow lenis.min. Js >>-->
+  <script src="assets/js/lenis.min.js"></script>
+  <!--<< Wow ScrollTrigger.min. Js >>-->
+  <script src="assets/js/ScrollTrigger.min.js"></script>
+  <!--<< Wow SplitText.min. Js >>-->
+  <script src="assets/js/SplitText.min.js"></script>
+  <!--<< Main.js >>-->
+  <script src="assets/js/main.js"></script>
+</body>
+
+<!-- Mirrored from ex-coders.com/html/visaway/news-grid.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 25 Mar 2026 09:09:31 GMT -->
+
 </html>
