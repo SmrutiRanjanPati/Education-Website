@@ -201,7 +201,8 @@
           <div class="header-left">
             <div class="logo">
               <a href="index.html" class="header-logo-2">
-                <img src="assets/img/logo/black-logo.svg" loading="lazy" decoding="async" alt="logo-img" style="width: 200px;" />
+                <img src="assets/img/logo/black-logo.svg" loading="lazy" decoding="async" alt="logo-img"
+                  style="width: 200px;" />
               </a>
             </div>
             <div class="mean__menu-wrapper">
@@ -352,52 +353,39 @@
   </section>
 
   <!--Contact Section3 Start -->
-  <section class="contact-section-3 section-padding fix pt-0">
+  <!-- <section class="contact-section-3 section-padding fix pt-0">
     <div class="container">
       <div class="contact-from-wrapper">
         <h5 class="text-center">Send Us Message</h5>
         <p class="text-center mt-3 mb-5">
-          "Have questions about visas or immigration? Send us a message today
-          and our expert team will respond quickly."
+          “Have questions about admissions? Contact us today for expert guidance and quick support from our team.”
         </p>
         <div class="row g-4">
           <div class="col-xl-12">
-            <form action="https://ex-coders.com/html/visaway/contact.php" id="contact-form1" method="POST"
+            <form action="send.php" method="POST"
               class="contact-form-items">
               <div class="row g-4">
                 <div class="col-lg-4">
                   <div class="form-clt">
                     <span>Your Name</span>
-                    <input type="text" name="name" id="name331" placeholder="Your name" />
+                    <input type="text" name="user_name" placeholder="Your name" />
                   </div>
                 </div>
                 <div class="col-lg-4">
                   <div class="form-clt">
                     <span>Your Email</span>
-                    <input type="text" name="name" id="email11" placeholder="Your email" />
+                    <input type="text" name="user_email" placeholder="Your email" />
                   </div>
                 </div>
                 <div class="col-lg-4">
                   <div class="form-clt">
                     <span>Your Phone</span>
-                    <input type="text" name="name" id="name22" placeholder="Phone Number" />
-                  </div>
-                </div>
-                <div class="col-lg-6">
-                  <div class="form-clt">
-                    <span>Your Address</span>
-                    <input type="text" name="name" id="name24" placeholder="Address Now" />
-                  </div>
-                </div>
-                <div class="col-lg-6">
-                  <div class="form-clt">
-                    <span>Your Date</span>
-                    <input type="text" name="name" id="name25" placeholder="Date" />
+                    <input type="tel" name="phone_number" placeholder="Phone Number" />
                   </div>
                 </div>
                 <div class="col-lg-12">
                   <div class="form-clt">
-                    <textarea name="message" id="message1" placeholder="Type your message"></textarea>
+                    <textarea name="message" placeholder="Type your message"></textarea>
                   </div>
                 </div>
                 <div class="col-lg-4">
@@ -408,6 +396,57 @@
                 </div>
               </div>
             </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+
+
+  <section class="contact-section-3 section-padding fix pt-0">
+    <div class="container">
+      <div class="contact-from-wrapper">
+        <h5 class="text-center">Send Us Message</h5>
+        <p class="text-center mt-3 mb-5">
+          “Have questions about admissions? Contact us today for expert guidance and quick support from our team.”
+        </p>
+        <div class="row g-4">
+          <div class="col-xl-12">
+            <form id="contact-form" class="contact-form-items">
+              <div class="row g-4">
+                <div class="col-lg-4">
+                  <div class="form-clt">
+                    <span>Your Name *</span>
+                    <input type="text" name="user_name" placeholder="Your name" required />
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="form-clt">
+                    <span>Your Email *</span>
+                    <input type="email" name="user_email" placeholder="Your email" required />
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="form-clt">
+                    <span>Your Phone *</span>
+                    <input type="number" name="phone_number" placeholder="Phone Number" required />
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                  <div class="form-clt">
+                    <textarea name="message" placeholder="Type your message" required></textarea>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <button type="submit" id="submit-btn" class="theme-btn style-2">
+                    SEND MESSAGE
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </form>
+            <div id="form-response" style="margin-top: 20px; text-align: center; display: none;"></div>
           </div>
         </div>
       </div>
@@ -472,23 +511,25 @@
     <div class="container">
       <div class="footer-wrapper">
         <p>
-            Copyright © <strong><span id="year"></span></strong>
-            <span><strong>Careerffutures</strong></span> All Rights Reserved.
-          </p>
+          Copyright © <strong><span id="year"></span></strong>
+          <span><strong>Careerffutures</strong></span> All Rights Reserved.
+        </p>
         <ul class="bottom-list">
           <li>
-            <a href="contact.html">Terms & Conditions</a>
+            <a href="contact.html" aria-label="careerfutures">Terms & Conditions</a>
           </li>
           <li>
-            <a href="contact.html">Privacy Policy</a>
+            <a href="contact.html" aria-label="careerfutures">Privacy Policy</a>
           </li>
           <li>
-            <a href="contact.html">Contact Us</a>
+            <a href="contact.html" aria-label="careerfutures">Contact Us</a>
           </li>
         </ul>
       </div>
     </div>
   </div>
+
+  <script src="assets/js/sendmail.js"></script>
 
   <!--<< All JS Plugins >>-->
   <script src="assets/js/jquery-3.7.1.min.js"></script>
@@ -521,7 +562,5 @@
   <!--<< Main.js >>-->
   <script src="assets/js/main.js"></script>
 </body>
-
-<!-- Mirrored from ex-coders.com/html/visaway/contact.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 25 Mar 2026 09:09:32 GMT -->
 
 </html>
