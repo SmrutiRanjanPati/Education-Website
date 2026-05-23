@@ -26,7 +26,7 @@
     {
       label: "Study Abroad", href: "coming-soon.html",
       submenu: [
-        { label: "MBBS in Nepal", href: "country-list.html" },
+        { label: "MBBS in Nepal", href: "coming-soon.html" },
         { label: "MBBS in Russia", href: "coming-soon.html" },
         { label: "MBBS in Ukraine", href: "coming-soon.html" },
         { label: "MBBS in Kyrgyzstan", href: "coming-soon.html" },
@@ -307,6 +307,7 @@
       .h-phone-link {
         display: flex;
         align-items: center;
+        height: 45px;
         gap: 8px;
         font-size: 13px;
         font-weight: 600;
@@ -341,6 +342,7 @@
         display: inline-flex;
         align-items: center;
         gap: 8px;
+        height: 45px;
         padding: 10px 20px !important;
         background: var(--h-green);
         color: #fff !important;
