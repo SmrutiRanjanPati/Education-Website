@@ -59,7 +59,7 @@
     const style = document.createElement("style");
     style.id = "footer-component-styles";
     style.textContent = `
-      @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;600&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
       /* ── Footer Root ── */
       #site-footer {
@@ -69,12 +69,10 @@
         --f-border:    rgba(255,255,255,0.08);
         --f-text:      rgb(255, 255, 255);
         --f-text-hi:   #ffffff;
-        --f-accent:    #c0392b;
+        --f-accent:    #008400;
         --f-accent-2:  #1a3c6e;
-        --f-gold:      #d4a853;
-        --f-serif:     'Playfair Display', Georgia, serif;
-        --f-sans:      'DM Sans', sans-serif;
-        font-family:   var(--f-sans);
+        --f-gold:      #008400;
+        font-family:   "Roboto", sans-serif;
       }
 
       /* ── Newsletter Strip ── */
@@ -84,7 +82,7 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        gap: 32px;
+        gap: 24px;
         flex-wrap: wrap;
         position: relative;
         overflow: hidden;
@@ -239,7 +237,7 @@
 
       .f-contact-pill {
         display: flex;
-        align-items: flex-start;
+        align-items: center;
         gap: 10px;
         font-size: 13px;
         color: var(--f-text);
@@ -352,7 +350,8 @@
       .f-copyright a {
         color: var(--f-gold);
         text-decoration: none;
-        font-weight: 600;
+        font-weight: bold;
+        font-size: 15px;
       }
 
       .f-copyright a:hover { color: #fff; }
@@ -382,7 +381,7 @@
         display: inline-flex;
         align-items: center;
         gap: 8px;
-        background: #25d366;
+        background: #008400;
         color: #fff;
         font-size: 12px;
         font-weight: 700;
@@ -394,21 +393,21 @@
       }
 
       .f-whatsapp-cta:hover {
-        background: #1ebe5d;
+        background: #1ede00;
         transform: scale(1.04);
       }
          /* Contact Us CTA in newsletter strip */
       .f-contact-us-cta {
         display: inline-flex;
         align-items: center;
-        padding: 14px 32px;
+        padding: 8px 25px;
         background: var(--f-accent);
         color: #ffffff;
         font-family: var(--f-sans);
         font-size: 14px;
         font-weight: 700;
         letter-spacing: 0.5px;
-        border-radius: 6px;
+        border-radius: 25px;
         text-decoration: none;
         white-space: nowrap;
         cursor: pointer;
