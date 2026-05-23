@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- ======== Page title ============ -->
+  <title>Career FFutures | Blog-Details</title>
+  <!--<< Favcion >>-->
+  <link rel="shortcut icon" href="assets/img/favicon.png" />
+
+  <link rel="shortcut icon" href="assets/img/favicon.png" />
+  <!--<< Bootstrap min.css >>-->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+  <!--<< All Min Css >>-->
+  <link rel="stylesheet" href="assets/css/all.min.css" />
+  <!--<< Animate.css >>-->
+  <link rel="stylesheet" href="assets/css/animate.css" />
+  <!--<< Magnific Popup.css >>-->
+  <link rel="stylesheet" href="assets/css/magnific-popup.css" />
+  <!--<< MeanMenu.css >>-->
+  <link rel="stylesheet" href="assets/css/meanmenu.css" />
+  <!--<< Odometer.css >>-->
+  <link rel="stylesheet" href="assets/css/odometer.css" />
+  <!--<< Swiper Bundle.css >>-->
+  <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+  <!--<< Nice Select.css >>-->
+  <link rel="stylesheet" href="assets/css/nice-select.css" />
+  <!--<< Main.css >>-->
+  <link rel="stylesheet" href="assets/css/main.css" />
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=DM+Sans:wght@300;400;500;600&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <style>
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      --ink: #0f0f0f;
+      --ink-light: #444;
+      --ink-muted: #888;
+      --paper: #faf9f6;
+      --paper-warm: #f2efe8;
+      --rule: #e0dbd0;
+      --accent: #c0392b;
+      --accent-2: #1a3c6e;
+      --serif: 'Playfair Display', Georgia, serif;
+      --sans: 'DM Sans', sans-serif;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: var(--sans);
+      background: var(--paper);
+      color: var(--ink);
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    /* ── MASTHEAD ── */
+    .blog-masthead {
+      background: var(--ink);
+      color: #fff;
+      padding: 0 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 64px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      border-bottom: 3px solid var(--accent);
+    }
+
+    .masthead-logo {
+      font-family: var(--serif);
+      font-size: 22px;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+    }
+
+    .masthead-logo span {
+      color: var(--accent);
+    }
+
+    .masthead-back {
+      font-size: 13px;
+      font-weight: 500;
+      color: rgba(255, 255, 255, 0.7);
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      transition: color 0.2s;
+      cursor: pointer;
+    }
+
+    .masthead-back:hover {
+      color: #fff;
+    }
+
+    /* ── ARTICLE HERO ── */
+    .article-hero {
+      background: var(--ink);
+      color: #fff;
+      padding: 64px 40px 0;
+      max-width: 100%;
+    }
+
+    .article-hero-inner {
+      max-width: 860px;
+      margin: 0 auto;
+    }
+
+    .article-category {
+      display: inline-block;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+      color: var(--accent);
+      border-bottom: 1px solid var(--accent);
+      padding-bottom: 4px;
+      margin-bottom: 20px;
+    }
+
+    .article-title {
+      font-family: var(--serif);
+      font-size: clamp(28px, 5vw, 56px);
+      font-weight: 900;
+      line-height: 1.1;
+      letter-spacing: -1px;
+      margin-bottom: 24px;
+      color: var(--paper);
+    }
+
+    .article-meta {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      font-size: 13px;
+      color: rgba(255, 255, 255, 0.55);
+      font-weight: 500;
+      padding-bottom: 40px;
+      flex-wrap: wrap;
+    }
+
+    .article-meta span {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    /* ── HERO IMAGE ── */
+    .article-image-wrap {
+      max-width: 860px;
+      margin: 0 auto;
+      overflow: hidden;
+    }
+
+    .article-image-wrap img {
+      width: 100%;
+      max-height: 500px;
+      object-fit: cover;
+      display: block;
+      border-radius: 12px 12px 0px 0px;
+    }
+
+    .no-hero-img {
+      width: 100%;
+      height: 360px;
+      background: linear-gradient(135deg, var(--accent-2) 0%, #0a0a0a 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 80px;
+      color: rgba(255, 255, 255, 0.1);
+    }
+
+    /* ── ARTICLE BODY ── */
+    .article-body {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 56px 40px 80px;
+    }
+
+    /* Drop cap on first paragraph */
+    .article-body p:first-child::first-letter {
+      font-family: var(--serif);
+      font-size: 72px;
+      font-weight: 900;
+      float: left;
+      line-height: 0.75;
+      margin-right: 10px;
+      margin-top: 10px;
+      color: var(--accent);
+    }
+
+    .article-body p {
+      font-size: 17px;
+      line-height: 1.85;
+      color: var(--ink-light);
+      margin-bottom: 28px;
+    }
+
+    /* Horizontal rule between paragraphs */
+    .article-body p+p {
+      padding-top: 4px;
+    }
+
+    /* Pull quote style for middle paragraph */
+    .pull-quote {
+      font-family: var(--serif);
+      font-size: clamp(20px, 3vw, 26px);
+      font-style: italic;
+      font-weight: 700;
+      color: var(--ink);
+      line-height: 1.45;
+      border-left: 4px solid var(--accent);
+      padding: 16px 0 16px 28px;
+      margin: 40px 0;
+    }
+
+    /* ── SHARE BAR ── */
+    .share-bar {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 24px 0;
+      border-top: 1px solid var(--rule);
+      border-bottom: 1px solid var(--rule);
+      margin-bottom: 56px;
+    }
+
+    .share-label {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--ink-muted);
+      margin-right: 4px;
+    }
+
+    .share-btn {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      border: 1px solid var(--rule);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 13px;
+      color: var(--ink-muted);
+      cursor: pointer;
+      transition: all 0.2s;
+      background: none;
+    }
+
+    .share-btn:hover {
+      background: var(--ink);
+      color: #fff;
+      border-color: var(--ink);
+    }
+
+    /* ── RELATED POSTS ── */
+    .related-section {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 0 40px 80px;
+    }
+
+    .related-heading {
+      font-family: var(--serif);
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--ink-muted);
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 32px;
+    }
+
+    .related-heading::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: var(--rule);
+    }
+
+    .related-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1px;
+      background: var(--rule);
+      border: 1px solid var(--rule);
+    }
+
+    .related-card {
+      background: var(--paper);
+      display: flex;
+      gap: 16px;
+      padding: 20px;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+
+    .related-card:hover {
+      background: #fff;
+    }
+
+    .related-thumb {
+      width: 80px;
+      height: 80px;
+      border-radius: 4px;
+      overflow: hidden;
+      flex-shrink: 0;
+    }
+
+    .related-thumb img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .related-thumb .no-img {
+      width: 100%;
+      height: 100%;
+      background: var(--paper-warm);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--ink-muted);
+    }
+
+    .related-info {
+      flex: 1;
+    }
+
+    .related-info .cat {
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 6px;
+    }
+
+    .related-info h5 {
+      font-family: var(--serif);
+      font-size: 15px;
+      font-weight: 700;
+      line-height: 1.3;
+      color: var(--ink);
+    }
+
+    /* ── NOT FOUND ── */
+    .not-found {
+      text-align: center;
+      padding: 120px 20px;
+      color: var(--ink-muted);
+    }
+
+    .not-found i {
+      font-size: 48px;
+      margin-bottom: 20px;
+      opacity: 0.3;
+    }
+
+    .not-found h2 {
+      font-family: var(--serif);
+      font-size: 28px;
+      margin-bottom: 10px;
+      color: var(--ink);
+    }
+
+    .not-found p {
+      font-size: 15px;
+      margin-bottom: 28px;
+    }
+
+    .btn-back {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--ink);
+      color: #fff;
+      padding: 12px 24px;
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      border-radius: 4px;
+      transition: background 0.2s;
+    }
+
+    .btn-back:hover {
+      background: var(--accent);
+    }
+
+    /* ── FOOTER ── */
+    .blog-footer {
+      background: var(--ink);
+      color: rgba(255, 255, 255, 0.5);
+      text-align: center;
+      padding: 28px;
+      font-size: 13px;
+    }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 768px) {
+      .blog-masthead {
+        padding: 0 20px;
+      }
+
+      .article-hero {
+        padding: 48px 20px 0;
+      }
+
+      .article-body {
+        padding: 40px 20px 60px;
+      }
+
+      .related-section {
+        padding: 0 20px 60px;
+      }
+
+      .related-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .article-body p:first-child::first-letter {
+        font-size: 56px;
+      }
+    }
+  </style>
+</head>
+
+<body class="smooth-scroll-yes">
+  <!-- Preloader Start -->
+  <div id="preloader" class="preloader">
+    <div class="animation-preloader">
+      <div class="spinner"></div>
+      <div class="txt-loading">
+        <span data-text-preloader="C" class="letters-loading">C</span>
+        <span data-text-preloader="A" class="letters-loading">A</span>
+        <span data-text-preloader="R" class="letters-loading">R</span>
+        <span data-text-preloader="E" class="letters-loading">E</span>
+        <span data-text-preloader="E" class="letters-loading">E</span>
+        <span data-text-preloader="R" class="letters-loading">R</span>
+        <span data-text-preloader="F" class="letters-loading">F</span>
+        <span data-text-preloader="F" class="letters-loading">F</span>
+        <span data-text-preloader="U" class="letters-loading">U</span>
+        <span data-text-preloader="T" class="letters-loading">T</span>
+        <span data-text-preloader="U" class="letters-loading">U</span>
+        <span data-text-preloader="R" class="letters-loading">R</span>
+        <span data-text-preloader="E" class="letters-loading">E</span>
+        <span data-text-preloader="S" class="letters-loading">S</span>
+      </div>
+      <p class="text-center">Loading</p>
+    </div>
+    <div class="loader">
+      <div class="row">
+        <div class="col-3 loader-section section-left">
+          <div class="bg"></div>
+        </div>
+        <div class="col-3 loader-section section-left">
+          <div class="bg"></div>
+        </div>
+        <div class="col-3 loader-section section-right">
+          <div class="bg"></div>
+        </div>
+        <div class="col-3 loader-section section-right">
+          <div class="bg"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- GT MouseCursor Start -->
+  <div class="mouseCursor cursor-outer"></div>
+  <div class="mouseCursor cursor-inner"></div>
+
+  <!-- Header-Top-Section Start -->
+  <div class="header-top-section">
+    <div class="container-fluid">
+      <div class="header-top-wrapper">
+        <div class="header-left">
+          <ul class="list">
+            <li class="style-2">
+              <span>Help Line</span>
+              <i class="fa-solid fa-phone"></i>
+              <a href="tel:+919090660999">+91 909 066 0999</a>
+            </li>
+            <li>
+              <i class="fa-solid fa-location-dot"></i>
+              2nd floor, Above Uco Bank, Khandagiri Marg Near Kolothia NH5,
+              Bhubaneswar, Odisha
+            </li>
+            <li>
+              <i class="fa-solid fa-envelope"></i>
+              <a href="mailto:info@careerfutures.in">info@careerfutures.in</a>
+            </li>
+          </ul>
+        </div>
+        <div class="header-right">
+          <div class="social-item">
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Offcanvas Area Start -->
+  <div class="fix-area">
+    <div class="offcanvas__info">
+      <div class="offcanvas__wrapper">
+        <div class="offcanvas__content">
+          <div class="offcanvas__top mb-5 d-flex justify-content-between align-items-center">
+            <div class="offcanvas__logo">
+              <a href="index.html">
+                <img src="assets/img/logo/black-logo.svg" loading="lazy" alt="logo-img" style="width: 200px" />
+              </a>
+            </div>
+            <div class="offcanvas__close">
+              <button>
+                <i class="fas fa-times"></i>
+              </button>
+            </div>
+          </div>
+          <p class="text d-none d-xl-block">
+            Nullam dignissim, ante scelerisque the is euismod fermentum odio
+            sem semper the is erat, a feugiat leo urna eget eros. Duis Aenean
+            a imperdiet risus.
+          </p>
+          <div class="mobile-menu fix mb-3"></div>
+          <div class="offcanvas__contact d-xl-block">
+            <h4 class="d-xl-block">Contact Info</h4>
+            <ul class="d-xl-block">
+              <li class="d-flex align-items-center">
+                <div class="offcanvas__contact-icon">
+                  <i class="fal fa-map-marker-alt"></i>
+                </div>
+                <div class="offcanvas__contact-text">
+                  <a target="_blank" href="contact.html">2nd floor, Above Uco Bank, Khandagiri Marg Near Kolothia
+                    NH5, Bhubaneswar, Odisha</a>
+                </div>
+              </li>
+              <li class="d-flex align-items-center">
+                <div class="offcanvas__contact-icon mr-15">
+                  <i class="fal fa-envelope"></i>
+                </div>
+                <div class="offcanvas__contact-text">
+                  <a href="mailto:info@careerfutures.in"><span
+                      class="mailto:info@careerfutures.in">info@careerfutures.in</span></a>
+                </div>
+              </li>
+              <li class="d-flex align-items-center">
+                <div class="offcanvas__contact-icon mr-15">
+                  <i class="fal fa-clock"></i>
+                </div>
+                <div class="offcanvas__contact-text">
+                  <a target="_blank" href="contact.html">Open All Days 24/7</a>
+                </div>
+              </li>
+              <li class="d-flex align-items-center">
+                <div class="offcanvas__contact-icon mr-15">
+                  <i class="far fa-phone"></i>
+                </div>
+                <div class="offcanvas__contact-text">
+                  <a href="tel:+919090660999">+91 909 066 0999</a>
+                </div>
+              </li>
+            </ul>
+            <div class="social-icon d-flex align-items-center">
+              <a href="contact.html"><i class="fab fa-facebook-f"></i></a>
+              <a href="contact.html"><i class="fab fa-twitter"></i></a>
+              <a href="contact.html"><i class="fab fa-youtube"></i></a>
+              <a href="contact.html"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="offcanvas__overlay"></div>
+  <!-- Reusable Header -->
+  <div id="site-header"></div>
+  <script src="assets/js/header-component.js"></script>
+
+  <!-- Content injected here -->
+  <div id="article-root"></div>
+
+  <footer class="blog-footer">
+    &copy; 2026 Career Future. All rights reserved.
+  </footer>
+
+  <script src="assets/js/blog-data.js"></script>
+
+  <script>
+    /* ── Get post ID from URL ── */
+    const params = new URLSearchParams(window.location.search);
+    const postId = parseInt(params.get("id"));
+    const post = BLOG_DATA.find(b => b.id === postId);
+    const root = document.getElementById("article-root");
+
+    if (!post) {
+      root.innerHTML = `
+        <div class="not-found">
+          <i class="fa-solid fa-newspaper"></i>
+          <h2>Post Not Found</h2>
+          <p>The blog post you're looking for doesn't exist or has been removed.</p>
+          <a href="blog.html" class="btn-back"><i class="fa-solid fa-arrow-left"></i> Back to Blog</a>
+        </div>
+      `;
+    } else {
+
+      /* Update page title */
+      // document.title = `${post.title} – Career Future`;
+
+      /* Build paragraphs — middle one gets pull-quote style */
+      const paraHTML = post.paragraphs.map((p, i) => {
+        if (i === 1 && post.paragraphs.length >= 2) {
+          // Second paragraph as pull quote (first sentence) + rest as normal
+          const sentences = p.split('. ');
+          const quote = sentences[0] + '.';
+          const rest = sentences.slice(1).join('. ');
+          return `
+            <blockquote class="pull-quote">${quote}</blockquote>
+            ${rest ? `<p>${rest}</p>` : ''}
+          `;
+        }
+        return `<p>${p}</p>`;
+      }).join('');
+
+      /* Related posts (same category, exclude current) */
+      const related = BLOG_DATA
+        .filter(b => b.category === post.category && b.id !== post.id)
+        .slice(0, 2);
+
+      const relatedHTML = related.length > 0 ? `
+        <div class="related-section">
+          <div class="related-heading">More in ${post.category}</div>
+          <div class="related-grid">
+            ${related.map(r => `
+              <div class="related-card" onclick="window.location.href='blog-detail.html?id=${r.id}'">
+                <div class="related-thumb">
+                  ${r.image
+          ? `<img src="${r.image}" alt="${r.title}" onerror="this.parentElement.innerHTML='<div class=no-img><i class=\\'fa-solid fa-newspaper\\'></i></div>'">`
+          : `<div class="no-img"><i class="fa-solid fa-newspaper"></i></div>`}
+                </div>
+                <div class="related-info">
+                  <div class="cat">${r.category}</div>
+                  <h5>${r.title}</h5>
+                </div>
+              </div>
+            `).join('')}
+          </div>
+        </div>
+      ` : '';
+
+      root.innerHTML = `
+        <!-- Article Hero -->
+        <div class="article-hero">
+          <div class="article-hero-inner">
+            <span class="article-category">${post.category}</span>
+            <h1 class="article-title">${post.title}</h1>
+            <div class="article-meta">
+              <span><i class="fa-regular fa-calendar"></i> ${post.date}</span>
+              <span><i class="fa-regular fa-user"></i> ${post.author}</span>
+              <span><i class="fa-regular fa-clock"></i> ${Math.ceil(post.paragraphs.join(' ').split(' ').length / 200)} min read</span>
+            </div>
+          </div>
+          <div class="article-image-wrap">
+            ${post.image
+          ? `<img src="${post.image}" alt="${post.title}" onerror="this.outerHTML='<div class=no-hero-img><i class=\\'fa-solid fa-newspaper\\'></i></div>'">`
+          : `<div class="no-hero-img"><i class="fa-solid fa-newspaper"></i></div>`}
+          </div>
+        </div>
+
+        <!-- Article Body -->
+        <article class="article-body">
+          <div class="share-bar">
+            <span class="share-label">Share</span>
+            <button class="share-btn" title="Copy link" onclick="copyLink()"><i class="fa-solid fa-link"></i></button>
+            <button class="share-btn" title="Share on WhatsApp" onclick="shareWhatsApp()"><i class="fa-brands fa-whatsapp"></i></button>
+            <button class="share-btn" title="Share on Twitter" onclick="shareTwitter()"><i class="fa-brands fa-x-twitter"></i></button>
+          </div>
+          ${paraHTML}
+        </article>
+
+        ${relatedHTML}
+      `;
+    }
+
+    /* ── Share helpers ── */
+    function copyLink() {
+      navigator.clipboard.writeText(window.location.href).then(() => {
+        alert("Link copied to clipboard!");
+      });
+    }
+
+    function shareWhatsApp() {
+      const text = encodeURIComponent(`${post?.title} – ${window.location.href}`);
+      window.open(`https://wa.me/?text=${text}`, "_blank");
+    }
+
+    function shareTwitter() {
+      const text = encodeURIComponent(post?.title || "");
+      const url = encodeURIComponent(window.location.href);
+      window.open(`https://twitter.com/intent/tweet?text=${text}&url=${url}`, "_blank");
+    }
+  </script>
+
+  <!--<< All JS Plugins >>-->
+  <script src="assets/js/jquery-3.7.1.min.js"></script>
+  <!--<< Viewport Js >>-->
+  <script src="assets/js/viewport.jquery.js"></script>
+  <!--<< Bootstrap Js >>-->
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <!--<< nice-selec Js >>-->
+  <script src="assets/js/jquery.nice-select.min.js"></script>
+  <!--<< Waypoints Js >>-->
+  <script src="assets/js/jquery.waypoints.js"></script>
+  <!--<< Odometer Js >>-->
+  <script src="assets/js/odometer.min.js"></script>
+  <!--<< Swiper Slider Js >>-->
+  <script src="assets/js/swiper-bundle.min.js"></script>
+  <!--<< MeanMenu Js >>-->
+  <script src="assets/js/jquery.meanmenu.min.js"></script>
+  <!--<< Magnific Popup Js >>-->
+  <script src="assets/js/jquery.magnific-popup.min.js"></script>
+  <!--<< Wow Animation Js >>-->
+  <script src="assets/js/wow.min.js"></script>
+  <!--<< circle-progress Js >>-->
+  <script src="assets/js/circle-progress.js"></script>
+  <!--<< Wow gsap Js >>-->
+  <script src="assets/js/gsap.js"></script>
+  <!--<< Wow lenis.min. Js >>-->
+  <script src="assets/js/lenis.min.js"></script>
+  <!--<< Wow ScrollTrigger.min. Js >>-->
+  <script src="assets/js/ScrollTrigger.min.js"></script>
+  <!--<< Wow SplitText.min. Js >>-->
+  <script src="assets/js/SplitText.min.js"></script>
+  <!--<< Main.js >>-->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

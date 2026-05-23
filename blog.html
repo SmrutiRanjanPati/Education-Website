@@ -1,0 +1,910 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- ======== Page title ============ -->
+  <title>Career FFutures | Blog</title>
+  <!--<< Favcion >>-->
+  <link rel="shortcut icon" href="assets/img/favicon.png" />
+
+  <link rel="shortcut icon" href="assets/img/favicon.png" />
+  <!--<< Bootstrap min.css >>-->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+  <!--<< All Min Css >>-->
+  <link rel="stylesheet" href="assets/css/all.min.css" />
+  <!--<< Animate.css >>-->
+  <link rel="stylesheet" href="assets/css/animate.css" />
+  <!--<< Magnific Popup.css >>-->
+  <link rel="stylesheet" href="assets/css/magnific-popup.css" />
+  <!--<< MeanMenu.css >>-->
+  <link rel="stylesheet" href="assets/css/meanmenu.css" />
+  <!--<< Odometer.css >>-->
+  <link rel="stylesheet" href="assets/css/odometer.css" />
+  <!--<< Swiper Bundle.css >>-->
+  <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+  <!--<< Nice Select.css >>-->
+  <link rel="stylesheet" href="assets/css/nice-select.css" />
+  <!--<< Main.css >>-->
+  <link rel="stylesheet" href="assets/css/main.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=DM+Sans:wght@300;400;500;600&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <style>
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      --ink: #0f0f0f;
+      --ink-light: #444;
+      --ink-muted: #888;
+      --paper: #faf9f6;
+      --paper-warm: #f2efe8;
+      --rule: #e0dbd0;
+      --accent: #c0392b;
+      --accent-2: #1a3c6e;
+      --serif: 'Playfair Display', Georgia, serif;
+      --sans: 'DM Sans', sans-serif;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: var(--sans);
+      background: var(--paper);
+      color: var(--ink);
+      min-height: 100vh;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    /* ── MASTHEAD ── */
+    .blog-masthead {
+      background: var(--ink);
+      color: #fff;
+      padding: 0 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 64px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      border-bottom: 3px solid var(--accent);
+    }
+
+    .masthead-logo {
+      font-family: var(--serif);
+      font-size: 22px;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+    }
+
+    .masthead-logo span {
+      color: var(--accent);
+    }
+
+    .masthead-back {
+      font-size: 13px;
+      font-weight: 500;
+      color: rgba(255, 255, 255, 0.7);
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      transition: color 0.2s;
+    }
+
+    .masthead-back:hover {
+      color: #fff;
+    }
+
+    /* ── HERO BANNER ── */
+    .blog-hero {
+      background: var(--ink);
+      color: #fff;
+      padding: 72px 40px 60px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .blog-hero::before {
+      content: 'BLOG';
+      position: absolute;
+      font-family: var(--serif);
+      font-size: clamp(120px, 20vw, 220px);
+      font-weight: 900;
+      color: rgba(255, 255, 255, 0.04);
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      white-space: nowrap;
+      pointer-events: none;
+      letter-spacing: -4px;
+    }
+
+    .blog-hero-label {
+      display: inline-block;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--accent);
+      border-top: 1px solid var(--accent);
+      border-bottom: 1px solid var(--accent);
+      padding: 5px 0;
+      margin-bottom: 20px;
+    }
+
+    .blog-hero h1 {
+      font-family: var(--serif);
+      font-size: clamp(36px, 6vw, 68px);
+      font-weight: 900;
+      line-height: 1.05;
+      letter-spacing: -1px;
+      max-width: 700px;
+      color: var(--paper-warm);
+      margin: 0 auto 16px;
+    }
+
+    .blog-hero p {
+      font-size: 16px;
+      color: rgba(255, 255, 255, 0.6);
+      max-width: 480px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+
+    /* ── FILTER BAR ── */
+    .filter-bar {
+      background: var(--paper-warm);
+      border-bottom: 1px solid var(--rule);
+      padding: 0 40px;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      overflow-x: auto;
+      scrollbar-width: none;
+      height: 52px;
+    }
+
+    .filter-bar::-webkit-scrollbar {
+      display: none;
+    }
+
+    .filter-btn {
+      background: none;
+      border: none;
+      font-family: var(--sans);
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      color: var(--ink-muted);
+      padding: 6px 14px;
+      border-radius: 4px;
+      cursor: pointer;
+      white-space: nowrap;
+      transition: all 0.2s;
+    }
+
+    .filter-btn:hover {
+      color: var(--ink);
+      background: var(--rule);
+    }
+
+    .filter-btn.active {
+      background: var(--ink);
+      color: #fff;
+    }
+
+    /* ── MAIN GRID ── */
+    .blog-container {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 56px 40px;
+    }
+
+    /* Featured post (first one — big) */
+    .featured-post {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0;
+      border: 1px solid var(--rule);
+      margin-bottom: 56px;
+      cursor: pointer;
+      overflow: hidden;
+      transition: box-shadow 0.3s;
+      background: #fff;
+      border-radius: 12px;
+    }
+
+    .featured-post:hover {
+      box-shadow: 0 12px 48px rgba(0, 0, 0, 0.12);
+    }
+
+    .featured-post:hover .featured-img img {
+      transform: scale(1.04);
+    }
+
+    .featured-img {
+      overflow: hidden;
+      height: 420px;
+    }
+
+    .featured-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.6s ease;
+    }
+
+    .featured-img .no-img {
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(135deg, var(--accent-2) 0%, #0f0f0f 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 64px;
+      color: rgba(255, 255, 255, 0.15);
+    }
+
+    .featured-content {
+      padding: 44px 48px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      border-left: 1px solid var(--rule);
+    }
+
+    .post-category {
+      display: inline-block;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 16px;
+    }
+
+    .featured-content h2 {
+      font-family: var(--serif);
+      font-size: clamp(24px, 3vw, 36px);
+      font-weight: 700;
+      line-height: 1.2;
+      letter-spacing: -0.5px;
+      margin-bottom: 16px;
+      color: var(--ink);
+    }
+
+    .featured-content .excerpt {
+      font-size: 15px;
+      line-height: 1.7;
+      color: var(--ink-light);
+      margin-bottom: 28px;
+    }
+
+    .post-meta {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      font-size: 12px;
+      color: var(--ink-muted);
+      font-weight: 500;
+      margin-bottom: 24px;
+    }
+
+    .post-meta span {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    .read-more-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: var(--ink);
+      border-bottom: 2px solid var(--ink);
+      padding-bottom: 2px;
+      transition: color 0.2s, border-color 0.2s;
+      width: fit-content;
+    }
+
+    .read-more-btn:hover {
+      color: var(--accent);
+      border-color: var(--accent);
+    }
+
+    /* Section divider */
+    .section-rule {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 36px;
+    }
+
+    .section-rule h3 {
+      font-family: var(--serif);
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--ink-muted);
+      white-space: nowrap;
+    }
+
+    .section-rule::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: var(--rule);
+    }
+
+    /* Cards grid */
+    .cards-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 15px;
+
+    }
+
+    .blog-card {
+      background: var(--paper);
+      cursor: pointer;
+      overflow: hidden;
+      transition: background 0.2s;
+      display: flex;
+      flex-direction: column;
+      border: 1px solid var(--rule);
+      border-radius: 8px;
+    }
+
+    .blog-card:hover {
+      background: #fff;
+    }
+
+    .blog-card:hover .card-img img {
+      transform: scale(1.05);
+    }
+
+    .card-img {
+      overflow: hidden;
+      height: 220px;
+    }
+
+    .card-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+
+    .card-img .no-img {
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(135deg, var(--paper-warm) 0%, var(--rule) 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 40px;
+      color: var(--ink-muted);
+    }
+
+    .card-body {
+      padding: 24px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      border-top: 1px solid var(--rule);
+    }
+
+    .card-body h4 {
+      font-family: var(--serif);
+      font-size: 19px;
+      font-weight: 700;
+      line-height: 1.3;
+      letter-spacing: -0.3px;
+      margin-bottom: 10px;
+      color: var(--ink);
+    }
+
+    .card-body .excerpt {
+      font-size: 13.5px;
+      line-height: 1.65;
+      color: var(--ink-light);
+      flex: 1;
+      margin-bottom: 18px;
+    }
+
+    .card-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-top: 14px;
+      border-top: 1px solid var(--rule);
+    }
+
+    .card-date {
+      font-size: 11px;
+      color: var(--ink-muted);
+      font-weight: 500;
+    }
+
+    .card-arrow {
+      width: 32px;
+      height: 32px;
+      border: 1px solid var(--rule);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 12px;
+      color: var(--ink-muted);
+      transition: all 0.2s;
+    }
+
+    .blog-card:hover .card-arrow {
+      background: var(--ink);
+      color: #fff;
+      border-color: var(--ink);
+    }
+
+    /* No results */
+    .no-results {
+      text-align: center;
+      padding: 80px 20px;
+      color: var(--ink-muted);
+      display: none;
+    }
+
+    .no-results i {
+      font-size: 40px;
+      margin-bottom: 16px;
+      opacity: 0.3;
+    }
+
+    .no-results p {
+      font-size: 16px;
+    }
+
+    /* Loading skeleton */
+    .skeleton {
+      animation: shimmer 1.5s infinite;
+      background: linear-gradient(90deg, var(--paper-warm) 25%, var(--rule) 50%, var(--paper-warm) 75%);
+      background-size: 200% 100%;
+      border-radius: 4px;
+    }
+
+    @keyframes shimmer {
+      0% {
+        background-position: 200% 0;
+      }
+
+      100% {
+        background-position: -200% 0;
+      }
+    }
+
+    /* ── FOOTER NOTE ── */
+    .blog-footer {
+      background: var(--ink);
+      color: rgba(255, 255, 255, 0.5);
+      text-align: center;
+      padding: 28px;
+      font-size: 13px;
+      margin-top: 80px;
+    }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 1024px) {
+      .cards-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .blog-masthead {
+        padding: 0 20px;
+      }
+
+      .blog-hero {
+        padding: 56px 20px 48px;
+      }
+
+      .filter-bar {
+        padding: 0 20px;
+      }
+
+      .blog-container {
+        padding: 40px 20px;
+      }
+
+      .featured-post {
+        grid-template-columns: 1fr;
+      }
+
+      .featured-img {
+        height: 260px;
+      }
+
+      .featured-content {
+        padding: 28px 24px;
+        border-left: none;
+        border-top: 1px solid var(--rule);
+      }
+
+      .cards-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body class="smooth-scroll-yes">
+  <!-- Preloader Start -->
+  <div id="preloader" class="preloader">
+    <div class="animation-preloader">
+      <div class="spinner"></div>
+      <div class="txt-loading">
+        <span data-text-preloader="C" class="letters-loading">C</span>
+        <span data-text-preloader="A" class="letters-loading">A</span>
+        <span data-text-preloader="R" class="letters-loading">R</span>
+        <span data-text-preloader="E" class="letters-loading">E</span>
+        <span data-text-preloader="E" class="letters-loading">E</span>
+        <span data-text-preloader="R" class="letters-loading">R</span>
+        <span data-text-preloader="F" class="letters-loading">F</span>
+        <span data-text-preloader="F" class="letters-loading">F</span>
+        <span data-text-preloader="U" class="letters-loading">U</span>
+        <span data-text-preloader="T" class="letters-loading">T</span>
+        <span data-text-preloader="U" class="letters-loading">U</span>
+        <span data-text-preloader="R" class="letters-loading">R</span>
+        <span data-text-preloader="E" class="letters-loading">E</span>
+        <span data-text-preloader="S" class="letters-loading">S</span>
+      </div>
+      <p class="text-center">Loading</p>
+    </div>
+    <div class="loader">
+      <div class="row">
+        <div class="col-3 loader-section section-left">
+          <div class="bg"></div>
+        </div>
+        <div class="col-3 loader-section section-left">
+          <div class="bg"></div>
+        </div>
+        <div class="col-3 loader-section section-right">
+          <div class="bg"></div>
+        </div>
+        <div class="col-3 loader-section section-right">
+          <div class="bg"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- GT MouseCursor Start -->
+  <div class="mouseCursor cursor-outer"></div>
+  <div class="mouseCursor cursor-inner"></div>
+
+  <!-- Header-Top-Section Start -->
+  <div class="header-top-section">
+    <div class="container-fluid">
+      <div class="header-top-wrapper">
+        <div class="header-left">
+          <ul class="list">
+            <li class="style-2">
+              <span>Help Line</span>
+              <i class="fa-solid fa-phone"></i>
+              <a href="tel:+919090660999">+91 909 066 0999</a>
+            </li>
+            <li>
+              <i class="fa-solid fa-location-dot"></i>
+              2nd floor, Above Uco Bank, Khandagiri Marg Near Kolothia NH5,
+              Bhubaneswar, Odisha
+            </li>
+            <li>
+              <i class="fa-solid fa-envelope"></i>
+              <a href="mailto:info@careerfutures.in">info@careerfutures.in</a>
+            </li>
+          </ul>
+        </div>
+        <div class="header-right">
+          <div class="social-item">
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Offcanvas Area Start -->
+  <div class="fix-area">
+    <div class="offcanvas__info">
+      <div class="offcanvas__wrapper">
+        <div class="offcanvas__content">
+          <div class="offcanvas__top mb-5 d-flex justify-content-between align-items-center">
+            <div class="offcanvas__logo">
+              <a href="index.html">
+                <img src="assets/img/logo/black-logo.svg" loading="lazy" alt="logo-img" style="width: 200px" />
+              </a>
+            </div>
+            <div class="offcanvas__close">
+              <button>
+                <i class="fas fa-times"></i>
+              </button>
+            </div>
+          </div>
+          <p class="text d-none d-xl-block">
+            Nullam dignissim, ante scelerisque the is euismod fermentum odio
+            sem semper the is erat, a feugiat leo urna eget eros. Duis Aenean
+            a imperdiet risus.
+          </p>
+          <div class="mobile-menu fix mb-3"></div>
+          <div class="offcanvas__contact d-xl-block">
+            <h4 class="d-xl-block">Contact Info</h4>
+            <ul class="d-xl-block">
+              <li class="d-flex align-items-center">
+                <div class="offcanvas__contact-icon">
+                  <i class="fal fa-map-marker-alt"></i>
+                </div>
+                <div class="offcanvas__contact-text">
+                  <a target="_blank" href="contact.html">2nd floor, Above Uco Bank, Khandagiri Marg Near Kolothia
+                    NH5, Bhubaneswar, Odisha</a>
+                </div>
+              </li>
+              <li class="d-flex align-items-center">
+                <div class="offcanvas__contact-icon mr-15">
+                  <i class="fal fa-envelope"></i>
+                </div>
+                <div class="offcanvas__contact-text">
+                  <a href="mailto:info@careerfutures.in"><span
+                      class="mailto:info@careerfutures.in">info@careerfutures.in</span></a>
+                </div>
+              </li>
+              <li class="d-flex align-items-center">
+                <div class="offcanvas__contact-icon mr-15">
+                  <i class="fal fa-clock"></i>
+                </div>
+                <div class="offcanvas__contact-text">
+                  <a target="_blank" href="contact.html">Open All Days 24/7</a>
+                </div>
+              </li>
+              <li class="d-flex align-items-center">
+                <div class="offcanvas__contact-icon mr-15">
+                  <i class="far fa-phone"></i>
+                </div>
+                <div class="offcanvas__contact-text">
+                  <a href="tel:+919090660999">+91 909 066 0999</a>
+                </div>
+              </li>
+            </ul>
+            <div class="social-icon d-flex align-items-center">
+              <a href="contact.html"><i class="fab fa-facebook-f"></i></a>
+              <a href="contact.html"><i class="fab fa-twitter"></i></a>
+              <a href="contact.html"><i class="fab fa-youtube"></i></a>
+              <a href="contact.html"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="offcanvas__overlay"></div>
+
+  <!-- Reusable Header -->
+  <div id="site-header"></div>
+  <script src="assets/js/header-component.js"></script>
+
+  <!-- Hero -->
+  <section class="blog-hero">
+    <div class="blog-hero-label">The Career Future Journal</div>
+    <h1>Insights, Guides &amp; Career Stories</h1>
+    <p>Expert advice on admissions, courses, and building your future in India's top universities.</p>
+  </section>
+
+  <!-- Filter Bar -->
+  <nav class="filter-bar" id="filterBar">
+    <button class="filter-btn active" data-filter="all">All</button>
+    <!-- Category buttons injected by JS -->
+  </nav>
+
+  <!-- Main Content -->
+  <main class="blog-container">
+    <!-- Featured post -->
+    <div id="featuredPost"></div>
+
+    <!-- Divider -->
+    <div class="section-rule">
+      <h3>More Stories</h3>
+    </div>
+
+    <!-- Cards grid -->
+    <div class="cards-grid" id="cardsGrid"></div>
+
+    <!-- No results -->
+    <div class="no-results" id="noResults">
+      <i class="fa-solid fa-newspaper"></i>
+      <p>No posts found in this category.</p>
+    </div>
+  </main>
+
+  <footer class="blog-footer">
+    &copy; 2026 Career Future. All rights reserved.
+  </footer>
+
+  <!-- Load blog data -->
+  <script src="assets/js/blog-data.js"></script>
+
+  <script>
+    let activeFilter = "all";
+
+    /* ── Build category filter buttons ── */
+    function buildFilters() {
+      const bar = document.getElementById("filterBar");
+      const cats = [...new Set(BLOG_DATA.map(b => b.category))];
+      cats.forEach(cat => {
+        const btn = document.createElement("button");
+        btn.className = "filter-btn";
+        btn.dataset.filter = cat;
+        btn.textContent = cat;
+        btn.addEventListener("click", () => applyFilter(cat, btn));
+        bar.appendChild(btn);
+      });
+
+      bar.addEventListener("click", e => {
+        if (e.target.dataset.filter === "all") {
+          applyFilter("all", e.target);
+        }
+      });
+    }
+
+    function applyFilter(filter, btn) {
+      activeFilter = filter;
+      document.querySelectorAll(".filter-btn").forEach(b => b.classList.remove("active"));
+      btn.classList.add("active");
+      renderPosts();
+    }
+
+    /* ── Render ── */
+    function renderPosts() {
+      const filtered = activeFilter === "all"
+        ? BLOG_DATA
+        : BLOG_DATA.filter(b => b.category === activeFilter);
+
+
+      // Sort by highest ID first
+      filtered.sort((a, b) => b.id - a.id);
+
+      const featured = filtered[0] || null;
+      const rest = filtered.slice(1);
+
+      renderFeatured(featured);
+      renderCards(rest);
+
+      document.getElementById("noResults").style.display =
+        filtered.length === 0 ? "block" : "none";
+      document.querySelector(".section-rule").style.display =
+        rest.length === 0 ? "none" : "flex";
+    }
+
+    function renderFeatured(post) {
+      const el = document.getElementById("featuredPost");
+      if (!post) { el.innerHTML = ""; return; }
+
+      el.innerHTML = `
+        <div class="featured-post" onclick="goToPost(${post.id})">
+          <div class="featured-img">
+            ${post.image
+          ? `<img src="${post.image}" alt="${post.title}" onerror="this.parentElement.innerHTML='<div class=no-img><i class=\\'fa-solid fa-newspaper\\'></i></div>'">`
+          : `<div class="no-img"><i class="fa-solid fa-newspaper"></i></div>`}
+          </div>
+          <div class="featured-content">
+            <span class="post-category">${post.category}</span>
+            <h2>${post.title}</h2>
+            <p class="excerpt">${post.excerpt}</p>
+            <div class="post-meta">
+              <span><i class="fa-regular fa-calendar"></i> ${post.date}</span>
+              <span><i class="fa-regular fa-user"></i> ${post.author}</span>
+            </div>
+            <span class="read-more-btn">Read Full Story <i class="fa-solid fa-arrow-right"></i></span>
+          </div>
+        </div>
+      `;
+    }
+
+    function renderCards(posts) {
+      const grid = document.getElementById("cardsGrid");
+      grid.innerHTML = posts.map(post => `
+        <div class="blog-card" onclick="goToPost(${post.id})">
+          <div class="card-img">
+            ${post.image
+          ? `<img src="${post.image}" alt="${post.title}" onerror="this.parentElement.innerHTML='<div class=no-img><i class=\\'fa-solid fa-newspaper\\'></i></div>'">`
+          : `<div class="no-img"><i class="fa-solid fa-newspaper"></i></div>`}
+          </div>
+          <div class="card-body">
+            <span class="post-category">${post.category}</span>
+            <h4>${post.title}</h4>
+            <p class="excerpt">${post.excerpt}</p>
+            <div class="card-footer">
+              <span class="card-date"><i class="fa-regular fa-calendar"></i> ${post.date}</span>
+              <span class="card-arrow"><i class="fa-solid fa-arrow-right"></i></span>
+            </div>
+          </div>
+        </div>
+      `).join("");
+    }
+
+    /* ── Navigate to detail page ── */
+    function goToPost(id) {
+      window.location.href = `blog-detail.html?id=${id}`;
+    }
+
+    /* ── Init ── */
+    buildFilters();
+    renderPosts();
+  </script>
+  <!--<< All JS Plugins >>-->
+  <script src="assets/js/jquery-3.7.1.min.js"></script>
+  <!--<< Viewport Js >>-->
+  <script src="assets/js/viewport.jquery.js"></script>
+  <!--<< Bootstrap Js >>-->
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <!--<< nice-selec Js >>-->
+  <script src="assets/js/jquery.nice-select.min.js"></script>
+  <!--<< Waypoints Js >>-->
+  <script src="assets/js/jquery.waypoints.js"></script>
+  <!--<< Odometer Js >>-->
+  <script src="assets/js/odometer.min.js"></script>
+  <!--<< Swiper Slider Js >>-->
+  <script src="assets/js/swiper-bundle.min.js"></script>
+  <!--<< MeanMenu Js >>-->
+  <script src="assets/js/jquery.meanmenu.min.js"></script>
+  <!--<< Magnific Popup Js >>-->
+  <script src="assets/js/jquery.magnific-popup.min.js"></script>
+  <!--<< Wow Animation Js >>-->
+  <script src="assets/js/wow.min.js"></script>
+  <!--<< circle-progress Js >>-->
+  <script src="assets/js/circle-progress.js"></script>
+  <!--<< Wow gsap Js >>-->
+  <script src="assets/js/gsap.js"></script>
+  <!--<< Wow lenis.min. Js >>-->
+  <script src="assets/js/lenis.min.js"></script>
+  <!--<< Wow ScrollTrigger.min. Js >>-->
+  <script src="assets/js/ScrollTrigger.min.js"></script>
+  <!--<< Wow SplitText.min. Js >>-->
+  <script src="assets/js/SplitText.min.js"></script>
+  <!--<< Main.js >>-->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

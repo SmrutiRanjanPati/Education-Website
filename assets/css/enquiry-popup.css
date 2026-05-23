@@ -1,0 +1,305 @@
+/* =============================================
+   ENQUIRY POPUP - Reusable Component Styles
+   ============================================= */
+
+/* Overlay */
+.enquiry-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(10, 15, 30, 0.75);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  z-index: 99999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.enquiry-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Modal Box */
+.enquiry-modal {
+  background: #ffffff;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 520px;
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+  transform: translateY(30px) scale(0.97);
+  transition: transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
+  position: relative;
+}
+
+.enquiry-overlay.active .enquiry-modal {
+  transform: translateY(0) scale(1);
+}
+
+/* Header */
+.enquiry-modal-header {
+  background: linear-gradient(135deg, #1a3c6e 0%, #2563b0 100%);
+  padding: 28px 32px 24px;
+  position: relative;
+}
+
+.enquiry-modal-header h4 {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0 0 4px;
+  letter-spacing: -0.3px;
+}
+
+.enquiry-modal-header p {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 13px;
+  margin: 0;
+}
+
+.enquiry-college-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 5px 12px;
+  border-radius: 50px;
+  margin-top: 12px;
+  letter-spacing: 0.2px;
+}
+
+.enquiry-college-badge i {
+  font-size: 11px;
+  opacity: 0.8;
+}
+
+/* Close Button */
+.enquiry-close-btn {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s ease, transform 0.2s ease;
+  line-height: 1;
+}
+
+.enquiry-close-btn:hover {
+  background: rgba(255, 255, 255, 0.3);
+  transform: rotate(90deg);
+}
+
+/* Body */
+.enquiry-modal-body {
+  padding: 28px 32px 32px;
+}
+
+/* Form Fields */
+.enquiry-form-group {
+  margin-bottom: 18px;
+}
+
+.enquiry-form-group label {
+  display: block;
+  font-size: 12.5px;
+  font-weight: 600;
+  color: #374151;
+  margin-bottom: 7px;
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
+}
+
+.enquiry-form-group label span {
+  color: #e53e3e;
+  margin-left: 2px;
+}
+
+.enquiry-form-group input,
+.enquiry-form-group textarea {
+  width: 100%;
+  padding: 12px 16px;
+  border: 1.5px solid #e5e7eb;
+  border-radius: 10px;
+  font-size: 14px;
+  color: #1f2937;
+  background: #f9fafb;
+  transition: border-color 0.2s ease, background 0.2s ease, box-shadow 0.2s ease;
+  outline: none;
+  box-sizing: border-box;
+  font-family: inherit;
+}
+
+.enquiry-form-group input:focus,
+.enquiry-form-group textarea:focus {
+  border-color: #2563b0;
+  background: #fff;
+  box-shadow: 0 0 0 3px rgba(37, 99, 176, 0.1);
+}
+
+.enquiry-form-group input[readonly] {
+  background: #f0f4ff;
+  border-color: #c7d6f5;
+  color: #3b5ea6;
+  cursor: not-allowed;
+  font-weight: 500;
+}
+
+.enquiry-form-group textarea {
+  resize: vertical;
+  min-height: 90px;
+}
+
+/* Two Column Row */
+.enquiry-form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+/* Submit Button */
+.enquiry-submit-btn {
+  width: 100%;
+  padding: 14px 24px;
+  background: linear-gradient(135deg, #1a3c6e 0%, #2563b0 100%);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: opacity 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+  margin-top: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.enquiry-submit-btn:hover:not(:disabled) {
+  opacity: 0.92;
+  transform: translateY(-1px);
+  box-shadow: 0 8px 24px rgba(37, 99, 176, 0.35);
+}
+
+.enquiry-submit-btn:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+
+.enquiry-submit-btn .spinner {
+  width: 16px;
+  height: 16px;
+  border: 2px solid rgba(255,255,255,0.4);
+  border-top-color: #fff;
+  border-radius: 50%;
+  animation: enquiry-spin 0.7s linear infinite;
+}
+
+@keyframes enquiry-spin {
+  to { transform: rotate(360deg); }
+}
+
+/* Thank You State */
+.enquiry-thankyou {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 32px;
+  text-align: center;
+}
+
+.enquiry-thankyou.show {
+  display: flex;
+}
+
+.enquiry-thankyou-icon {
+  width: 70px;
+  height: 70px;
+  background: linear-gradient(135deg, #d1fae5, #a7f3d0);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  animation: enquiry-pop 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+@keyframes enquiry-pop {
+  from { transform: scale(0.4); opacity: 0; }
+  to   { transform: scale(1);   opacity: 1; }
+}
+
+.enquiry-thankyou-icon i {
+  font-size: 32px;
+  color: #059669;
+}
+
+.enquiry-thankyou h4 {
+  font-size: 22px;
+  font-weight: 800;
+  color: #064e3b;
+  margin: 0 0 10px;
+}
+
+.enquiry-thankyou p {
+  font-size: 14px;
+  color: #6b7280;
+  margin: 0 0 16px;
+  line-height: 1.6;
+}
+
+.enquiry-countdown {
+  font-size: 12px;
+  color: #9ca3af;
+  font-weight: 500;
+}
+
+/* Error Message */
+.enquiry-error-msg {
+  display: none;
+  background: #fef2f2;
+  border: 1px solid #fecaca;
+  border-radius: 8px;
+  padding: 10px 14px;
+  font-size: 13px;
+  color: #dc2626;
+  margin-top: 12px;
+  text-align: center;
+}
+
+.enquiry-error-msg.show {
+  display: block;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .enquiry-modal-header,
+  .enquiry-modal-body {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .enquiry-form-row {
+    grid-template-columns: 1fr;
+  }
+}

@@ -31,6 +31,7 @@
   <link rel="stylesheet" href="assets/css/nice-select.css" />
   <!--<< Main.css >>-->
   <link rel="stylesheet" href="assets/css/main.css" />
+  <link rel="stylesheet" href="assets/css/enquiry-popup.css" />
 </head>
 
 <body class="smooth-scroll-yes">
@@ -74,10 +75,6 @@
     </div>
   </div>
 
-  <!-- GT Back To Top Start -->
-  <button id="back-top" class="back-to-top show" aria-label="Scroll back to top">
-    <i class="fa-regular fa-arrow-up" aria-hidden="true"></i>
-  </button>
   <!-- GT MouseCursor Start -->
   <div class="mouseCursor cursor-outer"></div>
   <div class="mouseCursor cursor-inner"></div>
@@ -192,96 +189,10 @@
   </div>
   <div class="offcanvas__overlay"></div>
 
-  <!-- New Header Section -->
-  <header id="header-sticky" class="header-1">
-    <div class="container-fluid">
-      <div class="mega-menu-wrapper">
-        <div class="header-main">
-          <div class="header-left">
-            <div class="logo">
-              <a href="index.html" class="header-logo-2" aria-label="careerfutures">
-                <img src="assets/img/logo/black-logo.svg" loading="lazy" decoding="async" alt="logo-img"
-                  style="width: 200px" />
-              </a>
-            </div>
-            <div class="mean__menu-wrapper">
-              <div class="main-menu">
-                <nav id="mobile-menu">
-                  <ul>
-                    <li class="has-dropdown">
-                      <a href="index.html" aria-label="careerfutures">Home</a>
-                    </li>
-                    <li>
-                      <a href="about.html" aria-label="careerfutures">About Us</a>
-                    </li>
-                    <li class="has-dropdown">
-                      <a href="top-btech-colleges.html" aria-label="careerfutures">Study in India </a>
-                      <ul class="submenu">
-                        <li><a href="top-btech-colleges.html" aria-label="careerfutures">B.tech</a></li>
-                        <li><a href="top-MBBS-colleges.html" aria-label="careerfutures">MBBS</a></li>
-                        <li><a href="MBBS-pg-cources.html" aria-label="careerfutures">MBBS (PG)</a></li>
-                        <li><a href="top-mba-colleges.html" aria-label="careerfutures">MBA</a></li>
-                        <li>
-                          <a href="top-bsc-agriculture-colleges.html" aria-label="careerfutures">Bsc
-                            Agriculture</a>
-                        </li>
-                        <li><a href="top-law-colleges.html" aria-label="careerfutures">LAW</a></li>
-                        <li>
-                          <a href="top-bds-mds-colleges.html" aria-label="careerfutures"
-                            aria-label="careerfutures">BDS-MDS</a>
-                        </li>
-                      </ul>
-                    </li>
-                    <li>
-                      <a href="coming-soon.html" aria-label="careerfutures">Study in Abroad</a>
-                      <ul class="submenu">
-                        <li><a href="country-list.html" aria-label="careerfutures">Mbbs In Nepal</a></li>
-                        <li>
-                          <a href="coming-soon.html" aria-label="careerfutures">Mbbs In Russia</a>
-                        </li>
-                        <li>
-                          <a href="coming-soon.html" aria-label="careerfutures">Mbbs In Ukraine</a>
-                        </li>
-                        <li>
-                          <a href="coming-soon.html" aria-label="careerfutures">Mbbs In Kyrgyzstan</a>
-                        </li>
-                        <li>
-                          <a href="coming-soon.html" aria-label="careerfutures">Mbbs In Philippines</a>
-                        </li>
-                        <li>
-                          <a href="coming-soon.html" aria-label="careerfutures">Mbbs In Bangladesh</a>
-                        </li>
-                      </ul>
-                    </li>
-                    <li>
-                      <a href="news-grid.html" aria-label="careerfutures">Blog</a>
-                    </li>
-                    <li>
-                      <a href="contact.html" aria-label="careerfutures">Contact Us</a>
-                    </li>
-                  </ul>
-                </nav>
-              </div>
-            </div>
-          </div>
-          <div class="header-right d-flex align-items-center mt-0">
-            <div class="header-call-item">
-              <a href="https://wa.me/919090660999?text=Hello%20I%20am%20interested%20in%20career%20guidance.%0ACan%20I%20get%20a%20free%20consultation%3F"
-                class="theme-btn" target="_blank" aria-label="careerfutures">
-                Contact Us
-                <i class="fa-brands fa-whatsapp"></i>
-              </a>
-              <div class="header__hamburger my-auto">
-                <div class="sidebar__toggle">
-                  <i class="fa-solid fa-bars-staggered"></i>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </header>
+  <!-- Reusable Header -->
+  <div id="site-header"></div>
+  <script src="assets/js/header-component.js"></script>
+
 
   <!--Hero Section Start -->
   <main role="main">
@@ -336,14 +247,9 @@
                       from initial application to addmission, ensuring a smooth,
                       hassle-free journey.
                     </p>
-                    <div class="hero-button">
-                      <a href="https://wa.me/919090660999?text=Hello%20I%20am%20interested%20in%20career%20guidance.%0ACan%20I%20get%20a%20free%20consultation%3F"
-                        class="theme-btn" target="_blank">
+                    <div class="hero-button" style="margin-top: 30px;">
+                      <a class="theme-btn hero-contact-popup" aria-label="careerfutures">
                         Contact Us
-                        <i class="fa-brands fa-whatsapp"></i>
-                      </a>
-                      <a href="contact.html" class="theme-btn style-2">
-                        Enquiry now
                         <i class="fa-solid fa-arrow-right"></i>
                       </a>
                     </div>
@@ -365,14 +271,9 @@
                       from initial application to addmission, ensuring a smooth,
                       hassle-free journey.
                     </p>
-                    <div class="hero-button">
-                      <a href="https://wa.me/919090660999?text=Hello%20I%20am%20interested%20in%20career%20guidance.%0ACan%20I%20get%20a%20free%20consultation%3F"
-                        class="theme-btn" target="_blank" aria-label="careerfutures">
+                    <div class="hero-button" style="margin-top: 30px;">
+                      <a class="theme-btn hero-contact-popup" aria-label="careerfutures">
                         Contact Us
-                        <i class="fa-brands fa-whatsapp"></i>
-                      </a>
-                      <a href="contact.html" class="theme-btn style-2" aria-label="careerfutures">
-                        Enquiry now
                         <i class="fa-solid fa-arrow-right"></i>
                       </a>
                     </div>
@@ -598,11 +499,12 @@
                   </li>
                 </ul>
               </div>
-              <a href="https://wa.me/919090660999?text=Hello%20I%20am%20interested%20in%20career%20guidance.%0ACan%20I%20get%20a%20free%20consultation%3F"
-                class="theme-btn" target="_blank" aria-label="careerfutures">
-                Contact Us
-                <i class="fa-brands fa-whatsapp"></i>
-              </a>
+              <div class="hero-button" style="margin-top: 30px;">
+                <a class="theme-btn hero-contact-popup" aria-label="careerfutures">
+                  Contact Us
+                  <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -668,11 +570,12 @@
                   </p>
                 </div>
               </div>
-              <a href="https://wa.me/919090660999?text=Hello%20I%20am%20interested%20in%20career%20guidance.%0ACan%20I%20get%20a%20free%20consultation%3F"
-                class="theme-btn" target="_blank" aria-label="careerfutures">
-                Contact Us
-                <i class="fa-brands fa-whatsapp"></i>
-              </a>
+              <div class="hero-button" style="margin-top: 30px;">
+                <a class="theme-btn hero-contact-popup" aria-label="careerfutures">
+                  Contact Us
+                  <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </div>
             </div>
           </div>
           <div class="col-lg-6">
@@ -1198,11 +1101,12 @@
                 universities, courses, and national education options to
                 achieve your academic goals confidently.
               </p>
-              <a href="https://wa.me/919090660999?text=Hello%20I%20am%20interested%20in%20career%20guidance.%0ACan%20I%20get%20a%20free%20consultation%3F"
-                class="theme-btn" target="_blank" aria-label="careerfutures">
-                Contact Us
-                <i class="fa-brands fa-whatsapp"></i>
-              </a>
+              <div class="hero-button" style="margin-top: 30px;">
+                <a class="theme-btn hero-contact-popup" aria-label="careerfutures">
+                  Contact Us
+                  <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </div>
             </div>
           </div>
           <div class="col-lg-7">
@@ -1416,6 +1320,7 @@
   <script src="assets/js/SplitText.min.js"></script>
   <!--<< Main.js >>-->
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/enquiry-popup.js"></script>
 </body>
 
 </html>
