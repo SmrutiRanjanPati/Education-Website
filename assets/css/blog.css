@@ -9,11 +9,11 @@
     :root {
       --ink: #0f0f0f;
       --ink-light: #444;
-      --ink-muted: #888;
+      --ink-muted: #5a5a5a;
       --paper: #faf9f6;
       --paper-warm: #f2efe8;
       --rule: #e0dbd0;
-      --accent: #c0392b;
+      --accent: #1A7A1A;
       --accent-2: #1a3c6e;
       --serif: 'Playfair Display', Georgia, serif;
       --sans: 'DM Sans', sans-serif;
@@ -83,7 +83,7 @@
     /* ── HERO BANNER ── */
     .blog-hero {
       background: var(--ink);
-      color: #fff;
+      color: var(--rule);
       padding: 72px 40px 60px;
       text-align: center;
       position: relative;

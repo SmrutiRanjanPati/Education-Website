@@ -9,11 +9,11 @@
     :root {
         --ink: #0f0f0f;
         --ink-light: #444;
-        --ink-muted: #888;
+        --ink-muted: #5a5a5a;
         --paper: #faf9f6;
         --paper-warm: #f2efe8;
         --rule: #e0dbd0;
-        --accent: #c0392b;
+        --accent: #1A7A1A;
         --accent-2: #1a3c6e;
         --serif: 'Playfair Display', Georgia, serif;
         --sans: 'DM Sans', sans-serif;
@@ -95,8 +95,8 @@
 
     .article-category {
         display: inline-block;
-        font-size: 10px;
-        font-weight: 700;
+        font-size: 12px;
+        font-family: var(--sans);
         letter-spacing: 2.5px;
         text-transform: uppercase;
         color: var(--accent);
