@@ -799,6 +799,70 @@
         display: block;
     }
 
+    .cf-image-float-hero {
+        position: absolute;
+        top: -55px;
+        right: -28px;
+        background: #2c6143;
+        border-radius: 16px;
+        padding: 16px 20px;
+        box-shadow: var(--shadow);
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        min-width: 200px;
+        transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+
+        /* Floating Animation */
+        animation: floatHero 3s ease-in-out infinite;
+    }
+
+    .cf-image-float-hero:hover {
+        transform: translateY(-6px);
+        box-shadow: var(--shadow-lg);
+        background-color: var(--green-dk);
+    }
+
+    /* Floating Keyframes */
+    @keyframes floatHero {
+        0% {
+            transform: translateY(0px);
+        }
+
+        50% {
+            transform: translateY(-10px);
+        }
+
+        100% {
+            transform: translateY(0px);
+        }
+    }
+
+    .cf-image-float-icon {
+        width: 44px;
+        height: 44px;
+        background: var(--green-lt);
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+        color: var(--green);
+        flex-shrink: 0;
+    }
+
+    .cf-image-float-hero strong {
+        font-size: 22px;
+        font-weight: 900;
+        color: var(--gold);
+    }
+
+    .cf-image-float-hero span {
+        font-size: 12px;
+        color: var(--paper);
+        display: block;
+    }
+
     /* Rating badge */
     .cf-rating-badge {
         position: absolute;
@@ -1271,6 +1335,10 @@
         }
 
         .cf-image-float {
+            display: none;
+        }
+
+        .cf-image-float-hero {
             display: none;
         }
 
