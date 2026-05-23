@@ -43,7 +43,7 @@
 
 /* Header */
 .enquiry-modal-header {
-  background: linear-gradient(135deg, #1a3c6e 0%, #2563b0 100%);
+  background: linear-gradient(125deg, #044d04 0%, #31a731 100%);
   padding: 25px 25px;
   position: relative;
 }
@@ -135,7 +135,7 @@ Body .enquiry-modal-body {
 .enquiry-form-group textarea {
   width: 100%;
   padding: 12px 16px;
-  border: 1.5px solid #e5e7eb;
+  border: 1.5px solid #cbcbcb;
   border-radius: 10px;
   font-size: 14px;
   color: #1f2937;
@@ -148,7 +148,7 @@ Body .enquiry-modal-body {
 
 .enquiry-form-group input:focus,
 .enquiry-form-group textarea:focus {
-  border-color: #2563b0;
+  border-color: #1a7a1a;
   background: #fff;
   box-shadow: 0 0 0 3px rgba(37, 99, 176, 0.1);
 }
@@ -156,7 +156,7 @@ Body .enquiry-modal-body {
 .enquiry-form-group input[readonly] {
   background: #f0f4ff;
   border-color: #c7d6f5;
-  color: #3b5ea6;
+  color: #1a7a1a;
   cursor: not-allowed;
   font-weight: 500;
 }
@@ -177,7 +177,7 @@ Body .enquiry-modal-body {
 .enquiry-submit-btn {
   width: 100%;
   padding: 14px 24px;
-  background: linear-gradient(135deg, #1a3c6e 0%, #2563b0 100%);
+  background: linear-gradient(45deg, #044d04 0%, #31a731 100%);
   color: #fff;
   border: none;
   border-radius: 10px;
@@ -196,7 +196,7 @@ Body .enquiry-modal-body {
 .enquiry-submit-btn:hover:not(:disabled) {
   opacity: 0.92;
   transform: translateY(-1px);
-  box-shadow: 0 8px 24px rgba(37, 99, 176, 0.35);
+  box-shadow: 0 8px 24px rgba(37, 176, 42, 0.35);
 }
 
 .enquiry-submit-btn:disabled {
@@ -265,7 +265,7 @@ Body .enquiry-modal-body {
 .enquiry-thankyou h4 {
   font-size: 22px;
   font-weight: 800;
-  color: #064e3b;
+  color: #064e2a;
   margin: 0 0 10px;
 }
 
