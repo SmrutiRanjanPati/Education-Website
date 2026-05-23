@@ -1306,11 +1306,11 @@
         }
 
         .cf-hero-badge {
-            font-size: 8px;
+            font-size: 10px;
         }
 
         .cf-hero-desc {
-            font-size: 12px;
+            font-size: 13px;
         }
 
         .cf-proof-strip {
@@ -1323,4 +1323,11 @@
             border-radius: 10px;
             letter-spacing: 1px;
         }
+    }
+
+    @media (max-width: 352px) {
+        .cf-hero-badge {
+            font-size: 8px;
+        }
+
     }
