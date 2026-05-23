@@ -4108,7 +4108,7 @@ span {
 
 .header-top-wrapper .header-left .list li i {
   margin-right: 12px;
-  color: var(--theme);
+   color: var(--white);
 }
 
 .header-top-wrapper .header-left .list li.style-2 {
