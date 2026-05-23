@@ -731,8 +731,8 @@
               <i class="fa-solid fa-phone"></i>
               ${PHONE}
             </a>
-            <a class="h-cta-btn hero-contact-popup" aria-label="Get Free Guidance">
-              Get Free Guidance
+            <a class="h-cta-btn hero-contact-popup" aria-label="Get Free Consultation">
+              Get Free Consultation
               <span class="h-cta-icon"><i class="fa-solid fa-arrow-right"></i></span>
             </a>
             <button class="h-hamburger" id="h-hamburger-btn" aria-label="Open menu">
