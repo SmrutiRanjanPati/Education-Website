@@ -5,6 +5,16 @@ document.addEventListener("DOMContentLoaded", function () {
         yearElement.textContent = new Date().getFullYear();
     }
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    const currentYear = new Date().getFullYear();
+
+    document.querySelectorAll(".year").forEach(function (element) {
+        element.textContent = currentYear;
+    });
+});
+
+
 (function ($) {
   "use strict";
   const $documentOn = $(document);

@@ -106,15 +106,13 @@ button {
   background-color: transparent;
   padding: 0;
 }
-
+/* 
 input:focus {
   color: var(--white);
   outline: none;
-}
+} */
 
-input {
-  color: var(--white);
-}
+/* x */
 
 h1,
 h2,
