@@ -937,11 +937,26 @@ img {
   gap: 6px;
 }
 
-.dashboard-dots span {
+.dashboard-dots .close {
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background: rgba(255, 255, 255, 0.35);
+  background: #FF605C;
+
+}
+.dashboard-dots .minimize {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #FFBD44;
+
+}
+.dashboard-dots .maximize {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #00CA4E;
+
 }
 
 .dashboard-title {
