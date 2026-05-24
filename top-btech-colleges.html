@@ -76,37 +76,37 @@
 
   <main role="main">
 
-  <!-- ══════════════════════════════════════
+    <!-- ══════════════════════════════════════
          TRUST TICKER BAR
     ══════════════════════════════════════ -->
-  <div class="trust-bar" aria-hidden="true">
-    <div class="trust-bar-inner">
-      <!-- duplicated for seamless loop -->
-      <div class="trust-bar-item"><i class="fa-solid fa-circle-check"></i> 1 Lakh+ Students Counselled</div>
-      <div class="trust-bar-dot"></div>
-      <div class="trust-bar-item"><i class="fa-solid fa-circle-check"></i> 500+ Partner Colleges</div>
-      <div class="trust-bar-dot"></div>
-      <div class="trust-bar-item"><i class="fa-solid fa-circle-check"></i> 10+ Years Experience</div>
-      <div class="trust-bar-dot"></div>
-      <div class="trust-bar-item"><i class="fa-solid fa-circle-check"></i> Free Counselling Available</div>
-      <div class="trust-bar-dot"></div>
-      <div class="trust-bar-item"><i class="fa-solid fa-circle-check"></i> MBBS · MBA · B.Tech · LAW · BDS</div>
-      <div class="trust-bar-dot"></div>
-      <div class="trust-bar-item"><i class="fa-solid fa-circle-check"></i> Study Abroad Guidance</div>
-      <div class="trust-bar-dot"></div>
-      <div class="trust-bar-item"><i class="fa-solid fa-circle-check"></i> 1 Lakh+ Students Counselled</div>
-      <div class="trust-bar-dot"></div>
-      <div class="trust-bar-item"><i class="fa-solid fa-circle-check"></i> 500+ Partner Colleges</div>
-      <div class="trust-bar-dot"></div>
-      <div class="trust-bar-item"><i class="fa-solid fa-circle-check"></i> 10+ Years Experience</div>
-      <div class="trust-bar-dot"></div>
-      <div class="trust-bar-item"><i class="fa-solid fa-circle-check"></i> Free Counselling Available</div>
-      <div class="trust-bar-dot"></div>
-      <div class="trust-bar-item"><i class="fa-solid fa-circle-check"></i> MBBS · MBA · B.Tech · LAW · BDS</div>
-      <div class="trust-bar-dot"></div>
-      <div class="trust-bar-item"><i class="fa-solid fa-circle-check"></i> Study Abroad Guidance</div>
+    <div class="trust-bar" aria-hidden="true">
+      <div class="trust-bar-inner">
+        <!-- duplicated for seamless loop -->
+        <div class="trust-bar-item"><i class="fa-solid fa-circle-check"></i> 1 Lakh+ Students Counselled</div>
+        <div class="trust-bar-dot"></div>
+        <div class="trust-bar-item"><i class="fa-solid fa-circle-check"></i> 500+ Partner Colleges</div>
+        <div class="trust-bar-dot"></div>
+        <div class="trust-bar-item"><i class="fa-solid fa-circle-check"></i> 10+ Years Experience</div>
+        <div class="trust-bar-dot"></div>
+        <div class="trust-bar-item"><i class="fa-solid fa-circle-check"></i> Free Counselling Available</div>
+        <div class="trust-bar-dot"></div>
+        <div class="trust-bar-item"><i class="fa-solid fa-circle-check"></i> MBBS · MBA · B.Tech · LAW · BDS</div>
+        <div class="trust-bar-dot"></div>
+        <div class="trust-bar-item"><i class="fa-solid fa-circle-check"></i> Study Abroad Guidance</div>
+        <div class="trust-bar-dot"></div>
+        <div class="trust-bar-item"><i class="fa-solid fa-circle-check"></i> 1 Lakh+ Students Counselled</div>
+        <div class="trust-bar-dot"></div>
+        <div class="trust-bar-item"><i class="fa-solid fa-circle-check"></i> 500+ Partner Colleges</div>
+        <div class="trust-bar-dot"></div>
+        <div class="trust-bar-item"><i class="fa-solid fa-circle-check"></i> 10+ Years Experience</div>
+        <div class="trust-bar-dot"></div>
+        <div class="trust-bar-item"><i class="fa-solid fa-circle-check"></i> Free Counselling Available</div>
+        <div class="trust-bar-dot"></div>
+        <div class="trust-bar-item"><i class="fa-solid fa-circle-check"></i> MBBS · MBA · B.Tech · LAW · BDS</div>
+        <div class="trust-bar-dot"></div>
+        <div class="trust-bar-item"><i class="fa-solid fa-circle-check"></i> Study Abroad Guidance</div>
+      </div>
     </div>
-  </div>
 
     <!-- ════════════════════════════
          HERO / BREADCRUMB
@@ -443,7 +443,8 @@
                  data-name="${college.name.toLowerCase()}"
                  data-location="${college.location.toLowerCase()}"
                  data-badge="${college.badge}"
-                 data-fee="${parseFee(college.fee)}">
+                 data-fee="${parseFee(college.fee)}"
+                data-course="${BTECH_PAGE.course}">
           <div class="pg-card-img">
             <img src="${college.image}" loading="lazy"
                  alt="${college.name} — B.Tech College in ${college.location}"
@@ -457,7 +458,8 @@
             <p class="pg-card-location">
               <i class="fa-solid fa-location-dot"></i>${college.location}
             </p>
-            <div class="pg-card-highlights">${highlights}</div>
+             
+            <div class="pg-card-highlights">${highlights}</div>    
             <div class="pg-card-footer">
               <div>
                 <div class="pg-card-fee">${college.fee}</div>
@@ -492,12 +494,15 @@
 
       // Search
       if (currentSearch.trim()) {
-        const q = currentSearch.toLowerCase();
-        colleges = colleges.filter(c =>
-          c.name.toLowerCase().includes(q) ||
-          c.location.toLowerCase().includes(q) ||
-          c.shortName.toLowerCase().includes(q)
-        );
+        const words = currentSearch.toLowerCase().trim().split(/\s+/);
+        colleges = colleges.filter(c => {
+          const haystack = [
+            c.name.toLowerCase(),
+            c.location.toLowerCase(),
+            c.shortName.toLowerCase(),
+          ].join(" ");
+          return words.every(word => haystack.includes(word));
+        });
       }
 
       // Sort
@@ -524,12 +529,20 @@
         btn.classList.add("active");
         currentFilter = btn.dataset.filter;
         renderColleges();
+
+        // ← Responsive offset based on screen width
+        const width = window.innerWidth;
+        const offset = width <= 640 ? 340 : width <= 1024 ? 250 : 230;
+
+        const grid = document.getElementById("collegesGrid");
+        const top = grid.getBoundingClientRect().top + window.pageYOffset - offset;
+        window.scrollTo({ top: top, behavior: "smooth" });
       });
     });
 
     /* -- Search -- */
     document.getElementById("collegeSearch").addEventListener("input", e => {
-      currentSearch = e.target.value;
+      currentSearch = e.target.value.trim().replace(/\s+/g, " ");
       renderColleges();
     });
 

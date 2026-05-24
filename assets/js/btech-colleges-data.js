@@ -11,6 +11,7 @@ const BTECH_PAGE = {
   description: "Explore India's best B.Tech engineering colleges with fees, rankings, and expert admission guidance. Get free counselling from Career Futures.",
   heroImage:   "assets/img/inner-page/breadcrumb.webp",
   introImage:  "assets/img/inner-page/intro.webp",
+  course:      "B.Tech",
   stats: [
     { number: "4,322+", label: "B.Tech Colleges" },
     { number: "1L+",    label: "Students Guided" },
