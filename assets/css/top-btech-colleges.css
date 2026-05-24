@@ -246,7 +246,7 @@ img {
   background: var(--white);
   border-bottom: 1px solid var(--rule);
   position: sticky;
-  top: 0px;
+  top: 72px;
   z-index: 100;
   box-shadow: 0 2px 12px rgba(10, 26, 10, 0.06);
 }
