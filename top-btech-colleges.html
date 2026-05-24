@@ -76,14 +76,37 @@
 
   <main role="main">
 
-    <!-- ════════════════════════════
-         TRUST TICKER
-    ════════════════════════════ -->
-    <div class="pg-ticker" aria-hidden="true">
-      <div class="pg-ticker-track" id="tickerTrack">
-        <!-- Injected by JS -->
-      </div>
+  <!-- ══════════════════════════════════════
+         TRUST TICKER BAR
+    ══════════════════════════════════════ -->
+  <div class="trust-bar" aria-hidden="true">
+    <div class="trust-bar-inner">
+      <!-- duplicated for seamless loop -->
+      <div class="trust-bar-item"><i class="fa-solid fa-circle-check"></i> 1 Lakh+ Students Counselled</div>
+      <div class="trust-bar-dot"></div>
+      <div class="trust-bar-item"><i class="fa-solid fa-circle-check"></i> 500+ Partner Colleges</div>
+      <div class="trust-bar-dot"></div>
+      <div class="trust-bar-item"><i class="fa-solid fa-circle-check"></i> 10+ Years Experience</div>
+      <div class="trust-bar-dot"></div>
+      <div class="trust-bar-item"><i class="fa-solid fa-circle-check"></i> Free Counselling Available</div>
+      <div class="trust-bar-dot"></div>
+      <div class="trust-bar-item"><i class="fa-solid fa-circle-check"></i> MBBS · MBA · B.Tech · LAW · BDS</div>
+      <div class="trust-bar-dot"></div>
+      <div class="trust-bar-item"><i class="fa-solid fa-circle-check"></i> Study Abroad Guidance</div>
+      <div class="trust-bar-dot"></div>
+      <div class="trust-bar-item"><i class="fa-solid fa-circle-check"></i> 1 Lakh+ Students Counselled</div>
+      <div class="trust-bar-dot"></div>
+      <div class="trust-bar-item"><i class="fa-solid fa-circle-check"></i> 500+ Partner Colleges</div>
+      <div class="trust-bar-dot"></div>
+      <div class="trust-bar-item"><i class="fa-solid fa-circle-check"></i> 10+ Years Experience</div>
+      <div class="trust-bar-dot"></div>
+      <div class="trust-bar-item"><i class="fa-solid fa-circle-check"></i> Free Counselling Available</div>
+      <div class="trust-bar-dot"></div>
+      <div class="trust-bar-item"><i class="fa-solid fa-circle-check"></i> MBBS · MBA · B.Tech · LAW · BDS</div>
+      <div class="trust-bar-dot"></div>
+      <div class="trust-bar-item"><i class="fa-solid fa-circle-check"></i> Study Abroad Guidance</div>
     </div>
+  </div>
 
     <!-- ════════════════════════════
          HERO / BREADCRUMB
@@ -374,31 +397,6 @@
   <script src="assets/js/btech-colleges-data.js"></script>
 
   <script>
-    /* ════════════════════════════════
-       PAGE INIT — reads from data file
-    ════════════════════════════════ */
-
-    /* -- Ticker -- */
-    const TICKER_ITEMS = [
-      "4,322+ B.Tech Colleges Listed",
-      "Free Admission Counselling",
-      "JEE / BITSAT / VITEEE Guidance",
-      "Scholarship Support Available",
-      "1 Lakh+ Students Counselled",
-      "500+ Partner Colleges",
-      "Direct Seat Booking",
-      "NRI & Management Quota Help",
-    ];
-
-    (function buildTicker() {
-      const track = document.getElementById("tickerTrack");
-      const items = [...TICKER_ITEMS, ...TICKER_ITEMS].map(t =>
-        `<span class="pg-ticker-item"><i class="fa-solid fa-circle-check"></i>${t}</span>
-         <span class="pg-ticker-dot"></span>`
-      ).join("");
-      track.innerHTML = items;
-    })();
-
     /* -- Hero stats -- */
     (function buildStats() {
       const wrap = document.getElementById("heroStats");
