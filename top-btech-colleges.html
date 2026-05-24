@@ -59,8 +59,6 @@
   </script>
 
   <!-- Stylesheets -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
   <link rel="stylesheet" href="assets/css/all.min.css" />
   <link rel="stylesheet" href="assets/css/animate.css" />
@@ -353,14 +351,22 @@
   <div id="site-footer"></div>
   <script src="assets/js/footer-component.js"></script>
 
-  <!-- Scripts -->
+  <!-- ══════════════════════════════════════
+       SCRIPTS
+  ══════════════════════════════════════ -->
   <script src="assets/js/jquery-3.7.1.min.js"></script>
+  <script src="assets/js/viewport.jquery.js"></script>
   <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/jquery.waypoints.js"></script>
+  <script src="assets/js/odometer.min.js"></script>
   <script src="assets/js/swiper-bundle.min.js"></script>
+  <script src="assets/js/jquery.meanmenu.min.js"></script>
+  <script src="assets/js/jquery.magnific-popup.min.js"></script>
   <script src="assets/js/wow.min.js"></script>
   <script src="assets/js/gsap.js"></script>
   <script src="assets/js/lenis.min.js"></script>
   <script src="assets/js/ScrollTrigger.min.js"></script>
+  <script src="assets/js/SplitText.min.js"></script>
   <script src="assets/js/main.js"></script>
   <script src="assets/js/enquiry-popup.js"></script>
 
@@ -403,15 +409,20 @@
         </div>
       `).join("");
     })();
-    (function buildStats() {
+    document.addEventListener("DOMContentLoaded", () => {
+
       const wrap = document.getElementById("heroStats2");
+
+      if (!wrap) return;
+
       wrap.innerHTML = BTECH_PAGE.stats.map(s => `
-        <div class="pg-hero-stat">
-          <strong>${s.number}</strong>
-          <span>${s.label}</span>
-        </div>
-      `).join("");
-    })();
+    <div class="pg-hero-stat">
+      <strong>${s.number}</strong>
+      <span>${s.label}</span>
+    </div>
+  `).join("");
+
+    });
 
     /* -- Fee parser for sorting -- */
     function parseFee(feeStr) {
@@ -532,6 +543,8 @@
 
     /* -- Initial render -- */
     renderColleges();
+
+
   </script>
 
 </body>
