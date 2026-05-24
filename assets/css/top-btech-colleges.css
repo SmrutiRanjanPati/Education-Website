@@ -413,6 +413,7 @@ img {
   gap: 12px;
   flex-wrap: wrap;
   flex-shrink: 0;
+  margin-bottom: 20px;
 }
 
 .pg-btn {
@@ -896,343 +897,259 @@ img {
 
 
 
-/* =========================================
-   HERO VISUAL DESIGN
-========================================= */
-
-.hero-visual {
-  position: relative;
-  width: 100%;
-  max-width: 600px;
-  height: 500px;
-  margin-left: auto;
-}
-
-/* Glow */
-
-.hero-glow {
-  position: absolute;
-  width: 350px;
-  height: 350px;
-  background: #4caf50;
-  border-radius: 50%;
-  filter: blur(140px);
-  opacity: 0.18;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-/* Main Dashboard */
-
-.dashboard-top {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 28px;
-}
-
-.dashboard-dots {
-  display: flex;
-  gap: 6px;
-}
-
-.dashboard-dots .close {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background: #FF605C;
-
-}
-.dashboard-dots .minimize {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background: #FFBD44;
-
-}
-.dashboard-dots .maximize {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background: #00CA4E;
-
-}
-
-.dashboard-title {
-  color: #fff;
-  font-size: 15px;
-  font-weight: 600;
-  letter-spacing: 0.5px;
-}
-
-/* Stats */
-
-.dashboard-content {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 18px;
-}
-
-.dashboard-stat {
-  padding: 20px;
-  border-radius: 20px;
-  background: rgba(255, 255, 255, 0.04);
-  border: 1px solid rgba(255, 255, 255, 0.06);
-}
-
-.dashboard-stat h3 {
-  color: #4caf50;
-  font-size: 32px;
-  margin-bottom: 8px;
-  font-weight: 700;
-  font-family: var(--serif);
-}
-
-.dashboard-stat p {
-  color: rgba(255, 255, 255, 0.75);
-  font-size: 14px;
-  line-height: 1.5;
-  font-family: var(--serif);
-}
-
-/* Graph */
-
-.graph-area {
-  position: relative;
-  margin-top: 28px;
-  height: 80px;
-  border-radius: 16px;
-  background: rgba(255, 255, 255, 0.03);
-  overflow: hidden;
-}
-
-.graph-line {
-  position: absolute;
-  inset: 0;
-  border-radius: inherit;
-
-  background: linear-gradient(90deg,
-      transparent 0%,
-      rgba(76, 175, 80, 0.08) 20%,
-      rgba(76, 175, 80, 0.35) 50%,
-      rgba(76, 175, 80, 0.08) 80%,
-      transparent 100%);
-
-  background-size: 200% 100%;
-  animation: smoothFlow 6s linear infinite;
-}
-
-.floating-card i {
-  width: 44px;
-  height: 44px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 12px;
-  background: rgba(76, 175, 80, 0.15);
-  color: #4caf50;
-  font-size: 18px;
-}
-
-.floating-card h4 {
-  color: #fff;
-  font-size: 15px;
-  margin-bottom: 4px;
-}
-
-.floating-card p {
-  color: rgba(255, 255, 255, 0.65);
-  font-size: 12px;
-}
-
-/* Card Positions */
-
-.floating-card-1 {
-  top: 40px;
-  right: -20px;
-}
-
-.floating-card-2 {
-  bottom: 70px;
-  left: -30px;
-  animation-delay: 1s;
-}
-
-.floating-card-3 {
-  bottom: -10px;
-  right: 30px;
-  animation-delay: 2s;
-}
 
 
-/* =========================
-   MAIN DASHBOARD CARD
-   ========================= */
-
-.dashboard-card {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 430px;
-  padding: 24px;
-  border-radius: 28px;
-  background: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  box-shadow:0 10px 40px rgba(0, 0, 0, 0.35),inset 0 1px 0 rgba(255, 255, 255, 0.05);
-  /* Faster + smoother */
-  animation: floatCard 4.5s ease-in-out infinite;
-  will-change: transform;
-  transform-style: preserve-3d;
-  backface-visibility: hidden;
-}
 
 
-/* =========================
-   FLOATING MINI CARDS
-   ========================= */
-
-.floating-card {
-  position: absolute;
-  display: flex;
-  align-items: center;
-  gap: 14px;
-  padding: 16px 18px;
-  border-radius: 18px;
-  background: rgba(255, 255, 255, 0.08);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  box-shadow:0 10px 30px rgba(0, 0, 0, 0.2);
-  /* Faster floating */
-  animation: floatSmall 3.5s ease-in-out infinite;
-  will-change: transform;
-  transform-style: preserve-3d;
-  backface-visibility: hidden;
-}
 
 
-/* =========================
-   NATURAL FLOAT DELAYS
-   ========================= */
-
-.floating-card:nth-child(1) {
-  animation-delay: 0s;
-}
-
-.floating-card:nth-child(2) {
-  animation-delay: -1s;
-}
-
-.floating-card:nth-child(3) {
-  animation-delay: -2s;
-}
-
-.floating-card:nth-child(4) {
-  animation-delay: -1.5s;
-}
 
 
-/* =========================
-   FLOAT ANIMATIONS
-   ========================= */
-
-@keyframes floatCard {
-
-  0%,
-  100% {
-    transform: translate3d(-50%, -50%, 0);
-  }
-
-  50% {
-    transform: translate3d(-50%, calc(-50% - 14px), 0);
-  }
-}
-
-@keyframes floatSmall {
-
-  0%,
-  100% {
-    transform: translate3d(0, 0, 0);
-  }
-
-  50% {
-    transform: translate3d(0, -10px, 0);
-  }
-}
 
 
-@keyframes smoothFlow {
-  from {
-    background-position: 200% 0;
-  }
 
-  to {
-    background-position: -200% 0;
-  }
-}
 
-/* Responsive */
 
-@media (max-width: 992px) {
 
+
+
+
+
+
+
+
+
+
+
+
+ 
+  /* ── HERO VISUAL WRAPPER ── */
   .hero-visual {
-    margin: 0px auto 0;
-    height: 330px;
+    position: relative;
+    width: 580px;
+    height: 500px;
   }
-
+ 
+  /* ── GLOW ── */
+  .hero-glow {
+    position: absolute;
+    width: 380px;
+    height: 380px;
+    background: radial-gradient(circle, rgba(76,175,80,0.28) 0%, transparent 70%);
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    will-change: opacity;
+  }
+ 
+  /* ── MAIN DASHBOARD CARD ── */
   .dashboard-card {
-    width: 100%;
-    max-width: 340px;
-    height: 330px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 420px;
+    padding: 22px 22px 20px;
+    border-radius: 24px;
+    background: rgba(255,255,255,0.06);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+    border: 1px solid rgba(255,255,255,0.09);
+    box-shadow:
+      0 20px 60px rgba(0,0,0,0.45),
+      0 0 0 0.5px rgba(255,255,255,0.04) inset;
+    animation: floatCard 5s ease-in-out infinite;
+    will-change: transform;
+    transform: translate(-50%, -50%);
   }
-
-  .floating-card {
-    transform: scale(0.9);
-  }
-
-  .graph-area {
-    display: none;
-  }
-
-  .floating-card {
-    display: none;
-  }
-
-}
-
-@media (max-width: 768px) {
-  .pg-hero-content {
-    width: 100%;
-  }
-
-  .hero-visual {
-    display: none;
-  }
-
-  .dashboard-card {
-    display: none;
-  }
-
-  .dashboard-content {
-    gap: 12px;
-  }
-
-  .dashboard-stat h3 {
-    font-size: 24px;
-  }
-
-  .floating-card {
-    display: none;
-  }
-
-  .pg-hero-stats {
-    gap: 12px;
+ 
+  /* ── TITLEBAR ── */
+  .dashboard-top {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 22px;
   }
-}
+ 
+  .dashboard-dots {
+    display: flex;
+    gap: 6px;
+  }
+ 
+  .dot {
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+  }
+  .dot.close    { background: #FF5F57; }
+  .dot.minimize { background: #FFBD2E; }
+  .dot.maximize { background: #28CA41; }
+ 
+  .dashboard-title {
+    color: rgba(255,255,255,0.9);
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+  }
+ 
+  /* ── STAT GRID ── */
+  .dashboard-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+  }
+ 
+  .dashboard-stat {
+    padding: 18px 16px;
+    border-radius: 16px;
+    background: rgba(255,255,255,0.045);
+    border: 1px solid rgba(255,255,255,0.07);
+  }
+ 
+  .dashboard-stat h3 {
+    color: #4caf50;
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 6px;
+    line-height: 1;
+    font-style: italic;
+    letter-spacing: -0.5px;
+  }
+ 
+  .dashboard-stat p {
+    color: rgba(255,255,255,0.6);
+    font-size: 13px;
+    line-height: 1.4;
+    font-weight: 500;
+  }
+ 
+  /* ── GRAPH AREA ── */
+  .graph-area {
+    position: relative;
+    margin-top: 18px;
+    height: 56px;
+    border-radius: 14px;
+    background: rgba(255,255,255,0.03);
+    overflow: hidden;
+  }
+ 
+  .graph-line {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      90deg,
+      transparent 0%,
+      rgba(76,175,80,0.06) 15%,
+      rgba(76,175,80,0.3) 50%,
+      rgba(76,175,80,0.06) 85%,
+      transparent 100%
+    );
+    background-size: 250% 100%;
+    animation: smoothFlow 5s linear infinite;
+    will-change: background-position;
+  }
+ 
+  /* ── FLOATING MINI CARDS ── */
+  .floating-card {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 13px 16px;
+    border-radius: 16px;
+    background: rgba(20, 60, 35, 0.82);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(76,175,80,0.18);
+    box-shadow: 0 8px 28px rgba(0,0,0,0.35);
+    white-space: nowrap;
+    will-change: transform;
+  }
+ 
+  .floating-card .fc-icon {
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 11px;
+    background: rgba(76,175,80,0.18);
+    color: #4caf50;
+    font-size: 17px;
+  }
+ 
+  .floating-card h4 {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 3px;
+  }
+ 
+  .floating-card p {
+    color: rgba(255,255,255,0.55);
+    font-size: 12px;
+    line-height: 1;
+  }
+ 
+  /* ── CARD POSITIONS ── */
+  /* Top-right: Top Ranked */
+  .floating-card-1 {
+    top: 18px;
+    right: -10px;
+    animation: floatSmall1 4.5s ease-in-out infinite;
+  }
+ 
+  /* Bottom-left: Direct Admission */
+  .floating-card-2 {
+    bottom: 90px;
+    left: -18px;
+    animation: floatSmall2 4.8s ease-in-out infinite;
+    animation-delay: -1.6s;
+  }
+ 
+  /* Bottom-right: Free Guidance */
+  .floating-card-3 {
+    bottom: 10px;
+    right: 20px;
+    animation: floatSmall3 4.2s ease-in-out infinite;
+    animation-delay: -0.8s;
+  }
+ 
+  /* ── ANIMATIONS ── */
+  @keyframes floatCard {
+    0%, 100% { transform: translate(-50%, -50%) translateY(0px); }
+    50%       { transform: translate(-50%, -50%) translateY(-12px); }
+  }
+ 
+  @keyframes floatSmall1 {
+    0%, 100% { transform: translateY(0px); }
+    50%       { transform: translateY(-9px); }
+  }
+ 
+  @keyframes floatSmall2 {
+    0%, 100% { transform: translateY(0px); }
+    50%       { transform: translateY(-8px); }
+  }
+ 
+  @keyframes floatSmall3 {
+    0%, 100% { transform: translateY(0px); }
+    50%       { transform: translateY(-10px); }
+  }
+ 
+  @keyframes smoothFlow {
+    0%   { background-position: 200% 0; }
+    100% { background-position: -200% 0; }
+  }
+ 
+  /* ── RESPONSIVE ── */
+  @media (max-width: 992px) {
+    .hero-visual { width: 100%; max-width: 380px; height: 340px; }
+    .dashboard-card { width: 92%; max-width: 330px; }
+    .graph-area, .floating-card { display: none; }
+  }
+ 
+  @media (max-width: 768px) {
+    .hero-visual { display: none; }
+  }
