@@ -12,7 +12,7 @@
     { label: "Home", href: "index.html", submenu: [] },
     { label: "About Us", href: "about.html", submenu: [] },
     {
-      label: "Study in India", href: "top-btech-colleges.html",
+      label: "Study in India", href: "study-in-india.html",
       submenu: [
         { label: "B.Tech", href: "top-btech-colleges.html" },
         { label: "MBBS", href: "top-MBBS-colleges.html" },
@@ -508,7 +508,7 @@
         transition: background 0.18s, color 0.18s;
       }
 
-      .h-drawer-sub a::before { content: '–'; color: var(--h-green); font-weight: 700; }
+      .h-drawer-sub a::before { content: '-'; color: var(--h-green); font-weight: 700; }
       .h-drawer-sub a:hover { background: var(--h-green-lt); color: var(--h-green); }
 
       .h-drawer-footer {

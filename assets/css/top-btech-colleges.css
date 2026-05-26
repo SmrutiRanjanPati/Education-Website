@@ -195,7 +195,7 @@ img {
   font-size: clamp(28px, 5vw, 56px);
   font-weight: 900;
   color: #fff;
-  line-height: 1.1;
+  line-height: 1.5;
   letter-spacing: -0.5px;
   margin-bottom: 16px;
 }

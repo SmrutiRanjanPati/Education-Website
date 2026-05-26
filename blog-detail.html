@@ -70,7 +70,7 @@
     } else {
 
       /* Update page title */
-      // document.title = `${post.title} – Career Future`;
+      // document.title = `${post.title} - Career Future`;
 
       /* Build paragraphs — middle one gets pull-quote style */
       const paraHTML = post.paragraphs.map((p, i) => {
@@ -160,7 +160,7 @@
     }
 
     function shareWhatsApp() {
-      const text = encodeURIComponent(`${post?.title} – ${window.location.href}`);
+      const text = encodeURIComponent(`${post?.title} - ${window.location.href}`);
       window.open(`https://wa.me/?text=${text}`, "_blank");
     }
 
