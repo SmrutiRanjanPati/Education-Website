@@ -24,7 +24,7 @@
       ]
     },
     {
-      label: "Study Abroad", href: "coming-soon.html",
+      label: "Study Abroad", href: "study-abroad.html",
       submenu: [
         { label: "MBBS in Nepal", href: "mbbs-in-nepal.html" },
         { label: "MBBS in Russia", href: "coming-soon.html" },
