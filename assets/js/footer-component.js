@@ -8,7 +8,7 @@
 (function () {
   "use strict";
 
-  /* ── CONFIG — edit here only ── */
+  /* ── CONFIG - edit here only ── */
   const CONFIG = {
     logo: "assets/img/logo/white-logo.svg",
     logoAlt: "Career Future Logo",
@@ -38,7 +38,7 @@
       { label: "BDS / MDS", href: "top-bds-mds-colleges.html" },
     ],
     studyAbroad: [
-      { label: "MBBS in Nepal", href: "country-list.html" },
+      { label: "MBBS in Nepal", href: "mbbs-in-nepal.html" },
       { label: "MBBS in Russia", href: "coming-soon.html" },
       { label: "MBBS in Ukraine", href: "coming-soon.html" },
       { label: "MBBS in Kyrgyzstan", href: "coming-soon.html" },

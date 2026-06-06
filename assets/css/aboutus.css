@@ -141,7 +141,7 @@ a {
 }
 
 
-/* Hero right — stats card */
+/* Hero right - stats card */
 .cf-hero-card {
   background: rgba(255, 255, 255, 0.06);
   backdrop-filter: blur(20px);
@@ -495,7 +495,7 @@ a {
 
 .trust-bar {
   background: #0a1a0a;
-  padding: 14px 0;
+  padding: 8px 0;
   overflow: hidden;
 }
 
@@ -1052,7 +1052,7 @@ a {
 }
 
 /* ══════════════════════════════════════
-   LEAD CAPTURE FORM — MAIN CTA
+   LEAD CAPTURE FORM - MAIN CTA
 ══════════════════════════════════════ */
 .cta-section {
   background: linear-gradient(135deg, var(--green-900) 0%, var(--green-700) 100%);

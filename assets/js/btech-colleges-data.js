@@ -100,7 +100,7 @@ const BTECH_COLLEGES = [
     location: "Bhubaneswar, Odisha",
     fee: "₹ 1,98,500/-",
     image: "assets/img/home-1/news/iit-bhubaneswar-768x384.webp",
-    badge: "IIT — Premier",
+    badge: "IIT - Premier",
     badgeColor: "#c0392b",
     highlights: ["JEE Advanced", "Central Government", "Top Placements"],
     featured: true,

@@ -1,5 +1,5 @@
 /* =============================================
-   TOP B.TECH COLLEGES PAGE — STYLES
+   TOP B.TECH COLLEGES PAGE - STYLES
    ============================================= */
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Playfair+Display:wght@700;900&display=swap');
@@ -60,7 +60,7 @@ img {
     ══════════════════════════════════════ */
 .trust-bar {
   background: var(--dark);
-  padding: 14px 0;
+  padding: 8px 0;
   overflow: hidden;
 }
 
@@ -249,7 +249,7 @@ img {
   background: var(--white);
   border-bottom: 1px solid var(--rule);
   position: sticky;
-  top: 72px;
+  top: 60px;
   z-index: 100;
   box-shadow: 0 2px 12px rgba(10, 26, 10, 0.06);
 }
@@ -678,7 +678,7 @@ img {
   font-size: 15px;
   font-weight: 800;
   color: var(--ink);
-  font-family: var(--serif);
+  font-family: var(--sans);
 }
 
 .pg-card-fee-label {

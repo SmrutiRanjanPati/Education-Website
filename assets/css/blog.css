@@ -188,7 +188,7 @@
       padding: 56px 40px;
     }
 
-    /* Featured post (first one — big) */
+    /* Featured post (first one - big) */
     .featured-post {
       display: grid;
       grid-template-columns: 1fr 1fr;

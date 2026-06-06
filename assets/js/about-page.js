@@ -37,7 +37,7 @@
   };
 
   /* =============================================
-     ABOUT PAGE INLINE FORM — GOOGLE SHEETS SUBMIT
+     ABOUT PAGE INLINE FORM - GOOGLE SHEETS SUBMIT
   ============================================= */
   const SHEET_URL =
     "https://script.google.com/macros/s/AKfycbxjMzheqLjwG1CFRTS-P9_tlXJtwNXFw8tlYyP_fAdvauMCGPrjg2pYf10ElhEG-cMXQw/exec";

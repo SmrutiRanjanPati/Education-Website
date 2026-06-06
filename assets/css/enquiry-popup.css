@@ -44,7 +44,7 @@
 /* Header */
 .enquiry-modal-header {
   background: linear-gradient(125deg, #044d04 0%, #31a731 100%);
-  padding: 25px 25px;
+  padding: 15px 25px;
   position: relative;
 }
 
@@ -108,12 +108,12 @@
 }
 
 Body .enquiry-modal-body {
-  padding: 25px 25px;
+  padding: 15px 15px;
 }
 
 /* Form Fields */
 .enquiry-form-group {
-  margin-bottom: 18px;
+  margin-bottom: 10px;
 }
 
 .enquiry-form-group label {

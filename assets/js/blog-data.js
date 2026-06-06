@@ -35,7 +35,7 @@ const BLOG_DATA = [
     image: "assets/img/blogs/mba-admissions.webp",
     excerpt: "From CAT scores to GD-PI rounds, we break down the complete MBA admission process for top B-schools in India for the 2026 batch.",
     paragraphs: [
-      "The MBA admission season in India is highly competitive, with over 2 lakh students appearing for CAT every year. The top IIMs — Ahmedabad, Bangalore, Calcutta, and Lucknow — typically require a CAT percentile above 99 for a call. However, institutes like XLRI, FMS Delhi, and MDI Gurgaon offer equally rewarding programs with slightly different selection criteria.",
+      "The MBA admission season in India is highly competitive, with over 2 lakh students appearing for CAT every year. The top IIMs - Ahmedabad, Bangalore, Calcutta, and Lucknow - typically require a CAT percentile above 99 for a call. However, institutes like XLRI, FMS Delhi, and MDI Gurgaon offer equally rewarding programs with slightly different selection criteria.",
       "Beyond CAT scores, most premier B-schools evaluate candidates on academic consistency, work experience, extracurricular achievements, and performance in Group Discussions and Personal Interviews. A well-rounded profile often outweighs a marginally higher test score. Building your profile two years before applying significantly improves your chances.",
       "Choosing between a 1-year and 2-year MBA program is another critical decision. Programs like ISB Hyderabad's PGP or IIM Ahmedabad's PGPX are designed for experienced professionals, while the traditional 2-year PGP suits fresh graduates. Evaluate ROI, average placement salaries, and industry connections before committing to any program."
     ]
@@ -65,7 +65,7 @@ const BLOG_DATA = [
     paragraphs: [
       "The choice between a 3-year LLB and a 5-year integrated BA LLB (or BBA LLB, B.Com LLB) depends largely on when you decide to pursue law. If you are a Class 12 student with a clear interest in the legal profession, the 5-year integrated program at top National Law Universities (NLUs) is the gold standard. The CLAT examination is your gateway to these prestigious institutions.",
       "For graduates from other disciplines who discover a passion for law later, the 3-year LLB program is ideal. Universities like Delhi University's Faculty of Law, Symbiosis Law School, and Amity Law School offer excellent 3-year programs with strong moot court traditions and internship pipelines with leading law firms and courts.",
-      "Career paths after law are incredibly diverse. You can practice as an advocate in district courts, High Courts, or the Supreme Court; join a corporate law firm; work in-house for a company's legal department; pursue judicial services; or enter academia. The Bar Council of India requires all law graduates to enroll with their respective State Bar Council before practicing — a crucial step that many overlook during their academic years."
+      "Career paths after law are incredibly diverse. You can practice as an advocate in district courts, High Courts, or the Supreme Court; join a corporate law firm; work in-house for a company's legal department; pursue judicial services; or enter academia. The Bar Council of India requires all law graduates to enroll with their respective State Bar Council before practicing - a crucial step that many overlook during their academic years."
     ]
   },
   {
@@ -89,11 +89,11 @@ const BLOG_DATA = [
     date: "April 14, 2026",
     author: "Career Future Team",
     image: "assets/img/home-1/news/soa-ins-1024x505.webp",
-    excerpt: "Cracking JEE Main and Advanced requires more than hard work — it demands a smart strategy. Here's how to plan your preparation for B.Tech admissions in 2026.",
+    excerpt: "Cracking JEE Main and Advanced requires more than hard work - it demands a smart strategy. Here's how to plan your preparation for B.Tech admissions in 2026.",
     paragraphs: [
       "JEE Main 2026 will be conducted in two sessions, and your best score across both sessions will be considered for admission to NITs, IIITs, and other centrally funded technical institutes. For IIT admissions, you need to qualify JEE Advanced, which is among the toughest entrance examinations in the world. Only the top 2.5 lakh JEE Main qualifiers are eligible to appear for JEE Advanced.",
       "Subject-wise, Physics and Mathematics form the backbone of JEE preparation. Chemistry, though often underestimated, can be a scoring subject that significantly boosts your overall percentile. Consistent practice of previous year papers, mock tests, and concept clarity over rote learning is the recipe followed by most top rankers.",
-      "Beyond IITs and NITs, private institutions like BITS Pilani, VIT Vellore, Manipal Institute of Technology, and SRM University offer excellent B.Tech programs with strong placement records. These colleges conduct their own entrance exams (BITSAT, VITEEE, MET) and are excellent alternatives for students who narrowly miss the IIT/NIT cutoffs. Don't limit your options — explore all avenues."
+      "Beyond IITs and NITs, private institutions like BITS Pilani, VIT Vellore, Manipal Institute of Technology, and SRM University offer excellent B.Tech programs with strong placement records. These colleges conduct their own entrance exams (BITSAT, VITEEE, MET) and are excellent alternatives for students who narrowly miss the IIT/NIT cutoffs. Don't limit your options - explore all avenues."
     ]
   },
   {
@@ -103,11 +103,11 @@ const BLOG_DATA = [
     date: "April 14, 2026",
     author: "Career Future Team",
     image: "assets/img/home-1/MBA/Pune-Institute-of-Business-Management-Pune.webp",
-    excerpt: "Cracking JEE Main and Advanced requires more than hard work — it demands a smart strategy. Here's how to plan your preparation for B.Tech admissions in 2026.",
+    excerpt: "Cracking JEE Main and Advanced requires more than hard work - it demands a smart strategy. Here's how to plan your preparation for B.Tech admissions in 2026.",
     paragraphs: [
       "JEE Main 2026 will be conducted in two sessions, and your best score across both sessions will be considered for admission to NITs, IIITs, and other centrally funded technical institutes. For IIT admissions, you need to qualify JEE Advanced, which is among the toughest entrance examinations in the world. Only the top 2.5 lakh JEE Main qualifiers are eligible to appear for JEE Advanced.",
       "Subject-wise, Physics and Mathematics form the backbone of JEE preparation. Chemistry, though often underestimated, can be a scoring subject that significantly boosts your overall percentile. Consistent practice of previous year papers, mock tests, and concept clarity over rote learning is the recipe followed by most top rankers.",
-      "Beyond IITs and NITs, private institutions like BITS Pilani, VIT Vellore, Manipal Institute of Technology, and SRM University offer excellent B.Tech programs with strong placement records. These colleges conduct their own entrance exams (BITSAT, VITEEE, MET) and are excellent alternatives for students who narrowly miss the IIT/NIT cutoffs. Don't limit your options — explore all avenues."
+      "Beyond IITs and NITs, private institutions like BITS Pilani, VIT Vellore, Manipal Institute of Technology, and SRM University offer excellent B.Tech programs with strong placement records. These colleges conduct their own entrance exams (BITSAT, VITEEE, MET) and are excellent alternatives for students who narrowly miss the IIT/NIT cutoffs. Don't limit your options - explore all avenues."
     ]
   }
 ];

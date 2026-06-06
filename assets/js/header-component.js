@@ -26,7 +26,7 @@
     {
       label: "Study Abroad", href: "coming-soon.html",
       submenu: [
-        { label: "MBBS in Nepal", href: "coming-soon.html" },
+        { label: "MBBS in Nepal", href: "mbbs-in-nepal.html" },
         { label: "MBBS in Russia", href: "coming-soon.html" },
         { label: "MBBS in Ukraine", href: "coming-soon.html" },
         { label: "MBBS in Kyrgyzstan", href: "coming-soon.html" },
@@ -186,7 +186,7 @@
 
       .h-header-inner {
         padding: 0 40px;
-        height: 72px;
+        height: 60px;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -392,7 +392,7 @@
 
       .h-cta-btn:hover .h-cta-icon { transform: translateX(3px); }
 
-      /* Hamburger — hidden on desktop */
+      /* Hamburger - hidden on desktop */
       .h-hamburger {
         display: none;
         width: 40px; height: 40px;
@@ -538,7 +538,7 @@
         flex-shrink: 0;
       }
 
-      /* Mobile CTA — full width, icon only on small screens */
+      /* Mobile CTA - full width, icon only on small screens */
       .h-drawer-cta {
         display: flex;
         align-items: center;
@@ -801,7 +801,7 @@
       document.body.style.overflow = "";
     }
 
-    /* Only our hamburger button opens the drawer — NOT the theme's sidebar__toggle */
+    /* Only our hamburger button opens the drawer - NOT the theme's sidebar__toggle */
     openBtn?.addEventListener("click", openDrawer);
     closeBtn?.addEventListener("click", closeDrawer);
     overlay?.addEventListener("click", closeDrawer);

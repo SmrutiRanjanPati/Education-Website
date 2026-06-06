@@ -177,7 +177,7 @@
     ══════════════════════════════════════ */
     .trust-bar {
         background: var(--dark);
-        padding: 14px 0;
+        padding: 8px 0;
         overflow: hidden;
     }
 
@@ -416,7 +416,7 @@
         font-size: 14px;
     }
 
-    /* Hero right — stats card */
+    /* Hero right - stats card */
     .cf-hero-card {
         background: rgba(255, 255, 255, 0.06);
         backdrop-filter: blur(20px);
@@ -533,7 +533,7 @@
     .cf-proof-item {
         display: flex;
         align-items: center;
-        gap: 12px;
+        gap: 8px;
     }
 
     .cf-proof-icon {
@@ -551,7 +551,7 @@
 
     .cf-proof-text strong {
         display: block;
-        font-size: 20px;
+        font-size: 15px;
         font-weight: 800;
         color: var(--ink);
         letter-spacing: 1px;
@@ -560,7 +560,7 @@
     }
 
     .cf-proof-text span {
-        font-size: 12px;
+        font-size: 10px;
         color: var(--muted);
         font-weight: 500;
     }

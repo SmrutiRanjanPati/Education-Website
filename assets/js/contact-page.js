@@ -56,7 +56,7 @@
   };
 
   /* =============================================
-     CONTACT FORM — GOOGLE SHEETS SUBMIT
+     CONTACT FORM - GOOGLE SHEETS SUBMIT
   ============================================= */
   window.handleContactSubmit = async function () {
     const btn      = document.getElementById("ct-submit");
