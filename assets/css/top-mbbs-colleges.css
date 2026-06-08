@@ -92,6 +92,49 @@ img {
   background: rgba(255, 255, 255, 0.15);
 }
 
+/* Hero stats */
+.pg-hero-stats {
+  display: none;
+}
+
+@media (max-width: 640px) {
+ .pg-hero-stats {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-top: 24px;
+}
+.pg-hero-stat {
+  text-align: center;
+  padding: 10px 14px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: var(--radius);
+  min-width: 110px;
+}
+.pg-hero-stat strong {
+  display: block;
+  font-family: var(--serif);
+  font-size: 26px;
+  font-weight: 900;
+  color: #4caf50;
+  line-height: 1;
+  margin-bottom: 4px;
+}
+.pg-hero-stat span {
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.55);
+  font-weight: 500;
+}
+
+}
+.pg-inline-cta-actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  flex-shrink: 0;
+  margin-bottom: 20px;
+}
 /* ══════════════════════════════════
    HERO SEGMENT ARCHITECTURE
    ══════════════════════════════════ */

@@ -524,10 +524,10 @@
 
     <script>
       /* -- Synchronized Hero Stats Mapping Injection loop -- */
-      (function injectStatsModule() {
-        const targetBox = document.getElementById("heroStats");
-        if (targetBox && typeof MBBS_PG_CONFIG !== "undefined") {
-          targetBox.innerHTML = MBBS_PG_CONFIG.stats
+      (function initStatsDeck() {
+        const wrapBox = document.getElementById("heroStats");
+        if (wrapBox && typeof MBBS_PG_CONFIG !== "undefined") {
+          wrapBox.innerHTML = MBBS_PG_CONFIG.stats
             .map(
               (s) => `
           <div class="pg-hero-stat">

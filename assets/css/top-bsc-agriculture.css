@@ -150,8 +150,14 @@ ul {
   margin-bottom: 32px;
 }
 
-/* Hero Analytics Dynamic Numbers Section Counters */
+
+/* Hero stats */
 .pg-hero-stats {
+  display: none;
+}
+
+@media (max-width: 640px) {
+ .pg-hero-stats {
   display: flex;
   gap: 16px;
   flex-wrap: wrap;
@@ -178,6 +184,15 @@ ul {
   font-size: 11px;
   color: rgba(255, 255, 255, 0.55);
   font-weight: 500;
+}
+
+}
+.pg-inline-cta-actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  flex-shrink: 0;
+  margin-bottom: 20px;
 }
 
 /* ══════════════════════════════════
