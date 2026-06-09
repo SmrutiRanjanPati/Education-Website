@@ -43,7 +43,9 @@
   const PHONE_HREF = "tel:+919090660999";
   const EMAIL = "info@careerfutures.in";
   const EMAIL_HREF = "mailto:info@careerfutures.in";
-  const ADDRESS = "2nd floor, Above Uco Bank, Khandagiri Marg Near Kolothia NH5, Bhubaneswar, Odisha";
+  const ADDRESS1 = "Khandagiri, Bhubaneswar";
+  const ADDRESS2 = "Mayur Vihar, New Delhi";
+  const ADDRESS3 = "Golapalli, Brahmapur,";
 
   /* ── INJECT STYLES ── */
   function injectStyles() {
@@ -705,12 +707,17 @@
           </div>
           <div class="h-topbar-divider"></div>
           <div class="h-topbar-item">
-            <i class="fa-solid fa-location-dot"></i>
-            <span>${ADDRESS}</span>
+              <i class="fa-solid fa-location-dot"></i>
+            <span>${ADDRESS1}</span>
+              <i class="fa-solid fa-location-dot"></i>
+            <span>${ADDRESS2}</span>
+              <i class="fa-solid fa-location-dot"></i>
+            <span>${ADDRESS3}</span>
           </div>
         </div>
         <div class="h-topbar-right">
           <a href="#" class="h-topbar-social" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="#" class="h-topbar-social" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
           <a href="#" class="h-topbar-social" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
           <a href="#" class="h-topbar-social" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
           <a href="#" class="h-topbar-social" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
