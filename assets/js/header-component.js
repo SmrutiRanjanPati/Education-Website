@@ -45,7 +45,7 @@
   const EMAIL_HREF = "mailto:info@careerfutures.in";
   const ADDRESS1 = "Khandagiri, Bhubaneswar";
   const ADDRESS2 = "Mayur Vihar, New Delhi";
-  const ADDRESS3 = "Golapalli, Brahmapur,";
+  const ADDRESS3 = "Golapalli, Brahmapur";
 
   /* ── INJECT STYLES ── */
   function injectStyles() {
