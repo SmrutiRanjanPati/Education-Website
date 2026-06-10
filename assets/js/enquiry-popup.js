@@ -163,7 +163,7 @@
     `;
 
     document.body.appendChild(overlay);
-    attachModalEvents(overlay);
+    attachModalEvents();
   }
 
   function openModal(collegeName, courseName) {
@@ -192,6 +192,26 @@
     document.body.style.overflow = "";
   }
 
+  /* ── CRITICAL FIX: OUTSIDE BACKGROUND CLICK DISMISSED FROM EVENT BINDINGS ── */
+  function attachModalEvents() {
+    document.getElementById("enquiry-close").addEventListener("click", closeModal);
+    document.getElementById("enquiry-popup-form").addEventListener("submit", handleEnquirySubmit);
+
+    document.getElementById("enq-mobile").addEventListener("input", function () {
+      this.value = this.value.replace(/[^0-9]/g, "");
+      this.style.borderColor = "";
+    });
+
+    document.getElementById("enq-captcha-input").addEventListener("input", function () {
+      this.value = this.value.replace(/[^0-9]/g, "");
+      this.style.borderColor = "";
+    });
+
+    document.querySelectorAll("#enquiry-popup-form input, #enquiry-popup-form textarea").forEach((el) => {
+      el.addEventListener("input", function () { this.style.borderColor = ""; });
+    });
+  }
+
   function resetModal() {
     const form = document.getElementById("enquiry-popup-form");
     if (!form) return;
@@ -211,26 +231,6 @@
     const errorPanel = document.getElementById("enq-error-msg");
     errorPanel.classList.remove("show");
     errorPanel.textContent = "";
-  }
-
-  function attachModalEvents(overlay) {
-    document.getElementById("enquiry-close").addEventListener("click", closeModal);
-    overlay.addEventListener("click", function (e) { if (e.target === overlay) closeModal(); });
-    document.getElementById("enquiry-popup-form").addEventListener("submit", handleEnquirySubmit);
-
-    document.getElementById("enq-mobile").addEventListener("input", function () {
-      this.value = this.value.replace(/[^0-9]/g, "");
-      this.style.borderColor = "";
-    });
-
-    document.getElementById("enq-captcha-input").addEventListener("input", function () {
-      this.value = this.value.replace(/[^0-9]/g, "");
-      this.style.borderColor = "";
-    });
-
-    document.querySelectorAll("#enquiry-popup-form input, #enquiry-popup-form textarea").forEach((el) => {
-      el.addEventListener("input", function () { this.style.borderColor = ""; });
-    });
   }
 
   async function handleEnquirySubmit(e) {
@@ -357,7 +357,7 @@
     `;
 
     document.body.appendChild(overlay);
-    attachContactModalEvents(overlay);
+    attachContactModalEvents();
   }
 
   function openContactModal() {
@@ -372,6 +372,26 @@
   function closeContactModal() {
     document.getElementById("contact-popup-overlay").classList.remove("active");
     document.body.style.overflow = "";
+  }
+
+  /* ── CRITICAL FIX: OUTSIDE BACKGROUND CLICK DISMISSED FROM EVENT BINDINGS ── */
+  function attachContactModalEvents() {
+    document.getElementById("contact-popup-close").addEventListener("click", closeContactModal);
+    document.getElementById("contact-popup-form").addEventListener("submit", handleContactSubmit);
+
+    document.getElementById("cp-mobile").addEventListener("input", function () {
+      this.value = this.value.replace(/[^0-9]/g, "");
+      this.style.borderColor = "";
+    });
+
+    document.getElementById("cp-captcha-input").addEventListener("input", function () {
+      this.value = this.value.replace(/[^0-9]/g, "");
+      this.style.borderColor = "";
+    });
+
+    document.querySelectorAll("#contact-popup-form input, #contact-popup-form textarea").forEach((el) => {
+      el.addEventListener("input", function () { this.style.borderColor = ""; });
+    });
   }
 
   function resetContactModal() {
@@ -393,26 +413,6 @@
     const errorPanel = document.getElementById("cp-error-msg");
     errorPanel.classList.remove("show");
     errorPanel.textContent = "";
-  }
-
-  function attachContactModalEvents(overlay) {
-    document.getElementById("contact-popup-close").addEventListener("click", closeContactModal);
-    overlay.addEventListener("click", function (e) { if (e.target === overlay) closeContactModal(); });
-    document.getElementById("contact-popup-form").addEventListener("submit", handleContactSubmit);
-
-    document.getElementById("cp-mobile").addEventListener("input", function () {
-      this.value = this.value.replace(/[^0-9]/g, "");
-      this.style.borderColor = "";
-    });
-
-    document.getElementById("cp-captcha-input").addEventListener("input", function () {
-      this.value = this.value.replace(/[^0-9]/g, "");
-      this.style.borderColor = "";
-    });
-
-    document.querySelectorAll("#contact-popup-form input, #contact-popup-form textarea").forEach((el) => {
-      el.addEventListener("input", function () { this.style.borderColor = ""; });
-    });
   }
 
   async function handleContactSubmit(e) {
@@ -534,7 +534,7 @@
 
         <div class="enquiry-thankyou" id="welcome-popup-thankyou">
           <div class="enquiry-thankyou-icon"><i class="fa-solid fa-check"></i></div>
-          <h4>Thank You! 🎉</h4>
+          <h4>Profile Logged Successfully! 🚀</h4>
           <p>Our senior counselor will map out your application and contact you directly.</p>
           <span class="enquiry-countdown" id="wel-countdown">Closing window in 2s...</span>
         </div>
@@ -542,7 +542,7 @@
     `;
 
     document.body.appendChild(overlay);
-    attachWelcomeModalEvents(overlay);
+    attachWelcomeModalEvents();
   }
 
   function openWelcomeModal() {
@@ -560,6 +560,26 @@
     document.getElementById("welcome-popup-overlay").classList.remove("active");
     document.body.style.overflow = "";
     sessionStorage.setItem("cf_welcome_modal_dismissed", "true");
+  }
+
+  /* ── CRITICAL FIX: OUTSIDE BACKGROUND CLICK DISMISSED FROM EVENT BINDINGS ── */
+  function attachWelcomeModalEvents() {
+    document.getElementById("welcome-popup-close").addEventListener("click", closeWelcomeModal);
+    document.getElementById("welcome-popup-form").addEventListener("submit", handleWelcomeSubmit);
+
+    document.getElementById("wel-mobile").addEventListener("input", function () {
+      this.value = this.value.replace(/[^0-9]/g, "");
+      this.style.borderColor = "";
+    });
+
+    document.getElementById("wel-captcha-input").addEventListener("input", function () {
+      this.value = this.value.replace(/[^0-9]/g, "");
+      this.style.borderColor = "";
+    });
+
+    document.querySelectorAll("#welcome-popup-form input, #welcome-popup-form textarea").forEach((el) => {
+      el.addEventListener("input", function () { this.style.borderColor = ""; });
+    });
   }
 
   function resetWelcomeModal() {
@@ -581,26 +601,6 @@
     const errorPanel = document.getElementById("wel-error-msg");
     errorPanel.classList.remove("show");
     errorPanel.textContent = "";
-  }
-
-  function attachWelcomeModalEvents(overlay) {
-    document.getElementById("welcome-popup-close").addEventListener("click", closeWelcomeModal);
-    overlay.addEventListener("click", function (e) { if (e.target === overlay) closeWelcomeModal(); });
-    document.getElementById("welcome-popup-form").addEventListener("submit", handleWelcomeSubmit);
-
-    document.getElementById("wel-mobile").addEventListener("input", function () {
-      this.value = this.value.replace(/[^0-9]/g, "");
-      this.style.borderColor = "";
-    });
-
-    document.getElementById("wel-captcha-input").addEventListener("input", function () {
-      this.value = this.value.replace(/[^0-9]/g, "");
-      this.style.borderColor = "";
-    });
-
-    document.querySelectorAll("#welcome-popup-form input, #welcome-popup-form textarea").forEach((el) => {
-      el.addEventListener("input", function () { this.style.borderColor = ""; });
-    });
   }
 
   async function handleWelcomeSubmit(e) {
@@ -626,16 +626,16 @@
 
     errorMsg.classList.remove("show");
     btn.disabled = true;
-    btn.innerHTML = '<span class="spinner"></span> Response Submitting...';
+    btn.innerHTML = '<span class="spinner"></span> Logging Profile...';
 
     const payload = {
-      source: "Auto Trigger Welcome Lead",
+      source: "Auto Trigger Welcome Modal Launchpad Line",
       full_name: welcomeDataMap.fullName,
       email_id: welcomeDataMap.email,
       mobile_number: welcomeDataMap.mobile,
       enquiry_details: welcomeDataMap.details,
-      college_name: "-",
-      course_name: "-"
+      college_name: "Instant Welcome Lead",
+      course_name: "Awaiting Assessment Routing"
     };
 
     try {
@@ -704,7 +704,7 @@
       if (!enqActive && !cpActive) {
         openWelcomeModal();
       }
-    }, 3000);
+    }, 2000);
 
     document.body.addEventListener("click", function (e) {
       const enquiryTrigger = e.target.closest(".enquiry-now");
@@ -743,9 +743,12 @@
     document.addEventListener("keydown", function(e) {
       if (e.key === "Escape") {
         const welOverlay = document.getElementById("welcome-popup-overlay");
-        if (welOverlay && welOverlay.classList.contains("active")) {
-          closeWelcomeModal();
-        }
+        const enqOverlay = document.getElementById("enquiry-overlay");
+        const cpOverlay = document.getElementById("contact-popup-overlay");
+        
+        if (welOverlay && welOverlay.classList.contains("active")) closeWelcomeModal();
+        if (enqOverlay && enqOverlay.classList.contains("active")) closeModal();
+        if (cpOverlay && cpOverlay.classList.contains("active")) closeContactModal();
       }
     });
   }
