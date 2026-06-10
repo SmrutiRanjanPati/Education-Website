@@ -634,8 +634,8 @@
       email_id: welcomeDataMap.email,
       mobile_number: welcomeDataMap.mobile,
       enquiry_details: welcomeDataMap.details,
-      college_name: "Instant Welcome Lead",
-      course_name: "Awaiting Assessment Routing"
+      college_name: "-",
+      course_name: "-"
     };
 
     try {
