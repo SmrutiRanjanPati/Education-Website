@@ -86,16 +86,14 @@
     }
 
     .cf-heading-title {
-        font-family: var(--serif);
-        font-size: clamp(18px, 2vw, 30px);
+        font-size: clamp(20px, 1vw, 24px);
         font-weight: 700;
         line-height: 1.15;
         letter-spacing: 0.5px;
-        color: var(--paper);
+        color: var(--dark);
     }
 
     .cf-heading {
-        font-family: var(--serif);
         font-size: clamp(28px, 4vw, 48px);
         font-weight: 900;
         line-height: 1.15;
@@ -185,7 +183,7 @@
        TRUST BAR
     ══════════════════════════════════════ */
     .trust-bar {
-        background: var(--dark);
+        background:#e6e6e6;
         padding: 8px 0;
         overflow: hidden;
     }
@@ -214,7 +212,7 @@
         gap: 8px;
         font-size: 13px;
         font-weight: 600;
-        color: rgba(255, 255, 255, 0.85);
+        color: #000000;
         white-space: nowrap;
         flex-shrink: 0;
     }
@@ -241,7 +239,7 @@
         display: flex;
         align-items: center;
         overflow: hidden;
-        background: linear-gradient(135deg, #051005 0%, #0a1a0a 40%, #0d2a0d 100%);
+        background: var(--paper);
     }
 
     .cf-hero-bg {
@@ -309,12 +307,12 @@
         gap: 8px;
         background: rgba(26, 122, 26, 0.2);
         border: 1px solid rgba(76, 175, 80, 0.4);
-        color: #81c784;
-        font-size: 12px;
+        color: var(--green);
+        font-size: 11px;
         font-weight: 600;
         letter-spacing: 1px;
         text-transform: uppercase;
-        padding: 7px 16px;
+        padding: 0px 10px;
         border-radius: 50px;
         margin-bottom: 28px;
         animation: fade-in-up 0.6s ease both;
@@ -324,18 +322,17 @@
         width: 6px;
         height: 6px;
         border-radius: 50%;
-        background: #4caf50;
+        background: var(--green);
         animation: pulse-dot 1.5s ease infinite;
         flex-shrink: 0;
     }
 
     .cf-hero-title {
-        font-family: var(--serif);
         font-size: clamp(33px, 6vw, 60px);
         font-weight: 900;
         line-height: 1.3;
         letter-spacing: 0px;
-        color: #fff;
+        color: var(--dark);
         margin-bottom: 16px;
         animation: fade-in-up 0.7s ease 0.1s both;
     }
@@ -346,21 +343,10 @@
         position: relative;
     }
 
-    .cf-hero-title em::after {
-        content: '';
-        position: absolute;
-        bottom: -4px;
-        left: 0;
-        right: 0;
-        height: 3px;
-        background: linear-gradient(90deg, #4caf50, #81c784);
-        border-radius: 2px;
-    }
-
     .cf-hero-desc {
         font-size: 17px;
         line-height: 1.75;
-        color: rgba(255, 255, 255, 0.7);
+        color: var(--dark);
         max-width: 560px;
         margin-bottom: 36px;
         animation: fade-in-up 0.7s ease 0.2s both;
@@ -416,7 +402,7 @@
         align-items: center;
         gap: 8px;
         font-size: 13px;
-        color: rgba(255, 255, 255, 0.65);
+        color: var(--dark);
         font-weight: 500;
     }
 
@@ -427,7 +413,7 @@
 
     /* Hero right - stats card */
     .cf-hero-card {
-        background: rgba(255, 255, 255, 0.06);
+        background: var(--green-dk);
         backdrop-filter: blur(20px);
         border: 1px solid rgba(255, 255, 255, 0.1);
         border-radius: 20px;
@@ -439,7 +425,6 @@
     }
 
     .cf-hero-card-title {
-        font-family: var(--serif);
         font-size: 20px;
         font-weight: 700;
         color: #fff;
@@ -450,7 +435,7 @@
     }
 
     .cf-hero-card-title i {
-        color: #4caf50;
+        color: var(--paper);
     }
 
     .cf-stat-grid {
@@ -469,11 +454,10 @@
     }
 
     .cf-stat-num {
-        font-family: var(--serif);
-        /* font-family: var(--sans); */
+        font-family: var(--sans);
         font-size: 28px;
         font-weight: 900;
-        color: #4caf50;
+        color: var(--paper);
         line-height: 1;
         letter-spacing: 2px;
         margin-bottom: 4px;
@@ -482,7 +466,7 @@
     .cf-stat-label {
         font-size: 12px;
         letter-spacing: 1px;
-        color: rgba(255, 255, 255, 0.6);
+        color: var(--paper);
         font-weight: 500;
     }
 
@@ -494,8 +478,8 @@
 
     .cf-course-pill {
         background: rgba(76, 175, 80, 0.15);
-        border: 1px solid rgba(76, 175, 80, 0.3);
-        color: #81c784;
+        border: 1px solid var(--paper);
+        color: var(--paper);
         font-size: 11px;
         font-weight: 700;
         letter-spacing: 0.5px;
@@ -656,7 +640,6 @@
     }
 
     .cf-course-card-title {
-        font-family: var(--serif);
         font-size: 17px;
         font-weight: 700;
         color: var(--ink);
@@ -787,7 +770,7 @@
     .cf-image-float-icon {
         width: 44px;
         height: 44px;
-        background: var(--green-lt);
+        background: var(--green);
         border-radius: 10px;
         display: flex;
         align-items: center;
@@ -813,7 +796,7 @@
         position: absolute;
         top: -55px;
         right: -28px;
-        background: #2c6143;
+        background: #ffffffbd;
         border-radius: 16px;
         padding: 16px 20px;
         box-shadow: var(--shadow);
@@ -851,13 +834,13 @@
     .cf-image-float-icon {
         width: 44px;
         height: 44px;
-        background: var(--green-lt);
+        background: var(--green);
         border-radius: 10px;
         display: flex;
         align-items: center;
         justify-content: center;
         font-size: 20px;
-        color: var(--green);
+        color: var(--paper);
         flex-shrink: 0;
     }
 
@@ -868,16 +851,18 @@
     }
 
     .cf-image-float-hero span {
+        font-weight: 700;
         font-size: 12px;
-        color: var(--paper);
+        color: var(--dark);
         display: block;
+        letter-spacing: .5px;
     }
 
     /* Rating badge */
     .cf-rating-badge {
         z-index: 99;
         position: absolute;
-        top: 24px;
+        top: -24px;
         right: -16px;
         background: var(--green);
         color: #fff;
@@ -1110,7 +1095,6 @@
     }
 
     .cf-counter-num {
-        font-family: var(--serif);
         font-size: clamp(36px, 5vw, 56px);
         font-weight: 900;
         color: #fff;
@@ -1162,7 +1146,6 @@
     }
 
     .cf-cta-text h2 {
-        font-family: var(--serif);
         font-size: clamp(24px, 4vw, 42px);
         font-weight: 900;
         color: #fff;
