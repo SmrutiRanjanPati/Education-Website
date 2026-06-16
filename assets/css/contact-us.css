@@ -82,7 +82,7 @@ a   { text-decoration: none; color: inherit; }
   line-height: 1.2;
   color: var(--text);
 }
-.display-h2 em { font-style: italic; color: var(--g500); }
+.display-h2 em {color: var(--g500); }
 
 /* ══════════════════════════════════════
    PAGE HERO
@@ -126,7 +126,7 @@ a   { text-decoration: none; color: inherit; }
   line-height: 1.15;
   margin-bottom: 14px;
 }
-.page-hero h1 em { font-style: italic; color: var(--g300); }
+.page-hero h1 em {color: var(--g300); }
 .page-hero-sub {
   font-size: 16px;
   color: rgba(255,255,255,0.6);

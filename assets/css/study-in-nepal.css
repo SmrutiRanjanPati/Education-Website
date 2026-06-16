@@ -111,7 +111,7 @@ h3 { font-size: 1.25rem; font-family: var(--font-body); font-weight: 600; }
 }
 .hero h1 em, .section-header h2 em, .cta-section h2 em {
   color: #4ade80;
-  font-style: italic;
+  font-style: normal;
 }
 .section-header h2 em { color: var(--green-accent-hover); }
 .hero p { font-size: 16px; color: #cbd5e1; max-width: 550px; margin: 16px 0 32px; }

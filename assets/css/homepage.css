@@ -810,12 +810,6 @@
         animation: floatHero 3s ease-in-out infinite;
     }
 
-    .cf-image-float-hero:hover {
-        transform: translateY(-6px);
-        box-shadow: var(--shadow-lg);
-        background-color: var(--green-dk);
-    }
-
     /* Floating Keyframes */
     @keyframes floatHero {
         0% {
